@@ -1,0 +1,68 @@
+{
+  "/api/Banner": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/ApplicationRules": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/ProfileUniversty": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/Program": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/Sector": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/Users": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/News": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/Faculty": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/profile-assets": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api/profile-assets": ""
+    },
+    "logLevel": "warn"
+  },
+  "/api/banner-assets": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api/banner-assets": ""
+    },
+    "logLevel": "warn"
+  }
+}

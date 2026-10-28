@@ -1,0 +1,72 @@
+<main class="news-detail" [attr.dir]="(langService.currentLang$ | async) === 'ar' ? 'rtl' : 'ltr'">
+  <p *ngIf="isLoading" class="detail-empty" role="status">
+    {{ langService.translate('allNews.LOADING') }}
+  </p>
+  <p *ngIf="loadError" class="detail-empty" role="alert">
+    {{ langService.translate('allNews.ERROR') }}
+  </p>
+  <ng-container *ngIf="news as item">
+    <header class="detail-header">
+      <div class="detail-header__inner">
+        <a class="detail-back" routerLink="/all-news">
+          <span aria-hidden="true">&#8592;</span>
+          {{ langService.translate('newsDetails.BACK') }}
+        </a>
+        <p class="detail-kicker">{{ langService.translate('newsDetails.LABEL') }}</p>
+        <p class="detail-category">{{ categoryName(item) }}</p>
+        <h1>{{ title(item) }}</h1>
+        <p class="detail-deck">{{ description(item) }}</p>
+      </div>
+      <div class="detail-header__mark" aria-hidden="true">BSNU</div>
+    </header>
+
+    <article class="detail-article">
+      <section *ngIf="imageUrls.length > 0" class="detail-carousel" [attr.aria-label]="langService.translate('allEvents.EVENT_GALLERY')">
+        <figure class="detail-image" aria-live="polite">
+          <img [src]="imageUrls[selectedImageIndex]" [alt]="title(item)">
+        </figure>
+        <ng-container *ngIf="imageUrls.length > 1">
+          <button
+            type="button"
+            class="detail-carousel__control detail-carousel__control--previous"
+            [attr.aria-label]="langService.translate('allEvents.PREVIOUS_IMAGE')"
+            (click)="showPreviousImage()">
+            <span aria-hidden="true">&#8592;</span>
+          </button>
+          <button
+            type="button"
+            class="detail-carousel__control detail-carousel__control--next"
+            [attr.aria-label]="langService.translate('allEvents.NEXT_IMAGE')"
+            (click)="showNextImage()">
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+          <div class="detail-carousel__indicators" role="group" [attr.aria-label]="langService.translate('allEvents.EVENT_GALLERY')">
+            <button
+              *ngFor="let image of imageUrls; let index = index"
+              type="button"
+              [class.is-active]="index === selectedImageIndex"
+              [attr.aria-current]="index === selectedImageIndex ? 'true' : null"
+              [attr.aria-label]="langService.translate('allEvents.SHOW_IMAGE') + ' ' + (index + 1)"
+              (click)="showImage(index)">
+            </button>
+          </div>
+        </ng-container>
+      </section>
+      <div class="detail-copy">
+        <p>{{ subtitle(item) }}</p>
+        <a class="detail-more" routerLink="/all-news">
+          {{ langService.translate('newsDetails.MORE') }}
+          <span aria-hidden="true">&#8594;</span>
+        </a>
+      </div>
+    </article>
+  </ng-container>
+
+  <ng-container *ngIf="!isLoading && !loadError && !news">
+    <section class="detail-empty">
+      <p class="detail-kicker">{{ langService.translate('newsDetails.LABEL') }}</p>
+      <h1>{{ langService.translate('newsDetails.NOT_FOUND') }}</h1>
+      <a class="detail-more" routerLink="/all-news">{{ langService.translate('newsDetails.MORE') }}</a>
+    </section>
+  </ng-container>
+</main>

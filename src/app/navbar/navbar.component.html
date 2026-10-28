@@ -1,0 +1,261 @@
+<!-- Header Top Section -->
+<div class="header-top-section" [ngClass]="{ 'hide-on-scroll': scrolled }">
+  <div class="container-fluid">
+    <div class="header-top-content">
+      <div class="xb-help-desk">
+        <img src="assets/icon/hero_top-icon.png" alt="Help Desk">
+        <p>{{ langService.translate('NAVBAR.Help') }} <span>{{ langService.translate('NAVBAR.helpNumber') }}</span></p>
+      </div>
+      <div class="xb-info">
+        <ul class="nav-links">
+          <li class="nav-item dropdown">
+            <a href="https://sis-bsnu.bsu.edu.eg/" target="_blank" class="nav-link dropdown-toggle" rel="noopener noreferrer">{{ langService.translate('NAVBAR.StudentPortal') }}</a>
+            <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+              <li><a class="dropdown-item" href="https://www.lms-bsnu.bsu.edu.eg/" target="_blank">{{ langService.translate('program.BTN2') }}</a></li>
+              <li><a class="dropdown-item" href="https://sis-bsnu.bsu.edu.eg/DefaultApplicantNew.aspx" target="_blank">{{ langService.translate('program.BTN1') }}</a></li>
+            </ul> 
+          </li>
+          <li><a href="https://www.lms-bsnu.bsu.edu.eg/" target="_blank" rel="noopener noreferrer">{{ langService.translate('NAVBAR.StaffPortal') }}</a></li>
+          <li><a routerLink="/Underconstruction">{{ langService.translate('NAVBAR.Alumni') }}</a></li>
+          <li><a routerLink="/Underconstruction">{{ langService.translate('NAVBAR.ResearchCommunity') }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" [ngClass]="{ 'scrolled': scrolled }">
+  <div class="container-fluid">
+    <h5 class="title-eng">
+      <a role="button" routerLink="/home" class="text-decoration-none">
+        {{ langService.translate('NAVBAR.TITLE') }}
+      </a>
+    </h5>
+
+    <!-- Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav" (click)="closeMobileNavbarOnLink($event)">
+      <ul class="navbar-nav ms-auto me-3">
+        <!-- Home -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="homeDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" routerLink="/home">{{ langService.translate('NAVBAR.HOME') }}</a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" routerLink="/vice_president/President">{{ langService.translate('NAVBAR.President') }}</a></li>
+            <li><a class="dropdown-item" routerLink="/vice_president/VicePresidentAcademic">{{ langService.translate('NAVBAR.VicePresident') }}</a></li>
+          </ul>
+        </li>
+
+        <!-- Admission -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="coursesDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">{{ langService.translate('NAVBAR.Admission') }}</a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li><a class="dropdown-item" routerLink="/Tutionfees">{{ langService.translate('NAVBAR.tutionfees') }}</a></li>
+            <li><a class="dropdown-item" routerLink="/Applicationrules">{{ langService.translate('NAVBAR.applicationrules') }}</a></li>
+            <li><a class="dropdown-item" routerLink="/vice_president/AffairsLead">{{ langService.translate('NAVBAR.studentaffiersPresident') }}</a></li>
+          </ul>
+        </li>
+
+        <!-- Academic Programs -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="academicDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">{{ langService.translate('NAVBAR.AcademicPrograms') }}</a>
+          <ul class="dropdown-menu" aria-labelledby="academicDropdown">
+            <li><a class="dropdown-item" routerLink="Program/21">testt</a></li>
+            <li><a class="dropdown-item" routerLink="Program/1">{{ langService.translate('NAVBAR.firstprogram') }}</a></li>
+            <li><a class="dropdown-item" routerLink="Program/2">{{ langService.translate('NAVBAR.secondprogram') }}</a></li>
+            <li><a class="dropdown-item" routerLink="Program/3">{{ langService.translate('NAVBAR.thirdprogram') }}</a></li>
+            <li><a class="dropdown-item" routerLink="Program/4">{{ langService.translate('NAVBAR.forthprogram') }}</a></li>
+            <li><a class="dropdown-item" routerLink="Program/5">{{ langService.translate('NAVBAR.fifthprogram') }}</a></li>
+            <li><a class="dropdown-item" routerLink="Program/11">{{ langService.translate('NAVBAR.sixthprogram') }}</a></li>
+            <li><a class="dropdown-item" routerLink="Program/9">{{ langService.translate('NAVBAR.sevenprogram') }}</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="computerdropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.eightprogram') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="computerdropdown">
+                <li><a class="dropdown-item" routerLink="Program/6">{{ langService.translate('NAVBAR.nineprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/7">{{ langService.translate('NAVBAR.tenprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/8">{{ langService.translate('NAVBAR.elevenprogram') }}</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="sciencedropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.twelveprogram') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="sciencedropdown">
+                <li><a class="dropdown-item" routerLink="Program/10">{{ langService.translate('NAVBAR.therteenprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/12">{{ langService.translate('NAVBAR.fortenprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/13">{{ langService.translate('NAVBAR.fiftenprogram') }}</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item" routerLink="Program/17">{{ langService.translate('NAVBAR.sixteenprogram') }}</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="artdropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.seventeenprogram') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="artdropdown">
+                <li><a class="dropdown-item" routerLink="Program/16">{{ langService.translate('NAVBAR.eighteenprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/19">{{ langService.translate('NAVBAR.nineteenprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/20">{{ langService.translate('NAVBAR.twintyprogram') }}</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item" routerLink="Program/15">{{ langService.translate('NAVBAR.twintyoneprogram') }}</a></li>
+
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="masscommdropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.twintytwoprogram') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="masscommdropdown">
+                <li><a class="dropdown-item" routerLink="Program/14">{{ langService.translate('NAVBAR.twintythreeprogram') }}</a></li>
+                <li><a class="dropdown-item" routerLink="Program/18">{{ langService.translate('NAVBAR.twintyfourprogram') }}</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Staff -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="pagesDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{ langService.translate('NAVBAR.Staff') }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.msector') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="blogDropdown">
+                <li><a class="dropdown-item" routerLink="/staff/dean/1">{{ langService.translate('NAVBAR.msectordean') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/1">{{ langService.translate('NAVBAR.msectormedicine') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/4">{{ langService.translate('NAVBAR.msectorphysical') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/3">{{ langService.translate('NAVBAR.msectororal') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/2">{{ langService.translate('NAVBAR.msectorpharma') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/5">{{ langService.translate('NAVBAR.msectornursing') }}</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="eventDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.esector') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="eventDropdown">
+                <li><a class="dropdown-item" routerLink="/staff/dean/2">{{ langService.translate('NAVBAR.esectorDean') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/9">{{ langService.translate('NAVBAR.esectorEngineering') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/6">{{ langService.translate('NAVBAR.esectorArtificialIntelligence') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/7">{{ langService.translate('NAVBAR.esectorCyberSecurity') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/8">{{ langService.translate('NAVBAR.esectorMedicalInformatics') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/12">{{ langService.translate('NAVBAR.esectorPetroleum') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/10">{{ langService.translate('NAVBAR.esectorBiochemistry') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/11">{{ langService.translate('NAVBAR.esectorIndustrialChemistry') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/13">{{ langService.translate('NAVBAR.esectorApplied') }}</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-item dropdown-toggle" id="teamDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ langService.translate('NAVBAR.hsector') }}
+              </a>
+              <ul class="dropdown-menu dropdown-submenu" aria-labelledby="teamDropdown">
+                <li><a class="dropdown-item" routerLink="/staff/dean/3">{{ langService.translate('NAVBAR.hsectorDean') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/17">{{ langService.translate('NAVBAR.hsectorLegalStudies') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/18">{{ langService.translate('NAVBAR.hsectorAccounting') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/15">{{ langService.translate('NAVBAR.hsectorArchiving') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/16">{{ langService.translate('NAVBAR.hsectorClinicalPsychology') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/19">{{ langService.translate('NAVBAR.hsectorGIS') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/18">{{ langService.translate('NAVBAR.hsectorTelevision') }}</a></li>
+                <li><a class="dropdown-item" routerLink="/staff/14">{{ langService.translate('NAVBAR.hsectorDigitalJournalisms') }}</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Contact -->
+        <li class="nav-item"><a class="nav-link" routerLink="contact">{{ langService.translate('NAVBAR.Contact') }}</a></li>
+
+        <!-- About Us -->
+        <li class="nav-item"><a class="nav-link" routerLink="/Underconstruction">{{ langService.translate('NAVBAR.AboutUs') }}</a></li>
+      </ul>
+
+      <!-- Search and Language -->
+      <div class="navbar-extras">
+        <!-- Search Button -->
+        <button class="btn btn-search me-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <svg width="18" height="18" class="search-icon" viewBox="0 0 18 18" fill="none">
+            <path d="M10.5 3.75H15" stroke="#170006" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M10.5 6H12.75" stroke="#170006" stroke-width="1.5" stroke-linecap="round" />
+            <path
+              d="M15.75 8.625C15.75 12.5625 12.5625 15.75 8.625 15.75C4.6875 15.75 1.5 12.5625 1.5 8.625C1.5 4.6875 4.6875 1.5 8.625 1.5"
+              stroke="#170006" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M16.5 16.5L15 15" stroke="#170006" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span class="d-lg-inline d-none">{{ langService.translate('NAVBAR.Search') }}</span>
+        </button>
+
+        <!-- Language Dropdown -->
+        <div class="dropdown lang-dropdown">
+          <button class="btn btn-language dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <span class="flag-icon"><img src="assets/icon/flag_usa.webp" alt="USA" class="flag-img"></span>
+            <span class="lang-name">{{ langService.translate('NAVBAR.EnglishLanguage') }}</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" style="width: fit-content;" (click)="switchToArabic()">{{
+                langService.translate('NAVBAR.ArabicLanguage') }}<span style="padding-left:7%;" class="flag-icon"><img
+                    src="assets/icon/flag-of-egypt.png" alt="Arabic" class="flag-img"></span></a></li>
+            <li><a class="dropdown-item" style="width: fit-content;" (click)="switchToEnglish()">{{
+                langService.translate('NAVBAR.EnglishLanguage') }}<span style="padding-left:7%;" class="flag-icon"><img
+                    src="assets/icon/flag_usa.webp" alt="English" class="flag-img"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ langService.translate('NAVBAR.Search') }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="{{ langService.translate('NAVBAR.Search') }}...">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="ProgramManagervideoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ langService.translate('NAVBAR.ProgramManagerWord') }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/CU5mtxjljSo" title="Program Manager Word" allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Router Outlet -->
+<router-outlet></router-outlet>

@@ -1,0 +1,154 @@
+ body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px auto 30px;
+      color: #0056b3;
+      animation: fadeInDown 0.9s ease both;
+    }
+
+    .tabs {
+      max-width: 1100px;
+      width: min(100%, 1100px);
+      margin: 0 auto 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      animation: fadeInUp 0.9s ease both;
+    }
+
+    .rules-state {
+      margin: 0;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .rules-state--error {
+      color: #8c302d;
+    }
+
+    .tab-buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid #ddd;
+      background: #fafafa;
+      overflow-x: auto;
+    }
+
+    .tab-buttons button {
+      flex: 1 1 25%;
+      min-width: 180px;
+      padding: 16px 18px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 15px;
+      text-align: left;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .tab-buttons button.active {
+      background: #ffffff;
+      color: #111;
+      font-weight: 700;
+      border-bottom: 3px solid #0056b3;
+      transform: translateY(-2px);
+    }
+
+    .tab-buttons button:hover {
+      background: #f0f0f0;
+    }
+
+    .tabs[dir='rtl'] .tab-buttons button {
+      text-align: right;
+    }
+
+    .tabs[dir='rtl'] .tab-panel,
+    .tabs[dir='rtl'] .tab-panel h2,
+    .tabs[dir='rtl'] .tab-panel p {
+      text-align: right;
+    }
+
+    .tab-panel {
+      display: none;
+      padding: 24px 28px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .tab-panel.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tab-panel h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    .tab-panel p,
+    .tab-panel ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .tab-panel ul {
+      list-style: none;
+      margin-top: 12px;
+    }
+
+    .tab-panel li {
+      margin-bottom: 10px;
+      padding-left: 1.4em;
+      position: relative;
+    }
+
+    .tabs[dir='rtl'] .tab-panel li {
+      padding-left: 0;
+      padding-right: 1.4em;
+    }
+
+    .tab-panel li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #0056b3;
+      font-weight: 700;
+    }
+
+    .tabs[dir='rtl'] .tab-panel li::before {
+      left: auto;
+      right: 0;
+    }

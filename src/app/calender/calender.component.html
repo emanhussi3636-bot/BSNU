@@ -1,0 +1,27 @@
+<section class="calendar-section" [attr.dir]="(langService.currentLang$ | async) === 'ar' ? 'rtl' : 'ltr'" [class.rtl]="(langService.currentLang$ | async) === 'ar'" [class.ltr]="(langService.currentLang$ | async) !== 'ar'">
+  <div class="calendar-header">
+    <h2>{{ langService.translate('Calendar.TITLE') }}</h2>
+  </div>
+
+  <div class="calendar-table-wrapper">
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>{{ langService.translate('Calendar.COLUMNS.EVENT') }}</th>
+          <th>{{ langService.translate('Calendar.COLUMNS.DATE') }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of rows">
+          <td>{{ langService.translate(row.labelKey) }}</td>
+          <td>{{ langService.translate(row.dateKey) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="calendar-footer">
+    <p>{{ langService.translate('Calendar.HEAD.ADVISOR') }}</p>
+    <p class="calendar-signature">{{ langService.translate('Calendar.HEAD.NAME') }}</p>
+  </div>
+</section>

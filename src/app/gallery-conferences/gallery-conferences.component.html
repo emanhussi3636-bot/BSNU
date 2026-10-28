@@ -1,0 +1,37 @@
+<div class="conference-detail-page">
+  <button class="back-button" (click)="goBack()">← {{ langService.translate('CONFERENCES.DETAIL.BACK_BUTTON') }}</button>
+
+  <div *ngIf="selectedItem; else missing" class="detail-wrapper">
+    <div class="detail-image-panel">
+      <div class="image-stack">
+        <img *ngFor="let imageUrl of selectedItem.image" [src]="imageUrl" [alt]="langService.translate(selectedItem.titleKey)" />
+      </div>
+    </div>
+
+    <div class="detail-copy-panel">
+      <span class="eyebrow">{{ langService.translate(selectedItem.typeKey) }}</span>
+      <h1>{{ langService.translate(selectedItem.titleKey) }}</h1>
+      <p class="subtitle">{{ langService.translate(selectedItem.subtitleKey) }}</p>
+      <p class="detail-text">{{ langService.translate(selectedItem.detailKey) }}</p>
+
+      <div class="detail-meta-grid">
+        <div>
+          <span>{{ langService.translate('CONFERENCES.DETAIL.DATE_LABEL') }}</span>
+          <strong>{{ selectedItem.date }}</strong>
+        </div>
+        <div>
+          <span>{{ langService.translate('CONFERENCES.DETAIL.LOCATION_LABEL') }}</span>
+          <strong>{{ langService.translate(selectedItem.locationKey) }}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #missing>
+    <div class="not-found-card">
+      <h2>{{ langService.translate('CONFERENCES.DETAIL.NOT_FOUND_TITLE') }}</h2>
+      <p>{{ langService.translate('CONFERENCES.DETAIL.NOT_FOUND_MESSAGE') }}</p>
+      <button class="back-button" (click)="goBack()">{{ langService.translate('CONFERENCES.DETAIL.RETURN_BUTTON') }}</button>
+    </div>
+  </ng-template>
+</div>

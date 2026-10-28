@@ -1,0 +1,69 @@
+.calendar-section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 120px auto 48px;
+  font-family: var(--font-body);
+  color: #1f232d;
+}
+
+.calendar-header h2 {
+  margin: 0 0 18px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.calendar-section.ltr .calendar-header h2 {
+  text-align: left;
+}
+
+.calendar-table-wrapper {
+  overflow-x: auto;
+}
+
+.calendar-table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  min-width: 680px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 16px 18px;
+  border: 1px solid rgba(31, 35, 45, 0.12);
+  text-align: right;
+  vertical-align: top;
+}
+
+.calendar-section.ltr .calendar-table th,
+.calendar-section.ltr .calendar-table td {
+  text-align: left;
+}
+
+.calendar-table th {
+  background: #f7f8fb;
+  font-weight: 700;
+}
+
+.calendar-table tbody tr:nth-child(even) {
+  background: #fbfcfe;
+}
+
+.calendar-footer {
+  margin-top: 24px;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.calendar-section.ltr .calendar-footer {
+  text-align: left;
+}
+
+.calendar-signature {
+  margin-top: 6px;
+  font-weight: 700;
+}

@@ -1,0 +1,93 @@
+<main class="event-detail-page">
+  <div class="event-detail-shell">
+    <a class="event-detail-back" routerLink="/all-events">← {{ langService.translate('ALL_EVENTS.BACK') }}</a>
+
+    <div class="event-detail-layout" *ngIf="selectedEvent; else unavailableEvent">
+      <section
+        class="event-detail-gallery"
+        *ngIf="eventImages.length"
+        [attr.aria-label]="langService.translate('ALL_EVENTS.EVENT_GALLERY')"
+      >
+        <img
+          class="event-detail-image"
+          [src]="eventImages[currentImageIndex]"
+          [alt]="selectedEvent.title || ''"
+        >
+        <span class="event-detail-image-count">{{ currentImageIndex + 1 }} / {{ eventImages.length }}</span>
+
+        <div class="event-detail-carousel-controls" *ngIf="eventImages.length > 1">
+          <button
+            type="button"
+            (click)="showPreviousImage()"
+            [attr.aria-label]="langService.translate('ALL_EVENTS.PREVIOUS_IMAGE')"
+          >‹</button>
+          <button
+            type="button"
+            (click)="showNextImage()"
+            [attr.aria-label]="langService.translate('ALL_EVENTS.NEXT_IMAGE')"
+          >›</button>
+        </div>
+
+        <div class="event-detail-dots" *ngIf="eventImages.length > 1">
+          <button
+            *ngFor="let image of eventImages; let index = index"
+            type="button"
+            [class.is-active]="currentImageIndex === index"
+            [attr.aria-label]="langService.translate('ALL_EVENTS.SHOW_IMAGE') + ' ' + (index + 1)"
+            [attr.aria-current]="currentImageIndex === index ? 'true' : null"
+            (click)="selectImage(index)"
+          ></button>
+        </div>
+      </section>
+
+      <article class="event-detail-copy">
+        <p class="event-detail-eyebrow">
+          {{ langService.translate('ALL_EVENTS.PROGRAM_EVENTS') }}
+        </p>
+        <h1>{{ selectedEvent.title }}</h1>
+        <p class="event-detail-subtitle" *ngIf="selectedEvent.description && selectedEvent.detail">
+          {{ selectedEvent.description }}
+        </p>
+
+        <p class="event-detail-description">
+          {{ selectedEvent.detail || selectedEvent.description || langService.translate('ALL_EVENTS.DETAILS_UNAVAILABLE') }}
+        </p>
+
+        <dl class="event-detail-meta">
+          <div>
+            <dt>{{ langService.translate('ALL_EVENTS.DATE') }}</dt>
+            <dd>
+              {{ formatDate(selectedEvent.startDate) || langService.translate('ALL_EVENTS.DATE_UNANNOUNCED') }}
+              <ng-container *ngIf="selectedEvent.endDate && selectedEvent.endDate !== selectedEvent.startDate">
+                – {{ formatDate(selectedEvent.endDate) }}
+              </ng-container>
+            </dd>
+          </div>
+          <div>
+            <dt>{{ langService.translate('ALL_EVENTS.PROGRAM') }}</dt>
+            <dd>{{ selectedEvent.programsId }}</dd>
+          </div>
+          <div *ngIf="selectedEvent.location">
+            <dt>{{ langService.translate('ALL_EVENTS.LOCATION') }}</dt>
+            <dd>{{ selectedEvent.location }}</dd>
+          </div>
+        </dl>
+      </article>
+    </div>
+
+    <ng-template #unavailableEvent>
+      <section class="event-detail-missing" role="status" *ngIf="isLoading; else eventProblem">
+        <p>{{ langService.translate('ALL_EVENTS.LOADING_EVENT') }}</p>
+      </section>
+    </ng-template>
+
+    <ng-template #eventProblem>
+      <section class="event-detail-missing" role="status">
+        <span aria-hidden="true">!</span>
+        <h1>{{ langService.translate(loadError ? 'ALL_EVENTS.EVENT_LOAD_FAILED' : 'ALL_EVENTS.EVENT_NOT_FOUND') }}</h1>
+        <p>{{ langService.translate(loadError ? 'ALL_EVENTS.EVENT_LOAD_FAILED_COPY' : 'ALL_EVENTS.EVENT_NOT_FOUND_COPY') }}</p>
+        <button type="button" (click)="goBack()">{{ langService.translate('ALL_EVENTS.BACK') }}</button>
+      </section>
+    </ng-template>
+  </div>
+</main>

@@ -1,0 +1,51 @@
+<section class="home-events" aria-labelledby="home-events-title">
+  <div class="home-events__decoration home-events__decoration--one" aria-hidden="true"></div>
+  <div class="home-events__decoration home-events__decoration--two" aria-hidden="true"></div>
+
+  <div class="container home-events__container">
+    <div class="home-events__heading">
+      <div>
+        <p class="home-events__eyebrow">{{ langService.translate('ALL_EVENTS.PUBLIC') }}</p>
+        <h2 id="home-events-title">{{ langService.translate('events.TITLE') }}</h2>
+      </div>
+      <a class="home-events__all-link" routerLink="/all-events">
+        {{ langService.translate('ALL_EVENTS.SEE_ALL') }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <p class="home-events__status" role="status" *ngIf="isLoading">
+      {{ langService.translate('ALL_EVENTS.LOADING_EVENTS') }}
+    </p>
+
+    <p class="home-events__status" role="alert" *ngIf="!isLoading && loadError">
+      {{ langService.translate('ALL_EVENTS.EVENTS_LOAD_FAILED') }}
+    </p>
+
+    <div class="home-events__grid" *ngIf="!isLoading && !loadError && latestEvents.length">
+      <a
+        class="home-events__card"
+        *ngFor="let item of latestEvents; let index = index"
+        [routerLink]="['/eventdetails', item.id, item.programsId]"
+        [style.--card-index]="index"
+      >
+        <div class="home-events__image">
+          <img *ngIf="imageUrl(item)" [src]="imageUrl(item)" [alt]="item.title || ''" loading="lazy">
+          <span class="home-events__date">{{ formatDate(item.startDate) }}</span>
+        </div>
+        <div class="home-events__copy">
+          <span class="home-events__category">{{ langService.translate('ALL_EVENTS.PUBLIC') }}</span>
+          <h3>{{ item.title }}</h3>
+          <span class="home-events__more">
+            {{ langService.translate('ALL_EVENTS.VIEW_DETAILS') }}
+            <span aria-hidden="true">↗</span>
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <p class="home-events__status" role="status" *ngIf="!isLoading && !loadError && !latestEvents.length">
+      {{ langService.translate('ALL_EVENTS.NO_RESULTS') }}
+    </p>
+  </div>
+</section>

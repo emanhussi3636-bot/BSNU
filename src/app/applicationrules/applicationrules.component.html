@@ -1,0 +1,42 @@
+<h1>{{ langService.translate('APPLICATIONRULES.PAGE_TITLE') }}</h1>
+
+<section class="tabs" [attr.dir]="dir">
+  @if (isLoading) {
+    <p class="rules-state" role="status">{{ langService.translate('APPLICATIONRULES.LOADING') }}</p>
+  } @else if (loadError) {
+    <p class="rules-state rules-state--error" role="alert">{{ langService.translate('APPLICATIONRULES.LOAD_ERROR') }}</p>
+  } @else if (rules.length > 0) {
+    <div class="tab-buttons" role="tablist">
+      @for (rule of rules; track $index; let ruleIndex = $index) {
+        <button
+          type="button"
+          role="tab"
+          [id]="'application-rule-tab-' + ruleIndex"
+          [attr.aria-controls]="'application-rule-panel-' + ruleIndex"
+          [attr.aria-selected]="activeRuleIndex === ruleIndex"
+          [class.active]="activeRuleIndex === ruleIndex"
+          (click)="selectTab(ruleIndex)">
+          {{ rule.label }}
+        </button>
+      }
+    </div>
+
+    @for (rule of rules; track $index; let ruleIndex = $index) {
+      @if (activeRuleIndex === ruleIndex) {
+        <div
+          class="tab-panel active"
+          role="tabpanel"
+          [id]="'application-rule-panel-' + ruleIndex"
+          [attr.aria-labelledby]="'application-rule-tab-' + ruleIndex">
+          <h2>{{ rule.heading }}</h2>
+          <p>{{ rule.description }}</p>
+          <ul>
+            @for (document of rule.documents; track $index) {
+              <li>{{ document.item }}</li>
+            }
+          </ul>
+        </div>
+      }
+    }
+  }
+</section>

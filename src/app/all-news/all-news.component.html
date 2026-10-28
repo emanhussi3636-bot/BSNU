@@ -1,0 +1,74 @@
+<main class="all-news" [attr.dir]="(langService.currentLang$ | async) === 'ar' ? 'rtl' : 'ltr'">
+  <section class="news-intro">
+    <div class="news-intro__inner">
+      <a class="news-back" routerLink="/home">
+        <span aria-hidden="true">&#8592;</span>
+        {{ langService.translate('allNews.BACK') }}
+      </a>
+      <p class="news-kicker">{{ langService.translate('allNews.KICKER') }}</p>
+      <h1>{{ langService.translate('allNews.TITLE') }}</h1>
+      <p class="news-intro__copy">{{ langService.translate('allNews.INTRO') }}</p>
+      <div class="news-intro__index" aria-hidden="true">BSNU / NEWS</div>
+    </div>
+    <div class="news-intro__art" aria-hidden="true">
+      <span class="news-intro__number">01</span>
+      <span class="news-intro__line"></span>
+    </div>
+  </section>
+
+  <section class="news-list" aria-label="University news">
+    <div class="news-toolbar">
+      <p class="news-count">
+        <span>{{ filteredNews.length | number: '2.0' }}</span>
+        {{ langService.translate('allNews.STORIES') }}
+      </p>
+      <div class="news-filters" role="group" [attr.aria-label]="langService.translate('allNews.FILTERS')">
+        <button
+          type="button"
+          [class.is-active]="activeCategoryId === null"
+          [attr.aria-pressed]="activeCategoryId === null"
+          (click)="selectCategory(null)">
+          {{ langService.translate('allNews.CATEGORIES.ALL') }}
+        </button>
+        <button
+          *ngFor="let category of categories"
+          type="button"
+          [class.is-active]="activeCategoryId === category.categoryId"
+          [attr.aria-pressed]="activeCategoryId === category.categoryId"
+          (click)="selectCategory(category.categoryId)">
+          {{ currentLanguage === 'ar' ? category.categoryNameAr : category.categoryNameEn }}
+        </button>
+      </div>
+    </div>
+
+    <p *ngIf="isLoading" class="news-message" role="status">
+      {{ langService.translate('allNews.LOADING') }}
+    </p>
+    <p *ngIf="loadError" class="news-message" role="alert">
+      {{ langService.translate('allNews.ERROR') }}
+    </p>
+    <p *ngIf="!isLoading && !loadError && filteredNews.length === 0" class="news-message">
+      {{ langService.translate('allNews.EMPTY') }}
+    </p>
+
+    <div *ngIf="!isLoading && !loadError" class="news-grid">
+      <article
+        *ngFor="let item of filteredNews; let index = index"
+        class="news-card"
+        [class.news-card--featured]="index === 0 && activeCategoryId === null"
+        [style.--card-index]="index">
+        <div class="news-card__image">
+          <a [routerLink]="['/news', item.id]" [attr.aria-label]="title(item)">
+            <img *ngIf="imageUrl(item) as image" [src]="image" [alt]="title(item)" loading="lazy">
+          </a>
+          <span class="news-card__number">{{ (index + 1) | number: '2.0' }}</span>
+        </div>
+        <div class="news-card__content">
+          <p class="news-card__category">{{ categoryName(item) }}</p>
+          <h2><a [routerLink]="'/news/' + item.id">{{ title(item) }}</a></h2>
+          <p class="news-card__description">{{ description(item) }}</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>

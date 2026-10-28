@@ -1,0 +1,901 @@
+.download-link {
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  text-align: justify !important;
+
+  gap: 6px;
+  padding: 8px 12px;
+  margin: 8px 12px;
+  border-radius: 6px;
+  background: #0a5da6;
+  color: #fff;
+}
+
+.download-link:hover {
+  background: #084e8c;
+}
+body{
+  font-family: "Font Awesome 5 Pro";
+
+}
+
+.xb-program__wrapper .xb-item--title{
+    font-family: "Font Awesome 5 Pro";
+    
+    margin-top: 0.4rem;
+    font-size: small;
+    font-weight: 300;
+    color: #000 !important;
+    text-align: justify;
+}
+.course-single{
+    background-color: #fff;
+    font-family: "Font Awesome 5 Pro" !important;
+
+}
+p{
+  font-size: medium;
+  font-weight:  300;
+}
+h1, h3, h5, h2, p, span{
+  font-family: "Font Awesome 5 Pro" !important;
+  padding-right:15px;
+  padding-left:15px;
+  text-align: justify !important; 
+
+} 
+span {
+    font-weight: 300;
+    font-size: 0.7rem;
+    padding-right:25px;
+
+}
+.xb-list li span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; /* LTR spacing */
+}
+
+.xb-list li span img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+/* -------------------------------------------------- */
+
+.hero .carousel-item {
+  position: relative;
+}
+.fanfact{
+  font-family: "Font Awesome 5 Pro";
+
+}
+
+/* Dark gradient overlay on images */
+.hero .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 30, 48, 0.5) 50%, rgba(0, 0, 0, 0.75) 100%); */
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(51, 52, 53, 0.7) 50%, rgba(1, 13, 63, 0.341) 100%);
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+   background-size: 400% 400%;
+  animation: gradientMove 8s ease ;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+.hero .xb-item--number {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Carousel controls styling */
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  z-index: 15;
+  transition: all 0.3s ease;
+}
+
+.hero .carousel-control-prev {
+  left: 30px;
+}
+
+.hero .carousel-control-next {
+  right: 30px;
+}
+
+.hero .carousel-control-prev:hover,
+.hero .carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.hero .carousel-control-prev-icon,
+.hero .carousel-control-next-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Carousel indicators */
+.hero .carousel-indicators {
+  bottom: -40px;
+  z-index: 15;
+}
+
+.hero .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.hero .carousel-indicators button.active {
+  background: #ffc107;
+  border-color: #ffc107;
+  transform: scale(1.3);
+}
+.container{
+        max-width: 100% !important;
+        /* padding-left: 15px; */
+        /* padding-right: 15px; */
+        margin: 0px !important;
+        padding: 0px !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .fanfact {
+    margin-top: 100px;
+  }
+
+  .fanfact .carousel-item img {
+    height: 300px;
+  }
+
+  .fanfact .xb-item--title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .fanfact .xb-item--number {
+    font-size: 48px;
+  }
+
+  .fanfact .xb-item--text {
+    font-size: 22px;
+  }
+
+  .fanfact .xb-item--content {
+    font-size: 14px;
+  }
+
+  .fanfact .xb-item--holder {
+    padding: 20px 24px;
+  }
+
+  .fanfact .carousel-control-prev,
+  .fanfact .carousel-control-next {
+    width: 45px;
+    height: 45px;
+  }
+
+  .fanfact .carousel-control-prev {
+    left: 15px;
+  }
+
+  .fanfact .carousel-control-next {
+    right: 15px;
+  }
+
+  .fanfact .carousel-caption {
+    bottom: 10px;
+    width: 95%;
+  }
+  .xb-list li span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+p[_ngcontent-ng-c2519294651]{
+  text-align: justify !important;
+}
+.xb-list li span img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+}
+
+@media (max-width: 480px) {
+  .fanfact .carousel-item img {
+    height: 250px;
+  }
+
+  .fanfact .xb-item--title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .fanfact .xb-item--number {
+    font-size: 36px;
+  }
+
+  .fanfact .xb-item--text {
+    font-size: 18px;
+  }
+
+  .fanfact .xb-item--content {
+    font-size: 13px;
+  }
+
+  .fanfact .xb-item--holder {
+    padding: 15px 20px;
+  }
+  .xb-list li span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: inline-flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.xb-list li span img {
+    width: 9px;
+    height: 9px;
+    object-fit: contain;
+}
+
+}
+.goalsIcon {
+  font-size: 10px !important;
+  margin-right: 9px;
+  background-color: #0a5da6;
+  padding: 5px 5px;
+  border-radius: 50%;
+  color: #000;
+  align-content: center;
+  text-align: center;
+  display: inline-table;
+}
+.course-sidebar2 {
+  margin-bottom: 30px !important;
+  width: 98%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  background-color: var(--color-white);
+  padding: 10px;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.07);
+  margin: 0px auto 0;
+  border-radius: 10px;
+  margin-top: 2.5%;
+  margin-inline-start: 13px; /* logical margin (LTR: left, RTL: right) */
+  margin-inline-end: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;    
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlide 1.5s ease forwards;
+  margin-top:10%;
+}
+.course-sidebar2:hover {
+  transform: translateY(-10px);
+  animation: fadeSlide 1.5s ease forwards;
+}
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+  .course-sidebar2 h3{
+    color:#0A5DA6;
+  }
+  @media (max-width: 767px) {
+    .course-sidebar2 {
+      margin: 0;
+      max-width: 100%;
+      padding: 20px; }
+    .xb-list li span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.xb-list li span img {
+    width: 9px;
+    height: 9px;
+    object-fit: contain;
+}
+ }
+  
+    
+  
+
+/* ------------- */
+/* 
+.container{
+    padding: 0;
+} */
+
+.breadcrumb__title {
+  text-shadow: 3px 3px 3px #000; 
+  text-align: center !important;
+}
+.programcarousel::before{
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(68, 114, 155, 0.7) 50%, rgba(1, 13, 63, 0.341) 100%);
+  transition: opacity 0.5s ease-in-out;
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+}
+.programcarousel{
+  padding: 100px 0;
+  min-height: 500px; 
+  background-size: cover;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.xb-program__wrapper[_ngcontent-ng-c2770790977] .xb-item--title[_ngcontent-ng-c2770790977]{
+  line-height: 17px;
+}
+
+/* ---------------- RTL / Arabic Adjustments (refinements) ---------------- */
+/* Apply when the page uses RTL direction (e.g. <html dir="rtl"> or <body dir="rtl">) */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] body,
+[dir="rtl"] .course-single {
+  font-family: "Noto Naskh Arabic", "Cairo", "Tajawal", "Font Awesome 5 Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] p,
+[dir="rtl"] span {
+  text-align: right !important;
+}
+[dir="rtl"] .course-sidebar2{
+  margin-right:40px;
+}
+[dir="rtl"] .breadcrumb__title {
+  text-align: center !important;
+}
+
+/* Flip list icon spacing for RTL */
+[dir="rtl"] .xb-list li span {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+/* Sidebar spacing: prefer right margin in RTL via logical properties */
+[dir="rtl"] .course-sidebar2 {
+  margin-inline-start: 0 !important;
+  margin-inline-end: 13px !important;
+}
+
+/* Course sidebar list adjustments */
+[dir="rtl"] .course-sidebar__list li span {
+  display: inline-block;
+  text-align: right;
+}
+
+/* Download links align text right in RTL */
+[dir="rtl"] .download-link {
+  text-align: right;
+}
+
+/* Carousel controls positioning in RTL (adjusted) */
+[dir="rtl"] .hero .carousel-control-prev {
+  right: 30px;
+  left: auto;
+}
+
+[dir="rtl"] .hero .carousel-control-next {
+  left: 30px;
+  right: auto;
+}
+
+/* Ensure breadcrumb descriptions justify nicely in Arabic */
+[dir="rtl"] .breadcrumb__desc {
+  text-align: justify !important;
+}
+
+/* Slightly increase line-height for Arabic readability */
+[dir="rtl"] p,
+[dir="rtl"] li {
+  line-height: 1.8;
+}
+
+/* End RTL adjustments */
+
+:host {
+  display: block;
+}
+
+.staff-profile-page {
+  position: relative;
+  isolation: isolate;
+  width: min(100% - 2rem, 1100px);
+  min-height: 60vh;
+  margin-inline: auto;
+  padding-block: clamp(8rem, 14vh, 11rem) clamp(3rem, 8vh, 6rem);
+}
+
+.staff-profile-page::before,
+.staff-profile-page::after {
+  position: absolute;
+  z-index: -1;
+  width: clamp(180px, 30vw, 340px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  content: "";
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.staff-profile-page::before {
+  top: 12%;
+  inset-inline-end: -12%;
+  background: radial-gradient(circle, rgba(10, 93, 166, 0.13), transparent 70%);
+}
+
+.staff-profile-page::after {
+  bottom: 5%;
+  inset-inline-start: -14%;
+  background: radial-gradient(circle, rgba(255, 184, 74, 0.16), transparent 70%);
+}
+
+.staff-profile-page .staff-profile-card {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  overflow: hidden;
+  border: 1px solid rgba(10, 93, 166, 0.11);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(249, 252, 255, 0.96));
+  box-shadow: 0 24px 70px rgba(15, 49, 77, 0.12);
+  opacity: 1;
+  animation: staffCardEnter 700ms cubic-bezier(0.2, 0.75, 0.25, 1) 80ms forwards;
+  transition: box-shadow 300ms ease, transform 300ms ease;
+}
+
+.staff-profile-page .staff-profile-card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, #0a5da6, #53a6dc 55%, #f5bd56);
+  content: "";
+}
+
+.staff-profile-page .staff-profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 32px 80px rgba(15, 49, 77, 0.17);
+  animation: none;
+}
+
+.staff-profile-page .staff-profile-role {
+  display: table;
+  max-width: 100%;
+  margin: 0 0 clamp(1.25rem, 3vw, 2rem);
+  padding: 0.55rem 1rem !important;
+  border: 1px solid rgba(10, 93, 166, 0.13);
+  border-radius: 999px;
+  background: rgba(10, 93, 166, 0.07);
+  color: #0a5da6;
+  font-family: var(--font-body) !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-align: start !important;
+}
+
+.staff-profile-page .staff-profile-info {
+  display: grid;
+  grid-template-columns: minmax(190px, 280px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.staff-profile-page .staff-profile-avatar {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(10, 93, 166, 0.13);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 70% 25%, rgba(255, 255, 255, 0.78), transparent 28%),
+    linear-gradient(145deg, #dcecf8, #a8cce5 55%, #0a5da6);
+  box-shadow: 0 16px 36px rgba(10, 71, 117, 0.17);
+}
+
+.staff-profile-page .staff-profile-avatar::after {
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 15px;
+  content: "";
+  pointer-events: none;
+}
+
+.staff-profile-page .staff-profile-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+.staff-profile-page .staff-profile-card:hover .staff-profile-avatar img {
+  transform: scale(1.045);
+}
+
+.staff-profile-page .staff-profile-details {
+  width: auto;
+  min-width: 0;
+  margin: 0;
+}
+
+.staff-profile-page .staff-profile-name {
+  margin: 0 0 0.6rem;
+  padding: 0 !important;
+  color: #153a58;
+  font-family: var(--font-heading) !important;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  text-align: start !important;
+}
+
+.staff-profile-page .staff-profile-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0.4rem 0.8rem !important;
+  border-inline-start: 3px solid #e9ad42;
+  border-radius: 4px;
+  background: rgba(245, 189, 86, 0.13);
+  color: #805713;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: start !important;
+}
+
+.staff-profile-page .staff-profile-bio {
+  margin: 1.4rem 0 0;
+  padding: 0 !important;
+  color: #4d5c68;
+  font-size: clamp(0.98rem, 1.4vw, 1.08rem);
+  font-weight: 400;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+  text-align: start !important;
+}
+
+.staff-profile-page .staff-state {
+  width: min(100%, 720px);
+  margin: 0 auto;
+  padding: clamp(1.2rem, 4vw, 2rem);
+  border: 1px solid rgba(10, 93, 166, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 45px rgba(15, 49, 77, 0.09);
+  color: #334b5d;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.6;
+  text-align: center;
+  animation: staffCardEnter 500ms ease both;
+}
+
+.staff-profile-page .staff-state--loading {
+  border-color: rgba(10, 93, 166, 0.2);
+}
+
+.staff-profile-page .staff-state--error {
+  border-color: rgba(174, 55, 55, 0.2);
+  background: rgba(255, 250, 250, 0.96);
+  color: #8d3030;
+}
+
+.staff-profile-page .staff-state--empty {
+  border-color: rgba(181, 132, 46, 0.22);
+  background: rgba(255, 253, 247, 0.96);
+  color: #755a2a;
+}
+
+@keyframes staffCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .staff-profile-page {
+    width: min(100% - 1.25rem, 540px);
+    min-height: 55vh;
+    padding-block: 7.5rem 3rem;
+  }
+
+  .staff-profile-page .staff-profile-card {
+    border-radius: 22px;
+  }
+
+  .staff-profile-page .staff-profile-info {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+  }
+
+  .staff-profile-page .staff-profile-avatar {
+    width: min(72%, 230px);
+  }
+
+  .staff-profile-page .staff-profile-details {
+    width: 100%;
+  }
+
+  .staff-profile-page .staff-profile-name,
+  .staff-profile-page .staff-profile-role,
+  .staff-profile-page .staff-profile-title {
+    text-align: center !important;
+  }
+
+  .staff-profile-page .staff-profile-role {
+    margin-inline: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .staff-profile-page *,
+  .staff-profile-page *::before,
+  .staff-profile-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .staff-profile-page .staff-profile-card {
+    opacity: 1;
+  }
+}
+
+/* ---------------- Additional RTL fixes for problematic elements ---------------- */
+/* Force list labels/values to align correctly even when inline styles exist */
+[dir="rtl"] .course-sidebar__list li,
+[dir="rtl"] .course-sidebar__list li div {
+  direction: rtl;
+}
+
+[dir="rtl"] .course-sidebar__list li span {
+  text-align: right !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* target the second span in each list row (value) and swap padding */
+[dir="rtl"] .course-sidebar__list li span + span {
+  padding-left: 0 !important;
+  padding-right: 8% !important;
+}
+
+/* ensure icons don't overflow and keep spacing consistent */
+.course-sidebar__list li span img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-inline-end: 8px; /* LTR default */
+}
+
+[dir="rtl"] .course-sidebar__list li span img {
+  margin-inline-start: 8px !important;
+  margin-inline-end: 0 !important;
+}
+
+/* Invert common ml-* utility classes in RTL */
+.ml-10 { margin-left: 10px; }
+.ml-15 { margin-left: 15px; }
+.ml-25 { margin-left: 25px; }
+
+[dir="rtl"] .ml-10 { margin-left: 0 !important; margin-right: 10px !important; }
+[dir="rtl"] .ml-15 { margin-left: 0 !important; margin-right: 15px !important; }
+[dir="rtl"] .ml-25 { margin-left: 0 !important; margin-right: 25px !important; }
+
+/* Table RTL fixes */
+.course-sidebar2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.course-sidebar2 table th,
+.course-sidebar2 table td {
+  padding: 10px 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  /* text-align: left; */
+  vertical-align: top;
+}
+
+[dir="rtl"] .course-sidebar2 table,
+[dir="rtl"] .course-sidebar2 table th,
+[dir="rtl"] .course-sidebar2 table td {
+  direction: rtl;
+  text-align: right !important;
+}
+
+/* Make course-bottom margins logical */
+.course-bottom {
+  margin-inline-start: 25px; /* default LTR */
+}
+
+[dir="rtl"] .course-bottom {
+  margin-inline-start: 0 !important;
+  margin-inline-end: 25px !important;
+}
+
+/* Small responsive tweaks for RTL */
+@media (max-width: 767px) {
+  [dir="rtl"] .course-sidebar__list li span + span {
+    padding-right: 6% !important;
+  }
+  [dir="rtl"] .breadcrumb__desc { text-align: center !important; }
+}
+
+/* End additional RTL fixes */
+
+/* ---------------- RTL / Arabic Adjustments ---------------- */
+/* Apply when the page uses RTL direction (e.g. <html dir="rtl"> or <body dir="rtl">) */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] body,
+[dir="rtl"] .course-single {
+  font-family: "Noto Naskh Arabic", "Cairo", "Tajawal", "Font Awesome 5 Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] p,
+[dir="rtl"] span {
+  text-align: right !important;
+}
+
+[dir="rtl"] .breadcrumb__title {
+  text-align: center !important;
+}
+
+/* Flip list icon spacing for RTL */
+[dir="rtl"] .xb-list li span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* Sidebar spacing: prefer right margin in RTL */
+[dir="rtl"] .course-sidebar2 {
+  margin-left: 0 !important;
+  margin-right: 13px !important;
+}
+
+/* Course sidebar list adjustments */
+[dir="rtl"] .course-sidebar__list li span {
+  display: inline-block;
+  text-align: right;
+}
+
+/* Download links keep icon on left visually but text aligned right */
+[dir="rtl"] .download-link {
+  direction: rtl;
+}
+
+/* Small fixes for carousel controls positioning in RTL */
+[dir="rtl"] .hero .carousel-control-prev {
+  right: 30px;
+  left: auto;
+}
+
+[dir="rtl"] .hero .carousel-control-next {
+  left: 30px;
+  right: auto;
+}
+
+/* Ensure breadcrumb descriptions justify nicely in Arabic */
+[dir="rtl"] .breadcrumb__desc {
+  text-align: justify !important;
+}
+
+/* Slightly increase line-height for Arabic readability */
+[dir="rtl"] p,
+[dir="rtl"] li {
+  line-height: 1.8;
+}
+
+/* End RTL adjustments */

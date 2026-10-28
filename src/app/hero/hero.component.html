@@ -1,0 +1,66 @@
+<section class="hero pos-rel" [class.scrolled]="scrolled">
+    <div class="container">
+        <div class="hero-wrapper">
+            <div #heroSwiper class="hero-slider swiper-container mySwiper">
+                <div class="swiper-wrapper" *ngIf="banners.length">
+                    <div class="bg_img swiper-slide" *ngFor="let banner of banners">
+                        <img class="hero-slide-image" [src]="banner.imageUrl" [alt]="banner.title">
+                        <div class="hero__content-wrap text-center pt-55">
+                            <div class="section-title clr-white">
+                                <span class="sub-title">{{ langService.translate('HERO.TITLE') }}</span>
+                                <h1 class="title">{{ banner.title }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-state" *ngIf="isLoading" role="status">
+                    {{ langService.translate('HERO.BANNERS_LOADING') }}
+                </div>
+                <div class="hero-state hero-state--error" *ngIf="loadError" role="alert">
+                    {{ langService.translate('HERO.BANNERS_ERROR') }}
+                </div>
+
+                <div class="swiper-pagination carousel-indicators" *ngIf="banners.length > 1"></div>
+                <button class="carousel-control-prev" type="button" aria-label="Previous slide"
+                    [disabled]="banners.length < 2">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" aria-label="Next slide"
+                    [disabled]="banners.length < 2">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- hero btn start -->
+<div class="hero-btns">
+    <div class="btns ul_li_center">
+        <a class="thm-btn thm-btn--stroke-white sec-btn"  routerLink="/UniversitySectors">{{ langService.translate('HERO.explore_programs') }}
+            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22 4.84999V16.74C22 17.71 21.21 18.6 20.24 18.72L19.93 18.76C18.29 18.98 15.98 19.66 14.12 20.44C13.47 20.71 12.75 20.22 12.75 19.51V5.59999C12.75 5.22999 12.96 4.88999 13.29 4.70999C15.12 3.71999 17.89 2.83999 19.77 2.67999H19.83C21.03 2.67999 22 3.64999 22 4.84999Z"
+                        fill="white" />
+                    <path
+                        d="M10.71 4.70999C8.87999 3.71999 6.10999 2.83999 4.22999 2.67999H4.15999C2.95999 2.67999 1.98999 3.64999 1.98999 4.84999V16.74C1.98999 17.71 2.77999 18.6 3.74999 18.72L4.05999 18.76C5.69999 18.98 8.00999 19.66 9.86999 20.44C10.52 20.71 11.24 20.22 11.24 19.51V5.59999C11.24 5.21999 11.04 4.88999 10.71 4.70999ZM4.99999 7.73999H7.24999C7.65999 7.73999 7.99999 8.07999 7.99999 8.48999C7.99999 8.90999 7.65999 9.23999 7.24999 9.23999H4.99999C4.58999 9.23999 4.24999 8.90999 4.24999 8.48999C4.24999 8.07999 4.58999 7.73999 4.99999 7.73999ZM7.99999 12.24H4.99999C4.58999 12.24 4.24999 11.91 4.24999 11.49C4.24999 11.08 4.58999 10.74 4.99999 10.74H7.99999C8.40999 10.74 8.74999 11.08 8.74999 11.49C8.74999 11.91 8.40999 12.24 7.99999 12.24Z"
+                        fill="white" />
+                </svg></span>
+        </a>
+        <a class="thm-btn thm-btn--stroke-white sec-btn" href="https://sis-bsnu.bsu.edu.eg/DefaultApplicantNew.aspx" target="_blank" rel="noopener noreferrer">{{ langService.translate('HERO.apply_now') }}
+            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.25 19.492V20.75C16.25 21.164 15.914 21.5 15.5 21.5C15.086 21.5 14.75 21.164 14.75 20.75V19.5H16C16.084 19.5 16.167 19.497 16.25 19.492Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.75 19.5H8C5.929 19.5 4.25 17.821 4.25 15.75V12.668L9.964 15.825C11.202 16.509 12.798 16.509 14.036 15.825L14.75 15.431V19.5ZM16.25 14.602L19.75 12.668V15.75C19.75 17.737 18.205 19.363 16.25 19.492V14.602Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.75 14.288L13.552 14.95C12.608 15.472 11.392 15.472 10.448 14.95L2.134 10.356C1.568 10.043 1.25 9.49499 1.25 8.92199C1.25 8.34799 1.568 7.79999 2.134 7.48799L10.448 2.89299C11.392 2.37199 12.608 2.37199 13.552 2.89299L21.866 7.48799C22.432 7.79999 22.75 8.34799 22.75 8.92199C22.75 9.49499 22.432 10.043 21.866 10.356L16.25 13.459V12.75C16.25 12.551 16.171 12.36 16.03 12.22L12.53 8.71999C12.238 8.42699 11.762 8.42699 11.47 8.71999C11.177 9.01199 11.177 9.48799 11.47 9.77999L14.75 13.061V14.288Z"
+                        fill="white" />
+                </svg></span>
+        </a>
+
+    </div>
+</div>
+<!-- hero btn end -->

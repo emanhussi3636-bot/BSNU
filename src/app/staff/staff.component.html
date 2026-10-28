@@ -1,0 +1,25 @@
+<main class="staff-profile-page">
+    <div *ngIf="isLoading" class="staff-state staff-state--loading" role="status">
+        {{ isSectorDean ? 'Loading sector dean...' : 'Loading program manager...' }}
+    </div>
+    <div *ngIf="loadError" class="staff-state staff-state--error" role="alert">
+        {{ isSectorDean ? 'Unable to load the sector dean. Please try again later.' : 'Unable to load the program manager. Please try again later.' }}
+    </div>
+    <div *ngIf="notFound" class="staff-state staff-state--empty" role="status">
+        {{ isSectorDean ? 'No dean was found for this sector.' : 'No program manager was found for this program.' }}
+    </div>
+    <article *ngIf="manager as programManager" class="course-sidebar2 staff-profile-card">
+        <h3 class="staff-profile-role">{{ langService.translate(isSectorDean ? 'STAFF.DEAN' : 'STAFF.PROGRAM_MANAGER') }}</h3>
+        <div class="admin-info ul_li staff-profile-info">
+            <div class="xb-item--avatar staff-profile-avatar">
+                <img *ngIf="imageUrl(programManager.image) as managerImage"
+                    [src]="managerImage" [alt]="programManager.name">
+            </div>
+            <div class="xb-item--holder staff-profile-details">
+                <h3 class="xb-item--name staff-profile-name">{{ programManager.name }}</h3>
+                <span *ngIf="programManager.jobTitle" class="xb-item--desig staff-profile-title">{{ programManager.jobTitle }}</span>
+                <p *ngIf="programManager.bio" class="staff-profile-bio" [innerHTML]="programManager.bio"></p>
+            </div>
+        </div>
+    </article>
+</main>

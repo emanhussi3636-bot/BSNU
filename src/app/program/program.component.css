@@ -1,0 +1,334 @@
+/* .program.pos-rel.pt-115 {
+  padding-bottom: 40px;
+} */
+ /* Add bottom padding */
+/* .xb-cta.mt-120 {
+  margin-bottom: 0; 
+} */
+/* Ensure no negative margins */
+/* Program Section */
+.program {
+  position: relative;
+  /* padding-top: 50px; */
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.program > .container {
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.programs_title{
+ 
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlide 1.2s ease forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.program .xb-cta {
+  position: relative;
+  margin-top: 10px;
+  padding: 80px 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+/* Dark gradient overlay on background image */
+.program .xb-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  linear-gradient(120deg, #003e9b 0%, #00c6ff 100%);
+
+  z-index: 1;
+  transition:  0.6s ease-in-out, opacity 0.4s ease;
+}
+
+/* Alternative gradient options */
+/* Option 2: Darker blue gradient */
+/*
+.program .xb-cta::before {
+  background: linear-gradient(135deg, rgba(20, 84, 140, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+*/
+
+/* Option 3: Subtle overlay */
+/*
+.program .xb-cta::before {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(20, 84, 140, 0.6) 100%);
+}
+*/
+
+/* Content above overlay */
+.program .xb-cta h2 {
+  position: relative;
+  z-index: 10;
+  font-size: clamp(36px, 4.5vw, 64px);
+  /* font-weight: bold;
+  color: #bad3eb !important; */
+  margin-bottom: 15px;
+  line-height: 1.3;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+.program .xb-btn {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.program .thm-btn {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+  margin-top: 20px;
+  transition: all 0.3s ease;
+ background: linear-gradient(120deg, #ffcc00, #ff9900, #ffb700);
+  background-size: 200% 200%;
+  transition: 0.5s;
+}
+
+
+.program .thm-btn:hover {
+  border-color: #fff;
+  box-shadow: 0 0 15px #ffcc00;
+  transform: translateY(-3px);
+  background-position: 100% 0;
+}
+
+
+/* .program .thm-btn {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: #ffc107;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+  margin-top: 20px;
+}
+
+.program .thm-btn:hover {
+  background: #ffb300;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(255, 193, 7, 0.5);
+} */
+
+.program .thm-btn span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.program .thm-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.program .xb-btn > span {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff !important;
+  
+  margin-top: 20px;
+  text-shadow: 0 3px 6px rgba(44, 42, 42, 0.3);
+}
+
+.program .xb-btn > span img {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Utility classes */
+.ul_li {
+  display: flex;
+  align-items: center;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.bg_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .program .xb-cta {
+    padding: 60px 40px;
+  }
+
+  .program .xb-cta h2 {
+    font-size: 36px;
+  }
+
+  .program .xb-btn {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .program .xb-cta {
+    padding: 50px 30px;
+  }
+
+  .program .xb-cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .program .xb-btn {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .program .thm-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .program .xb-btn > span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .program .xb-cta {
+    padding: 40px 20px;
+    margin-top: 20px;
+  }
+
+  .program .xb-cta h2 {
+    font-size: 24px;
+  }
+
+  .program .thm-btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  .program .xb-btn > span {
+    font-size: 16px;
+  }
+
+  .program .xb-btn > span img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Animation on hover */
+.program .xb-cta:hover::before {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 84, 140, 0.5) 50%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+
+/* Base overlay */
+.program .xb-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(68, 114, 155, 0.7) 50%, rgba(1, 13, 63, 0.341) 100%);
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+   background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* On hover, fade to new gradient by switching opacity */
+.program .xb-cta:hover::before {
+  opacity: 0;
+}
+
+/* Add a second overlay for hover effect */
+.program .xb-cta::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(20, 84, 140, 0.5) 50%, rgba(0, 0, 0, 0.75) 100%);
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.program .xb-cta:hover::after {
+  opacity: 1;
+}

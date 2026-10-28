@@ -1,0 +1,157 @@
+.university-sectors-section {
+  width: min(100%, 1400px);
+  margin: 80px auto 0;
+  padding: 32px 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #0f4c81;
+}
+
+.section-header p {
+  color: #4a5568;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.sector-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.sector-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 14px 40px rgba(15, 76, 129, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sector-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 48px rgba(15, 76, 129, 0.12);
+}
+
+.sector-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.sector-content {
+  padding: 20px;
+}
+
+.sector-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  color: #102a43;
+}
+
+.sector-content p {
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 12px;
+}
+
+.sector-program-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  color: #334155;
+}
+
+.sector-program-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.sector-content button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #0f4c81;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  margin: 0 auto;
+}
+
+.sector-content button:hover {
+  background: #0b325e;
+}
+
+.programs-panel {
+  margin-top: 36px;
+}
+
+.programs-header h3 {
+  margin: 0 0 8px;
+  color: #0f4c81;
+}
+
+.programs-header p {
+  margin: 0 0 20px;
+  color: #475569;
+}
+
+.program-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.program-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 22px 18px;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(15, 76, 129, 0.06);
+  color: inherit;
+  text-decoration: none;
+}
+
+.program-image {
+  width: 100%;
+  height: 130px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0f4c81 0%, #2e6da4 100%);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.program-card h4 {
+  margin: 0;
+  color: #102a43;
+  font-size: 1rem;
+}
+
+@media (max-width: 720px) {
+  .sector-card img {
+    height: 170px;
+  }
+
+  .program-image {
+    height: 120px;
+  }
+}

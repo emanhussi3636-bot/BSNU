@@ -1,0 +1,27 @@
+<div class="conference-gallery-page">
+  <section class="conference-hero" #hero (pointermove)="updatePointer($event, hero)" (pointerleave)="resetPointer(hero)">
+    <div class="hero-copy">
+      <span class="eyebrow">{{ langService.translate('CONFERENCES.HERO.GALLERY_LABEL') }}</span>
+      <h1>{{ langService.translate('CONFERENCES.HERO.TITLE') }}</h1>
+      <!-- <p>{{ langService.translate('CONFERENCES.HERO.DESCRIPTION') }}</p> -->
+    </div>
+  </section>
+
+  <section class="gallery-grid">
+    <div class="gallery-card"
+      *ngFor="let item of conferenceGalleries"
+      #card
+      (click)="openDetail(item.id, $event)"
+      (pointerdown)="onCardPointerDown($event, item.id, card)"
+      (pointermove)="updatePointer($event, card)"
+      (pointerleave)="resetPointer(card)">
+      <img [src]="item.image" [alt]="langService.translate(item.titleKey)" />
+      <div class="card-accent"></div>
+      <div class="card-overlay">
+        <span class="overlay-eyebrow">{{ langService.translate(item.subtitleKey) }}</span>
+        <h3>{{ langService.translate(item.titleKey) }}</h3>
+        <p>{{ langService.translate(item.snippetKey) }}</p>
+      </div>
+    </div>
+  </section>
+</div>

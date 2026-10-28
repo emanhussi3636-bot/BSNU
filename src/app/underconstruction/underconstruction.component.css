@@ -1,0 +1,53 @@
+.underconstruction-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f5f7fb;
+}
+
+.underconstruction-card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 40px 32px;
+  box-shadow: 0 24px 80px rgba(31, 35, 45, 0.08);
+  text-align: center;
+}
+
+.underconstruction-image {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto 30px;
+  display: block;
+}
+
+.underconstruction-card h1 {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  color: #1f232d;
+}
+
+.underconstruction-card p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #515b6e;
+  margin-bottom: 28px;
+}
+
+.underconstruction-button {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background-color: #0c63e4;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+}
+
+.underconstruction-button:hover {
+  background-color: #094aba;
+}

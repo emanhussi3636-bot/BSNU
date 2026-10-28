@@ -1,0 +1,89 @@
+<main class="all-events-page">
+  <header class="all-events-hero">
+    <div class="all-events-shell">
+      <a class="all-events-back" routerLink="/home">← {{ langService.translate('ALL_EVENTS.BACK_HOME') }}</a>
+      <p class="all-events-eyebrow">{{ langService.translate('ALL_EVENTS.PUBLIC') }} &amp; {{ langService.translate('ALL_EVENTS.PROGRAM_EVENTS') }}</p>
+      <h1>{{ langService.translate('ALL_EVENTS.TITLE') }}</h1>
+      <p class="all-events-intro">{{ langService.translate('ALL_EVENTS.INTRO') }}</p>
+    </div>
+  </header>
+
+  <div class="all-events-shell all-events-content">
+    <div class="all-events-controls">
+      <div class="all-events-filters" role="group" [attr.aria-label]="langService.translate('ALL_EVENTS.FILTER_BY_PROGRAM')">
+        <button
+          type="button"
+          class="all-events-filter"
+          [class.is-active]="selectedProgramId === null"
+          [attr.aria-pressed]="selectedProgramId === null"
+          (click)="selectProgram(null)"
+        >{{ langService.translate('ALL_EVENTS.ALL_PROGRAMS') }}</button>
+        <button
+          *ngFor="let programId of programIds"
+          type="button"
+          class="all-events-filter"
+          [class.is-active]="selectedProgramId === programId"
+          [attr.aria-pressed]="selectedProgramId === programId"
+          (click)="selectProgram(programId)"
+        >{{ langService.translate('ALL_EVENTS.PROGRAM') }} {{ programId }}</button>
+      </div>
+
+      <label class="all-events-search">
+        <span class="visually-hidden">{{ langService.translate('ALL_EVENTS.SEARCH_LABEL') }}</span>
+        <span class="all-events-search-icon" aria-hidden="true">⌕</span>
+        <input
+          type="search"
+          [placeholder]="langService.translate('ALL_EVENTS.SEARCH_PLACEHOLDER')"
+          [value]="searchTerm"
+          (input)="updateSearch($event)"
+        >
+      </label>
+    </div>
+
+    <section class="all-events-group" *ngIf="isLoading" role="status">
+      <p>{{ langService.translate('ALL_EVENTS.LOADING_EVENTS') }}</p>
+    </section>
+
+    <section class="all-events-empty" *ngIf="!isLoading && loadError" role="alert">
+      <p>{{ langService.translate('ALL_EVENTS.EVENTS_LOAD_FAILED') }}</p>
+    </section>
+
+    <div class="all-events-groups" *ngIf="!isLoading && !loadError && visibleEvents.length">
+      <section class="all-events-group">
+        <div class="all-events-group-heading">
+          <div>
+            <p>{{ langService.translate('ALL_EVENTS.PROGRAM_EVENTS') }}</p>
+            <h2>{{ langService.translate('ALL_EVENTS.TITLE') }}</h2>
+          </div>
+          <span class="all-events-count">{{ visibleEvents.length }}</span>
+        </div>
+
+        <div class="all-events-grid">
+          <a
+            class="all-event-card"
+            *ngFor="let item of visibleEvents; let index = index"
+            [routerLink]="['/eventdetails', item.id, item.programsId]"
+            [style.--card-index]="index"
+          >
+            <div class="all-event-image">
+              <img *ngIf="imageUrl(item)" [src]="imageUrl(item)" [alt]="item.title || ''" loading="lazy">
+              <span>{{ formatDate(item.startDate) }}</span>
+            </div>
+            <div class="all-event-copy">
+              <span class="all-event-program">
+                {{ langService.translate('ALL_EVENTS.PROGRAM') }} {{ item.programsId }}
+              </span>
+              <h3>{{ item.title }}</h3>
+              <span class="all-event-link">{{ langService.translate('ALL_EVENTS.VIEW_DETAILS') }} <b aria-hidden="true">↗</b></span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="all-events-empty" role="status" *ngIf="!isLoading && !loadError && !visibleEvents.length">
+      <span aria-hidden="true">⌕</span>
+      <p>{{ langService.translate('ALL_EVENTS.NO_RESULTS') }}</p>
+    </div>
+  </div>
+</main>

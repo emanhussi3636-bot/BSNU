@@ -1,0 +1,151 @@
+.conference-detail-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 30px 24px 72px;
+}
+
+.back-button {
+  border: none;
+  background: rgba(6, 20, 53, 0.92);
+  color: #f8fbff;
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.back-button:hover {
+  transform: translateY(-1px);
+  background: rgba(25, 62, 161, 0.98);
+}
+
+.detail-wrapper {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.1fr) minmax(320px, 0.9fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 34px;
+}
+
+.detail-image-panel {
+  border-radius: 32px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.22);
+}
+
+.image-stack {
+  background: #eaeae2;
+}
+
+.detail-image-panel img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.image-stack img {
+  margin-bottom: 20px;
+}
+
+.image-stack img:last-child {
+  margin-bottom: 0;
+}
+
+.detail-copy-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px 28px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 32px;
+  box-shadow: 0 20px 48px rgba(7, 19, 67, 0.14);
+}
+
+.detail-copy-panel .eyebrow {
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #5b6fd1;
+}
+
+.detail-copy-panel h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 0;
+  color: #49516e;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.detail-text {
+  color: #3f4766;
+  line-height: 1.85;
+  font-size: 1rem;
+}
+
+.detail-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.detail-meta-grid div {
+  border-radius: 22px;
+  padding: 18px 20px;
+  background: #f3f5ff;
+  box-shadow: inset 0 0 0 1px rgba(102, 116, 218, 0.1);
+}
+
+.detail-meta-grid span {
+  display: block;
+  color: #7f84a5;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  margin-bottom: 8px;
+}
+
+.detail-meta-grid strong {
+  display: block;
+  color: #121a3a;
+  font-size: 1.05rem;
+}
+
+.not-found-card {
+  margin-top: 40px;
+  padding: 42px 36px;
+  border-radius: 28px;
+  background: #0c1637;
+  color: #f3f7ff;
+  text-align: center;
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.22);
+}
+
+.not-found-card h2 {
+  margin: 0 0 18px;
+  font-size: 2rem;
+}
+
+.not-found-card p {
+  margin: 0 0 28px;
+  color: #b6c1eb;
+  line-height: 1.8;
+}
+
+@media (max-width: 860px) {
+  .detail-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .conference-detail-page {
+    padding: 28px 18px 56px;
+  }
+}

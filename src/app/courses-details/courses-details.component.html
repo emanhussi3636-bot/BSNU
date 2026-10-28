@@ -1,0 +1,168 @@
+<main class="course-details">
+  <p *ngIf="isLoading" class="course-details__state" role="status">
+    {{ langService.translate('programs.LOADING') }}
+  </p>
+  <p *ngIf="loadError" class="course-details__state" role="alert">
+    {{ langService.translate('programs.ERROR') }}
+  </p>
+
+  <section *ngIf="notFound && !isLoading" class="course-details__state" role="status">
+    <h1>{{ langService.translate('programs.NOT_FOUND') }}</h1>
+  </section>
+
+  <ng-container *ngIf="program as item">
+    <header class="course-details__hero" [style.background-image]="programImages.length ? 'linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.35)), url(' + programImages[currentImageIndex] + ')' : null">
+      <div class="course-details__hero-content">
+        <p class="course-details__eyebrow">{{ item.description }}</p>
+        <h1>{{ item.name }}</h1>
+        <p *ngIf="item.academicDegree" class="course-details__degree">{{ item.academicDegree }}</p>
+      </div>
+      <div *ngIf="programImages.length > 1" class="course-details__carousel-controls">
+        <button type="button" (click)="showPreviousImage()" aria-label="Previous program image">
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+        <span>{{ currentImageIndex + 1 }} / {{ programImages.length }}</span>
+        <button type="button" (click)="showNextImage()" aria-label="Next program image">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container course-details__layout">
+      <aside class="course-details__sidebar">
+         <section *ngIf="item.videoPath && assetUrl(item.videoPath) as videoUrl" class="course-details__panel">
+          <video controls preload="metadata" [src]="videoUrl"></video>
+        </section>
+        <section class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.COURSEINCLUDE') }}</h2>
+          <dl>
+            <ng-container *ngIf="item.duration">
+              <dt>{{ langService.translate('MEDICAL.DURATION') }}</dt>
+              <dd>{{ item.duration }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.studySystem">
+              <dt>{{ langService.translate('MEDICAL.STUDYSYSTEM') }}</dt>
+              <dd>{{ item.studySystem }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.creditHours">
+              <dt>{{ langService.translate('MEDICAL.TOTALHOURS') }}</dt>
+              <dd>{{ item.creditHours }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.academicDegree">
+              <dt>{{ langService.translate('MEDICAL.ACADEMICDEGREE') }}</dt>
+              <dd>{{ item.academicDegree }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.jobTitles">
+              <dt>{{ langService.translate('MEDICAL.JOBTITLE') }}</dt>
+              <dd>{{ item.jobTitles }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.studentsCount !== null && item.studentsCount !== undefined">
+              <dt>{{ langService.translate('MEDICAL.STUDENTS') }}</dt>
+              <dd>{{ item.studentsCount }}</dd>
+            </ng-container>
+          </dl>
+        </section>
+
+        <section *ngIf="programImages.length" class="course-details__panel course-details__program-images">
+          <img
+            *ngFor="let image of programImages; let index = index"
+            [src]="image"
+            [alt]="item.name + ' image ' + (index + 1)"
+            loading="lazy">
+        </section>
+
+       
+      </aside>
+
+      <div class="course-details__content">
+        <section *ngIf="item.programManager as manager" class="course-details__panel course-details__panel--manager">
+          <h2>{{ langService.translate('MEDICAL.PROGRAMMANNAGE') }}</h2>
+          <div class="course-details__manager">
+            <img *ngIf="programManagerImage" [src]="programManagerImage" [alt]="manager.name">
+            <div>
+              <h3>{{ manager.name }}</h3>
+              <p *ngIf="manager.title">{{ manager.title }}</p>
+              <p *ngIf="manager.bio">{{ manager.bio }}</p>
+            </div>
+          </div>
+        </section>
+
+        <section *ngIf="item.mission" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.MISSION') }}</h2>
+          <p>{{ item.mission }}</p>
+        </section>
+
+        <section *ngIf="item.vision" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.VISSION') }}</h2>
+          <p>{{ item.vision }}</p>
+        </section>
+
+        <section *ngIf="item.goals?.length" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.GOALS') }}</h2>
+          <ul>
+            <li *ngFor="let goal of item.goals">{{ goal.description }}</li>
+          </ul>
+        </section>
+
+        <section *ngIf="item.beneficiaries?.length" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.BENEFICIARYSECTOR') }}</h2>
+          <ul>
+            <li *ngFor="let beneficiary of item.beneficiaries">{{ beneficiary.description }}</li>
+          </ul>
+        </section>
+
+        <section *ngIf="item.requirements?.length" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.REQ') }}</h2>
+          <div class="course-details__requirements-table">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">{{ langService.translate('MEDICAL.NUMBER') }}</th>
+                  <th scope="col">{{ langService.translate('MEDICAL.REQ') }}</th>
+                  <th scope="col">{{ langService.translate('MEDICAL.TOTALHOURS') }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let requirement of item.requirements; let index = index">
+                  <td>{{ index + 1 }}</td>
+                  <td>{{ requirement.requirementName }}</td>
+                  <td>{{ requirement.totalHours ?? requirement.creditHours ?? requirement.hours ?? '-' }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section *ngIf="item.schedules?.length" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.PROGRAMSCEDULE') }}</h2>
+          <a
+            *ngFor="let schedule of item.schedules"
+            class="download-link"
+            [href]="assetUrl(schedule.fileName)"
+            target="_blank"
+            rel="noopener">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            {{ schedule.fileName.split('/').pop() }}
+          </a>
+        </section>
+
+        <section *ngIf="item.events?.length" class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.EVENTSTITLE') }}</h2>
+          <div class="course-details__events">
+            <article *ngFor="let event of item.events" class="course-details__event">
+              <img
+                *ngIf="assetUrl(event.images?.[0]?.imagePath) as eventImage"
+                [src]="eventImage"
+                [alt]="event.title"
+                loading="lazy">
+              <h3>{{ event.title }}</h3>
+              <p *ngIf="event.description">{{ event.description }}</p>
+              <p *ngIf="event.location">{{ event.location }}</p>
+              <time *ngIf="event.startDate">{{ event.startDate | date }}</time>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </ng-container>
+</main>

@@ -1,0 +1,32 @@
+<div *ngIf="isLoading" class="vice-president-state" role="status" aria-live="polite">Loading...</div>
+<div *ngIf="loadError" class="vice-president-state vice-president-state--error" role="alert" aria-live="assertive">
+  Unable to load this university role. Please try again later.
+</div>
+<div *ngIf="notFound" class="vice-president-state" role="status">No user was found for this role.</div>
+
+<main *ngIf="selectedVicePresident as vicePresident" class="vice-president-page"
+  [class.vice-president-page--with-video]="showPresidentVideo">
+  <article class="vice-president-content course-sidebar2">
+    <div class="vice-president-card-accent" aria-hidden="true"></div>
+    <h3 class="vice-president-role mb-10">{{ vicePresident.title }}</h3>
+    <div class="admin-info ul_li vice-president-profile">
+      <div class="xb-item--avatar vice-president-avatar">
+        <img *ngIf="vicePresident.image" [src]="vicePresident.image" [alt]="vicePresident.NAME" loading="lazy">
+      </div>
+      <div class="xb-item--holder vice-president-details">
+        <h2 class="xb-item--name vice-president-name">{{ vicePresident.NAME }}</h2>
+        <span class="xb-item--desig vice-president-job-title">{{ vicePresident.JOBTITLE }}</span>
+        <p *ngIf="vicePresident.description">{{ vicePresident.description }}</p>
+        <p class="vice-president-bio" [innerHTML]="vicePresident.BIO"></p>
+      </div>
+    </div>
+  </article>
+
+  <aside class="vice-president-video" *ngIf="showPresidentVideo">
+    <h3 class="mb-10">{{ vicePresident.VIDEO }}</h3>
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.youtube.com/embed/CU5mtxjljSo" title="President Video"
+        allowfullscreen loading="lazy"></iframe>
+    </div>
+  </aside>
+</main>

@@ -1,0 +1,40 @@
+<div class="faq-carousel-section">
+  <div class="faq-container">
+    <div class="faq-header">
+      <h2 class="faq-main-title">{{ langService.translate('FAQ.TITLE') }}</h2>
+      <p class="faq-subtitle">{{ langService.translate('FAQ.DESC') }}</p>
+    </div>
+
+    <div class="faq-navigation">
+      <button 
+        class="faq-nav-btn" 
+        [class.disabled]="!canGoPrevious"
+        (click)="previousSlide()" 
+        [disabled]="!canGoPrevious"
+        aria-label="Previous">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button 
+        class="faq-nav-btn" 
+        [class.disabled]="!canGoNext"
+        (click)="nextSlide()" 
+        [disabled]="!canGoNext"
+        aria-label="Next">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M12 16L6 10L12 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="faq-cards-wrapper">
+      <div class="faq-cards-container" [@cardAnimation]="currentSlide">
+        <div class="faq-card" *ngFor="let faq of visibleCards; let i = index">
+          <h3 class="faq-question" style="text-align: center;">{{ langService.translate(faq.question) }}</h3>
+          <p class="faq-answer" style="text-align: center;">{{ langService.translate(faq.answer) }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

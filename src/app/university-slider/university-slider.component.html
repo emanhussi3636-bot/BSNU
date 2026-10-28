@@ -1,0 +1,58 @@
+<section class="fanfact pos-rel">
+  <div class="container">
+    <div class="fanfact-wrapper">
+      <div #profileSwiper class="fanfact-slider swiper">
+        @if (isLoading) {
+          <div class="profile-state" role="status">
+            {{ langService.translate('university-slider.LOADING') }}
+          </div>
+        } @else if (loadError) {
+          <div class="profile-state profile-state--error" role="alert">
+            {{ langService.translate('university-slider.LOAD_ERROR') }}
+          </div>
+        } @else if (slides.length > 0) {
+          <div class="swiper-wrapper">
+            @for (slide of slides; track $index) {
+              <article class="swiper-slide university-slide">
+                @if (!failedImageUrls.has(slide.imageUrl)) {
+                  <img
+                    [src]="slide.imageUrl"
+                    [alt]="slide.slideTitle"
+                    loading="lazy"
+                    decoding="async"
+                    (error)="markImageUnavailable(slide.imageUrl)">
+                } @else {
+                  <div class="profile-image-placeholder" aria-hidden="true">BSNU</div>
+                }
+                <div class="carousel-caption" [attr.dir]="dir">
+                  <h2 class="xb-item--title">{{ slide.title }}</h2>
+                  <div class="xb-item--holder">
+                    <h3 class="xb-item--number">{{ slide.number }}</h3>
+                    <h2 class="xb-item--text">{{ slide.slideTitle }}</h2>
+                    <p class="xb-item--content">{{ slide.desc }}</p>
+                  </div>
+                </div>
+              </article>
+            }
+          </div>
+
+          @if (slides.length > 1) {
+            <div class="swiper-pagination carousel-indicators" aria-label="Slides"></div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              [attr.aria-label]="langService.translate('university-slider.PREVIOUS')">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              [attr.aria-label]="langService.translate('university-slider.NEXT')">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          }
+        }
+      </div>
+    </div>
+  </div>
+</section>

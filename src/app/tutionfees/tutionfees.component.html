@@ -1,0 +1,32 @@
+<section class="tuition-fees-section" [attr.dir]="dir">
+  <div class="section-header">
+    <h1>{{ langService.translate('TUTIONFEES.PAGE_TITLE') }}</h1>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="tuition-table">
+      <thead>
+        <tr>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.NUMBER') }}</th>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.SECTOR') }}</th>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.PROGRAM') }}</th>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_ONE') }}</th>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_TWO') }}</th>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_THREE') }}</th>
+          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_FOUR') }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of tuitionFees">
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.NUMBER')">{{ row.number }}</td>
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.SECTOR')">{{ row.sector }}</td>
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.PROGRAM')">{{ row.program }}</td>
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_ONE')">{{ row.level1 }}</td>
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_TWO')">{{ row.level2 }}</td>
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_THREE')">{{ row.level3 }}</td>
+          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_FOUR')">{{ row.level4 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

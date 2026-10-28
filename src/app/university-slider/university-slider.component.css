@@ -1,0 +1,705 @@
+/* Fanfact Carousel Section */
+.fanfact {
+  position: relative;
+  margin-top: 250px;
+  margin-bottom: 10%;
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fanfact > .container {
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fanfact .university-slide {
+  position: relative;
+}
+
+.fanfact .university-slide img {
+  width: 100%;
+  height: clamp(550px, 35vw, 700px);
+  object-fit: cover;
+}
+
+/* Dark gradient overlay on images */
+.fanfact .university-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(51, 52, 53, 0.7) 50%, rgba(1, 13, 63, 0.341) 100%);
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Text content above overlay */
+.fanfact .carousel-caption {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fanfact .xb-item--title {
+  font-size: clamp(44px, 5.5vw, 84px);
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  line-height: 1.3;
+}
+
+.fanfact .xb-item--holder {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeSlide 1.5s ease forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fanfact .xb-item--number {
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fanfact .xb-item--text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.fanfact .xb-item--content {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Carousel controls styling */
+.fanfact .carousel-control-prev,
+.fanfact .carousel-control-next {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  z-index: 15;
+  transition: all 0.3s ease;
+}
+
+.fanfact .carousel-control-prev {
+  left: 30px;
+}
+
+.fanfact .carousel-control-next {
+  right: 30px;
+}
+
+.fanfact .carousel-control-prev:hover,
+.fanfact .carousel-control-next:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.fanfact .carousel-control-prev-icon,
+.fanfact .carousel-control-next-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Carousel indicators */
+.fanfact .carousel-indicators {
+  /* bottom: -40px; */
+  z-index: 15;
+}
+
+.fanfact .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.fanfact .carousel-indicators button.active {
+  background: #ffc107;
+  border-color: #ffc107;
+  transform: scale(1.3);
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+@media (max-width: 768px) {
+  .fanfact {
+    margin-top: 200px;
+    padding-top: 0;
+  }
+
+  .fanfact .university-slide img {
+    height: 300px;
+  }
+
+  .fanfact .carousel-caption {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+  }
+
+  .fanfact .xb-item--title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .fanfact .xb-item--holder {
+    padding: 18px 20px;
+  }
+
+  .fanfact .xb-item--number {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+
+  .fanfact .xb-item--text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fanfact .xb-item--content {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .fanfact .carousel-control-prev,
+  .fanfact .carousel-control-next {
+    width: 45px;
+    height: 45px;
+  }
+
+  .fanfact .carousel-control-prev {
+    left: 10px;
+  }
+
+  .fanfact .carousel-control-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fanfact {
+    margin-top: 150px;
+    padding-top: 0;
+    margin-bottom: 20%;
+  }
+
+  .fanfact .university-slide img {
+    height: 200px;
+  }
+
+  .fanfact .carousel-caption {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .fanfact .xb-item--title {
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: none; /* Hide title on very small screens */
+  }
+
+  .fanfact .xb-item--holder {
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .fanfact .xb-item--number {
+    font-size: 32px;
+    margin-bottom: 6px;
+  }
+
+  .fanfact .xb-item--text {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .fanfact .xb-item--content {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .fanfact .carousel-control-prev,
+  .fanfact .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fanfact .carousel-control-prev {
+    left: 8px;
+  }
+
+  .fanfact .carousel-control-next {
+    right: 8px;
+  }
+
+  .fanfact .carousel-indicators {
+    bottom: -30px;
+  }
+
+  .fanfact .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.fanfact[_ngcontent-ng-c3360794662] .carousel-indicators[_ngcontent-ng-c3360794662]{
+  bottom: 0;
+  z-index: 15;
+}
+
+.carousel-caption {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+:host {
+  display: block;
+  --facts-blue: var(--color-primary, #2677be);
+  --facts-deep-blue: #082844;
+  --facts-gold: #ffc107;
+}
+
+.fanfact {
+  position: relative;
+  width: 100%;
+  margin: 80px auto 96px !important;
+  padding: 0 24px;
+}
+
+.fanfact > .container {
+  width: min(100%, 1440px);
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.fanfact .fanfact-wrapper {
+  position: relative;
+  margin: 0;
+}
+
+.fanfact-slider {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.fanfact-slider {
+  position: relative;
+  background: var(--facts-deep-blue);
+  box-shadow: 0 22px 54px rgba(8, 40, 68, .2);
+}
+
+.fanfact .university-slide {
+  position: relative;
+  height: 600px;
+  min-height: 540px;
+  overflow: hidden;
+  background: var(--facts-deep-blue);
+}
+
+.fanfact .university-slide img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.01);
+}
+
+.fanfact .swiper-slide-active img {
+  animation: facts-image-drift 12s ease-in-out both;
+}
+
+.fanfact .university-slide::before {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(110deg, rgba(5, 26, 46, .82), rgba(5, 26, 46, .38) 58%, rgba(5, 26, 46, .7));
+  content: '';
+  pointer-events: none;
+}
+
+.fanfact .university-slide::after {
+  position: absolute;
+  inset: 18px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, .35);
+  content: '';
+  pointer-events: none;
+}
+
+.fanfact .carousel-caption {
+  position: absolute;
+  inset: 0;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 3;
+  display: flex;
+  width: auto;
+  max-width: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 58px 10% 76px;
+  transform: none;
+  text-align: center;
+}
+
+.fanfact .xb-item--title {
+  display: block;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, .38);
+  animation: facts-rise 620ms 80ms both;
+}
+
+.fanfact .xb-item--holder {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: 30px 40px;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-inline-start: 4px solid var(--facts-gold);
+  border-radius: 4px;
+  background: rgba(8, 40, 68, .54);
+  box-shadow: 0 15px 42px rgba(0, 0, 0, .16);
+  backdrop-filter: blur(8px);
+  animation: facts-rise 720ms 160ms both;
+}
+
+.fanfact .xb-item--number {
+  margin: 0 0 8px;
+  color: var(--facts-gold);
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.05;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, .25);
+}
+
+.fanfact .xb-item--text {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, .28);
+}
+
+.fanfact .xb-item--content {
+  max-width: 620px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, .92);
+  font-size: 17px;
+  line-height: 1.65;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .28);
+}
+
+.fanfact .carousel-control-prev,
+.fanfact .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, .58);
+  border-radius: 50%;
+  background: rgba(8, 40, 68, .42);
+  opacity: .95;
+  transform: translateY(-50%);
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.fanfact .carousel-control-prev { left: 24px; }
+.fanfact .carousel-control-next { right: 24px; }
+
+.fanfact .carousel-control-prev:hover,
+.fanfact .carousel-control-next:hover {
+  border-color: #fff;
+  background: var(--facts-blue);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.fanfact .carousel-indicators {
+  bottom: 16px !important;
+  z-index: 3;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.fanfact .carousel-indicators button {
+  width: 22px;
+  height: 4px;
+  margin: 0;
+  border: 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, .55);
+  opacity: 1;
+  transition: width 180ms ease, background 180ms ease;
+}
+
+.fanfact .carousel-indicators button.active {
+  width: 38px;
+  background: var(--facts-gold);
+  transform: none;
+}
+
+.fanfact .swiper-pagination-bullet {
+  width: 22px;
+  height: 4px;
+  margin: 0 !important;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, .55);
+  opacity: 1;
+  transition: width 180ms ease, background 180ms ease;
+}
+
+.fanfact .swiper-pagination-bullet-active {
+  width: 38px;
+  background: var(--facts-gold);
+}
+
+.fanfact .swiper-pagination-bullet:focus-visible {
+  outline: 3px solid var(--facts-gold);
+  outline-offset: 4px;
+}
+
+.fanfact .profile-state {
+  display: grid;
+  min-height: 280px;
+  padding: 24px;
+  color: #fff;
+  place-items: center;
+  text-align: center;
+}
+
+.fanfact .profile-state--error {
+  background: #442936;
+}
+
+.fanfact .profile-image-placeholder {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  color: rgba(255, 255, 255, .58);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: .25em;
+  place-items: center;
+}
+
+.fanfact .carousel-control-prev:focus-visible,
+.fanfact .carousel-control-next:focus-visible,
+.fanfact .carousel-indicators button:focus-visible {
+  outline: 3px solid var(--facts-gold);
+  outline-offset: 4px;
+}
+
+@keyframes facts-rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes facts-image-drift {
+  from { transform: scale(1.01); }
+  to { transform: scale(1.08); }
+}
+
+@media (max-width: 991px) {
+  .fanfact {
+    margin: 64px auto 76px !important;
+    padding: 0 18px;
+  }
+
+  .fanfact .university-slide {
+    height: 560px;
+    min-height: 520px;
+  }
+
+  .fanfact .carousel-caption {
+    padding: 54px 9% 72px;
+  }
+
+  .fanfact .xb-item--title {
+    font-size: 24px;
+  }
+
+  .fanfact .xb-item--number {
+    font-size: 52px;
+  }
+
+  .fanfact .xb-item--text {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fanfact {
+    margin: 48px auto 60px !important;
+    padding: 0 12px;
+  }
+
+  .fanfact .university-slide {
+    height: 570px;
+    min-height: 540px;
+  }
+
+  .fanfact .university-slide::after {
+    inset: 10px;
+  }
+
+  .fanfact .carousel-caption {
+    padding: 52px 46px 72px;
+  }
+
+  .fanfact .xb-item--title {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .fanfact .xb-item--holder {
+    padding: 22px 18px;
+  }
+
+  .fanfact .xb-item--number {
+    font-size: 46px;
+  }
+
+  .fanfact .xb-item--text {
+    font-size: 23px;
+  }
+
+  .fanfact .xb-item--content {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .fanfact .carousel-control-prev,
+  .fanfact .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fanfact .carousel-control-prev { left: 12px; }
+  .fanfact .carousel-control-next { right: 12px; }
+
+  .fanfact .carousel-control-prev-icon,
+  .fanfact .carousel-control-next-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .fanfact .carousel-indicators {
+    gap: 6px;
+    bottom: 14px !important;
+  }
+
+  .fanfact .carousel-indicators button,
+  .fanfact .swiper-pagination-bullet { width: 15px; }
+  .fanfact .carousel-indicators button.active,
+  .fanfact .swiper-pagination-bullet-active { width: 28px; }
+}
+
+@media (max-width: 390px) {
+  .fanfact .university-slide {
+    height: 600px;
+    min-height: 560px;
+  }
+
+  .fanfact .carousel-caption {
+    padding: 48px 42px 70px;
+  }
+
+  .fanfact .xb-item--title { font-size: 20px; }
+  .fanfact .xb-item--holder { padding: 20px 14px; }
+  .fanfact .xb-item--number { font-size: 42px; }
+  .fanfact .xb-item--text { font-size: 21px; }
+  .fanfact .xb-item--content { font-size: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fanfact .swiper-slide-active img,
+  .fanfact .xb-item--title,
+  .fanfact .xb-item--holder {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .fanfact .carousel-control-prev,
+  .fanfact .carousel-control-next,
+  .fanfact .carousel-indicators button {
+    transition: none;
+  }
+
+  .fanfact .swiper-pagination-bullet {
+    transition: none;
+  }
+}

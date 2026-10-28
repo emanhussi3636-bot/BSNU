@@ -1,0 +1,33 @@
+<section class="university-sectors-section">
+  <div class="section-header">
+    <h2>{{ langService.translate('universitySectors.HEADER.TITLE') }}</h2>
+    <p>{{ langService.translate('universitySectors.HEADER.DESC') }}</p>
+  </div>
+
+  <div class="sector-grid">
+    <article class="sector-card" *ngFor="let sector of sectors">
+      <img [src]="sector.image" [alt]="sector.title" />
+      <div class="sector-content">
+        <h3>{{ sector.title }}</h3>
+        <p>{{ sector.subtitle }}</p>
+        <button type="button" (click)="selectSector(sector.id)">
+          {{ selectedSectorId === sector.id ? langService.translate('universitySectors.BUTTON.HIDE_PROGRAMS') : langService.translate('universitySectors.BUTTON.SHOW_PROGRAMS') }}
+        </button>
+      </div>
+    </article>
+  </div>
+
+  <section class="programs-panel" *ngIf="selectedSector">
+    <div class="programs-header">
+      <h3>{{ selectedSector.title }} {{ langService.translate('universitySectors.PROGRAMS_LABEL') }}</h3>
+      <p>{{ langService.translate('universitySectors.PROGRAMS_PANEL.DESC') }}</p>
+    </div>
+
+    <div class="program-grid">
+      <a class="program-card" *ngFor="let program of selectedSector.programs" [routerLink]="program.link">
+        <div class="program-image">{{ program.name.charAt(0) }}</div>
+        <h4>{{ program.name }}</h4>
+      </a>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,2437 @@
+{
+  "BRENAVBAR": {
+    "TITLE": "Help Desk",
+    "Student_Portal": "Student Portal",
+    "Staff_Portal": "Staff Portal",
+    "Alumni": "Alumni",
+    "Research_Community": "Research Community"
+  },
+  "MEDICAL": {
+    "TITLE": "Medicine",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Doaa Ahmed Hamdy",
+    "progrmmannagerdesc": "Professor",
+    "PROGRAMMANAGERBIO": "Professor of Medical Parasitology at Beni-Suef University with 20+ years’ experience in teaching, research, and medical education. Specialist in parasitic diseases, bioinformatics, and microbiomes, with 22 international publications and extensive postgraduate supervision.",
+    "DURATION": "Duration:",
+    "DURATION2": "5 years plus 2 years of compulsory training in hospitals (internship).",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Doctor",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "Credit point system – 316 hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor of Medicine and Surgery.",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "7200",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of medicine",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "To be a pioneer in the fields of education, treatment and scientific research in Egypt and the Middle East, recognized internationally for its excellence and the competence of its graduates according to local, national and international standards.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "We aim to graduate highly skilled physicians, committed to ethics, lifelong learning, advanced research, and modern healthcare standards—serving communities and addressing national health challenges.",
+    "GOALS": "goals",
+    "GOAL1": "Increase institutional capacity and enhance competitive advantages.",
+    "GOAL2": "Increase educational efficiency and develop the character of undergraduate students.",
+    "GOAL3": "Increase the educational efficiency of graduate studies and develop scientific research.",
+    "GOAL4": "Increase the  efficiency of community participation.",
+    "GOAL5": "Develop the capabilities and skills of faculty members.",
+    "GOAL6": "Implement quality standards and evaluate the institutional capacity and educational effectiveness of the program.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "University hospitals, Ministry of Health hospitals, and health insurance hospitals inside and outside the Arab  Republic of Egypt.",
+    "BENEFICIARYSECTOR2": "Health units and centers and primary care centers inside and outside the Arab Republic of Egypt.",
+    "BENEFICIARYSECTOR3": "Medical research centers and clinical research centers inside and outside the Arab Republic of Egypt.",
+    "BENEFICIARYSECTOR4": "Medical clinics and private hospitals.",
+    "TABLE": "The program consists of 141 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Points in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "1 Points",
+    "REQ2": "elective courses",
+    "HOURS2": "9 Points",
+    "REQ3": "compulsatory courses",
+    "HOURS3": "306 Points",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Faculty of medicine events' You May Like",
+    "EVENT1": "Impact conference for the first time in Beni-Suef National University",
+    "EVENT2": "The First Student Conference of the Medicine and Surgery Program",
+    "EVENT3": "Participation in the “Givers of Hope” Initiative "
+  },
+  "CONTACT": {
+    "TITLE": "Contact US",
+    "DESC": "Get in Touch with Our BSNU university",
+    "SENDMESSAGE": "send us a message 👍🏻",
+    "SENDMESSAGEDESC": "Give us chance to serve our students",
+    "FNAME": "Full Name",
+    "FULLNAMEPLACEHOLDER": "Mohamed Hassan",
+    "EMAIL": "Your Email",
+    "PHONE": "Your Phone",
+    "MESSAGE": "Message",
+    "MESAAGEPLACEHOLEDER": "How can we help you?",
+    "SENDMESSAGEButton": "Send Message",
+    "LETKNOW": "Let us know how we can help",
+    "StudentAffairs": "Student Affairs",
+    "StudentAffairsEmail": "studentservices@bsunu.edu.eg",
+    "ITSUPPORT": "IT Support",
+    "ITSUPPORTEmail": "itsupprt@bsunu.edu.eg",
+    "Addmition": "Addmition",
+    "AddmitionEmail": "vp@bsunu.edu.eg",
+    "FinancialAffairs": "Financial Affairs",
+    "FinancialAffairsEmail": "info@bsunu.edu.eg"
+  },
+  "NAVBAR": {
+    "TITLE": "Beni-suef National University",
+    "HOME": "HOME",
+    "Admission": "Admission",
+    "tutionfees": "Tution Fees",
+    "applicationrules": "Application Rules",
+    "AcademicPrograms": "Academic Programs",
+    "Staff": "Staff",
+    "Contact": "Contact",
+    "AboutUs": "About Us",
+    "Search": "Search",
+    "Help": "Help Desk:",
+    "helpNumber": "+1 (415) 555-0132",
+    "StudentPortal": "Student Portal",
+    "StaffPortal": "Staff Portal",
+    "Alumni": "Alumni",
+    "ResearchCommunity": "Research Community",
+    "VicePresident": "Vice President for Academic Affairs",
+    "President": "President",
+    "studentaffiersPresident": "Department head",
+    "ProgramManagerWord": "President's Word",
+    "ArabicLanguage": "العربية",
+    "EnglishLanguage": "English",
+    "firstprogram": "Medicine and Surgery",
+    "secondprogram": "Pharm D &clinical",
+    "thirdprogram": "Dentistry And Oral & Maxillofacial Surgery",
+    "forthprogram": "Physical Therapy",
+    "fifthprogram": "Nursing",
+    "sixthprogram": "Navigation & Space Sciences",
+    "sevenprogram": "Engineering",
+    "eightprogram": "Computers and AI",
+    "nineprogram": "Cybersecurity",
+    "tenprogram": "Artificial intelligence",
+    "elevenprogram": "medical informatics",
+    "twelveprogram": "Science",
+    "therteenprogram": "BioChemistry",
+    "fortenprogram": "Industrial chemistry",
+    "fiftenprogram": "Petroleum and mining geology",
+    "sixteenprogram": "Law",
+    "seventeenprogram": "Art",
+    "eighteenprogram": "Clinical psychology",
+    "nineteenprogram": "Surveying, Mapping and GIS",
+    "twintyprogram": "Archive",
+    "twintyoneprogram": "Commerce",
+    "twintytwoprogram": "mass communication",
+    "twintythreeprogram": "Television and film production",
+    "twintyfourprogram": "Digital and television journalism",
+    "msector": "Medical sector",
+    "msectordean": "Dean",
+    "msectormedicine": "Medicine and Surgery",
+    "msectorphysical": "Physical Therapy",
+    "msectororal": "Oral and Dental Surgery",
+    "msectorpharma": "Pharma D",
+    "msectornursing": "Nursing",
+    "esector": "Engineering sector",
+    "esectorDean": "Dean",
+    "esectorEngineering": "Engineering",
+    "esectorArtificialIntelligence": "Artificial Intelligence",
+    "esectorCyberSecurity": "Cyber Security Engineering",
+    "esectorMedicalInformatics": "Medical Informatics",
+    "esectorPetroleum": "Petroleum Geology and Mining ",
+    "esectorBiochemistry": "Biochemistry and Microbiology",
+    "esectorIndustrialChemistry": "Industrial Chemistry",
+    "esectorApplied": "Applied Sciences for Space and Navigation",
+    "hsectorDean": "Dean",
+    "hsector": "Education and Humanitarian Sector",
+    "hsectorLegalStudies": "Legal Studies",
+    "hsectorAccounting": "International Accounting and Finance",
+    "hsectorArchiving": "Information Systems and Electronic Archiving",
+    "hsectorClinicalPsychology": "Clinical Psychology",
+    "hsectorGIS": "Surveying, Mapping, GIS",
+    "hsectorTelevision": "Television and Film Production",
+    "hsectorDigitalJournalisms": "Digital and Television Journalism"
+  },
+  "TUTIONFEES": {
+    "PAGE_TITLE": "Tution Fees in Benisuef National University 2026 - 2027",
+    "HEADERS": {
+      "NUMBER": "Number",
+      "SECTOR": "Sector",
+      "PROGRAM": "Program",
+      "LEVEL_ONE": "Level 1\n2026 - 2027",
+      "LEVEL_TWO": "Level 2\n2025 - 2026",
+      "LEVEL_THREE": "Level 3\n2024 - 2025",
+      "LEVEL_FOUR": "Level 4\n2023 - 2024"
+    },
+    "ROWS": [
+      {
+        "number": 1,
+        "sector": "Medical",
+        "program": "Medicine & Surgery",
+        "level1": "150,000 EGP",
+        "level2": "111,100 EGP",
+        "level3": "111,100 EGP",
+        "level4": "99,435 EGP"
+      },
+      {
+        "number": 2,
+        "sector": "Medical",
+        "program": "Pharmacy",
+        "level1": "110,000 EGP",
+        "level2": "80,800 EGP",
+        "level3": "80,800 EGP",
+        "level4": ""
+      },
+      {
+        "number": 3,
+        "sector": "Medical",
+        "program": "Dentistry",
+        "level1": "125,000 EGP",
+        "level2": "90,900 EGP",
+        "level3": "90,900 EGP",
+        "level4": ""
+      },
+      {
+        "number": 4,
+        "sector": "Medical",
+        "program": "Physical Therapy",
+        "level1": "115,000 EGP",
+        "level2": "75,750 EGP",
+        "level3": "75,750 EGP",
+        "level4": "66,660 EGP"
+      },
+      {
+        "number": 5,
+        "sector": "Medical",
+        "program": "Nursing",
+        "level1": "70,000 EGP",
+        "level2": "50,500 EGP",
+        "level3": "50,500 EGP",
+        "level4": "27,775 EGP"
+      },
+      {
+        "number": 6,
+        "sector": "Engineering",
+        "program": "Engineering",
+        "level1": "75,000 EGP",
+        "level2": "60,600 EGP",
+        "level3": "60,600 EGP",
+        "level4": "61,105 EGP"
+      },
+      {
+        "number": 7,
+        "sector": "Engineering",
+        "program": "Artificial Intelligence",
+        "level1": "75,000 EGP",
+        "level2": "50,500 EGP",
+        "level3": "50,500 EGP",
+        "level4": "38,885 EGP"
+      },
+      {
+        "number": 8,
+        "sector": "Engineering",
+        "program": "Cybersecurity",
+        "level1": "75,000 EGP",
+        "level2": "50,500 EGP",
+        "level3": "50,500 EGP",
+        "level4": "38,885 EGP"
+      },
+      {
+        "number": 9,
+        "sector": "Engineering",
+        "program": "Medical Informatics",
+        "level1": "55,000 EGP",
+        "level2": "50,500 EGP",
+        "level3": "50,500 EGP",
+        "level4": "38,885 EGP"
+      },
+      {
+        "number": 10,
+        "sector": "Engineering",
+        "program": "Petroleum Geology & Mining",
+        "level1": "45,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": ""
+      },
+      {
+        "number": 11,
+        "sector": "Engineering",
+        "program": "Industrial Chemistry",
+        "level1": "45,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "",
+        "level4": ""
+      },
+      {
+        "number": 12,
+        "sector": "Engineering",
+        "program": "Navigation Sciences & Space Technology",
+        "level1": "65,000 EGP",
+        "level2": "50,500 EGP",
+        "level3": "50,500 EGP",
+        "level4": ""
+      },
+      {
+        "number": 13,
+        "sector": "Engineering",
+        "program": "Biochemistry",
+        "level1": "60,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": "33,330 EGP"
+      },
+      {
+        "number": 14,
+        "sector": "Engineering",
+        "program": "Renewable and Sustainable Energy Engineering",
+        "level1": "75,000 EGP",
+        "level2": "60,600 EGP",
+        "level3": "60,600 EGP",
+        "level4": "61,105 EGP"
+      },
+      {
+        "number": 15,
+        "sector": "Education & Humanities",
+        "program": "Surveying, Mapping, and Geographic Information Systems (GIS)",
+        "level1": "50,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": "33,330 EGP"
+      },
+      {
+        "number": 16,
+        "sector": "Education & Humanities",
+        "program": "Law",
+        "level1": "60,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "",
+        "level4": ""
+      },
+      {
+        "number": 17,
+        "sector": "Education & Humanities",
+        "program": "Accounting and International Trade",
+        "level1": "50,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": "33,330 EGP"
+      },
+      {
+        "number": 18,
+        "sector": "Education & Humanities",
+        "program": "Information Systems and Electronic Archives",
+        "level1": "50,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "",
+        "level4": ""
+      },
+      {
+        "number": 19,
+        "sector": "Education & Humanities",
+        "program": "Clinical Psychology",
+        "level1": "60,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": "33,330 EGP"
+      },
+      {
+        "number": 20,
+        "sector": "Education & Humanities",
+        "program": "Television & Film Production",
+        "level1": "50,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": "33,330 EGP"
+      },
+      {
+        "number": 21,
+        "sector": "Education & Humanities",
+        "program": "Digital Journalism",
+        "level1": "50,000 EGP",
+        "level2": "35,350 EGP",
+        "level3": "35,350 EGP",
+        "level4": ""
+      }
+    ]
+  },
+  "APPLICATIONRULES": {
+    "PAGE_TITLE": "Admission requirements of Beni Suef National University",
+    "LOADING": "Loading application requirements...",
+    "LOAD_ERROR": "Application requirements could not be loaded. Please try again later.",
+    "TAB1_LABEL": "Egyptian Thanaweya Amma ",
+    "TAB2_LABEL": "Al-Azhar ",
+    "TAB3_LABEL": "Arab certificates ",
+    "TAB4_LABEL": "Foreign equivalent certificates ",
+    "TAB1_HEADING": "Egyptian Thanaweya Amma Students 👇",
+    "TAB2_HEADING": "Al-Azhar Students 👇",
+    "TAB3_HEADING": "Arab certificates Students 👇",
+    "TAB4_HEADING": "Foreign equivalent students 👇",
+    "TAB1_DESCRIPTION": "📄 Required Documents Upon Admission (Egyptian Thanaweya Amma)",
+    "TAB2_DESCRIPTION": "📄 Required Documents Upon Admission (Al-Azhar Certificates)",
+    "TAB3_DESCRIPTION": "📄 Required Documents Upon Admission (Arab Certificates)",
+    "TAB4_DESCRIPTION": "📄 Required Documents Upon Admission (Foreign Equivalent Certificates: IB, IG, American)",
+    "TAB1_DOCUMENTS": [
+      "Original Thanaweya Amma certificate.",
+      "Original recent birth certificate.",
+      "Two copies of the national ID card (or passport) for both the student and the guardian.",
+      "A signed declaration by the student and their guardian confirming the accuracy of all submitted documents and information.",
+      "In case any information is found to be incorrect, the student’s enrollment at the university will be considered void, without prejudice to any legal liability of the student and guardian.",
+      "Six recent personal photos, with the student’s name and national ID number written on them.",
+      "Military service forms (Form 2 and Form 6) for male students.",
+      "Receipt of application fee payment.",
+      "Receipt of tuition fee payment."
+    ],
+    "TAB2_DOCUMENTS": [
+      "Six recent personal photos.",
+      "Original recent birth certificate.",
+      "Two copies of the national ID card (or passport) for both the student and the guardian.",
+      "A signed declaration by the student and their guardian confirming the accuracy of all submitted documents and information.",
+      "If any information is found to be incorrect, the student’s enrollment will be considered void, without prejudice to any legal liability of the student and guardian.",
+      "Original Al-Azhar secondary certificate.",
+      "Military service forms (Form 2 and Form 6) for male students.",
+      "Receipt of application fee payment.",
+      "Receipt of tuition fee payment."
+    ],
+    "TAB3_DOCUMENTS": [
+      "Original recent birth certificate.",
+      "Six recent personal photos, with the student’s name and national ID number written on them.",
+      "Two copies of the national ID card (or passport) for both the student and the guardian.",
+      "Military service forms (Form 2 and Form 6) for male students.",
+      "Original certificate of successful completion, duly authenticated with all required official stamps.",
+      "A signed declaration by the student and their guardian confirming the accuracy of all submitted documents and information.",
+      "If any information is found to be incorrect, the student’s enrollment will be considered void, without prejudice to any legal liability of the student and guardian.",
+      "Movement certificate issued by the Passports, Immigration, and Nationality Authority, showing the dates and destinations of the student’s entry and exit.",
+      "Receipt of application fee payment.",
+      "Receipt of tuition fee payment."
+    ],
+    "TAB4_DOCUMENTS": [
+      "Six recent personal photos, with the student’s name and national ID number written on them.",
+      "Two copies of the national ID card (or passport) for both the student and the guardian.",
+      "Military service forms (Form 2 and Form 6) for male students.",
+      "Original recent birth certificate.",
+      "Official transcript (certified) or the original certificate, duly authenticated (including certification from the Ministry of Foreign Affairs).",
+      "SAT/EST equivalency certificate from the College Board + authenticated SAT/EST results including Student ID Code and GPA.",
+      "Official letter from the school stating the number of academic years completed (for IB Diploma and American Diploma students).",
+      "A certificate issued by the Ministry of Education confirming that the obtained certificate is equivalent to the Egyptian Thanaweya Amma and that the student has completed all pre-university education requirements.",
+      "Proof of completing 12 years of education or more, certified, for students who obtained their certificate from outside Egypt.",
+      "A signed declaration by the student and their guardian confirming the accuracy of all submitted documents and information.",
+      "If any information is found to be incorrect, the student’s enrollment will be considered void, without prejudice to any legal liability of the student and guardian.",
+      "Movement certificate issued by the Passports, Immigration, and Nationality Authority, showing the dates and destinations of entry and exit (required if the certificate was obtained from outside Egypt).",
+      "Receipt of application fee payment.",
+      "Receipt of tuition fee payment."
+    ]
+  },
+  "HOME": {
+    "TITLE": "Beni-Suef National University (BSNU)",
+    "DESC": "Beni-Suef National University is committed to empowering its students with strong scientific, practical, and creative skills, preparing distinguished graduates who can compete in today’s dynamic job market. The university aims to strengthen the connection between education, industry, and society, while fostering innovation, excellence, and forward-thinking. We proudly invite you to explore our university, discover its unique learning environment, and join us as we build a brighter future together.",
+    "APPLY": "Apply Now"
+  },
+  "HERO": {
+    "TITLE": "Beni-suef National University",
+    "SLID1": "BSNU President Prof. Dr. Tarek Ali  welcoming new students for the 2025–2026 academic year.",
+    "SLID2": "From BSNU’s Physics Lab — students actively  supporting the development of basic sciences",
+    "SLID3": "BSNU President Prof. Dr. Tarek Ali  welcoming new students for the 2025–2026 academic year",
+    "SLID4": "From the heart of Egypt –  150 BSNU students visiting the Grand Egyptian Museum",
+    "SLID5": "BSNU students participating in the first Student Activities Festival,  proudly representing the university under the patronage of Misr El-Kheir Foundation",
+    "SLID6": "Beni-suef National University Your Pathway to Success",
+    "BANNERS_LOADING": "Loading banners...",
+    "BANNERS_ERROR": "Unable to load banners right now.",
+    "explore_programs": "explore programs",
+    "apply_now": "apply now "
+  },
+  "DEPARTMENTS": {
+    "TITLE": "Faculties",
+    "SUBTITLE": "Explore the academic colleges of Beni-Suef National University",
+    "LOADING": "Loading faculties...",
+    "LOAD_ERROR": "Faculties could not be loaded. Please try again later.",
+    "SLIDE": "Slide",
+    "PREVIOUS": "Previous faculties",
+    "NEXT": "Next faculties",
+    "Faculty_of_Medicine": "Faculty of Medicine",
+    "Faculty_of_Pharmacy": "Faculty of Pharmacy",
+    "Faculty_of_Dentistry": "Faculty of Dentistry",
+    "Faculty_of_Nursing": "Faculty of Nursing",
+    "Faculty_of_Physical_therapy": "Faculty of Physical therapy",
+    "Faculty_of_Mass_comm": "Faculty of Mass comm",
+    "Faculty_of_Engineering": "Faculty of Engineering",
+    "Faculty_of_Science": "Faculty of Science",
+    "Faculty_of_Computers_IT": "Faculty of Computers & IT",
+    "Faculty_of_Commerce": "Faculty of Commerce",
+    "Faculty_of_Arts": "Faculty of Arts",
+    "Faculty_of_law": "Faculty of law",
+    "Faculty_of_Navigation_and_Space_Sciences":"Faculty of Navigation and Space Sciences"
+  },
+  "university-slider": {
+    "LOADING": "Loading university profile...",
+    "LOAD_ERROR": "The university profile could not be loaded. Please try again later.",
+    "PREVIOUS": "Previous slide",
+    "NEXT": "Next slide"
+  },
+  "universitySectors": {
+    "HEADER": {
+      "TITLE": "University Sectors",
+      "DESC": "Choose a sector to explore its programs and open the program cards below."
+    },
+    "BUTTON": {
+      "SHOW_PROGRAMS": "Show Programs",
+      "HIDE_PROGRAMS": "Hide Programs"
+    },
+    "PROGRAMS_PANEL": {
+      "DESC": "Select a program to see the available options in this sector."
+    },
+    "PROGRAMS_LABEL": "Programs",
+    "SECTORS": {
+      "medical": {
+        "TITLE": "Medical Sector",
+        "SUBTITLE": "Health programs for future medical professionals."
+      },
+      "engineering": {
+        "TITLE": "Engineering Sector",
+        "SUBTITLE": "Innovative engineering programs for tomorrow’s builders."
+      },
+      "education-humanities": {
+        "TITLE": "Education & Humanities Sector",
+        "SUBTITLE": "Programs that support community, law, and media development."
+      }
+    },
+    "PROGRAMS": {
+      "medicine": "Medicine and Surgery",
+      "pharmacy": "Pharm D & clinical",
+      "dentistry": "Dentistry And Oral & Maxillofacial Surgery",
+      "physical-therapy": "Physical Therapy",
+      "nursing": "Nursing",
+      "cyber-security": "Cybersecurity",
+      "medical-informatics": "Medical Informatics",
+      "ai": "Artificial Intelligence",
+      "biochemistry": "Biochemistry and Microbiology",
+      "industrial-chemistry": "Industrial Chemistry",
+      "petroleum-geology": "Petroleum Geology and Mining",
+      "navigation-space": "Applied Sciences for Space and Navigation",
+      "engineering": "Engineering",
+      "clinical-psychology": "Clinical Psychology",
+      "gis": "Surveying, Mapping, GIS",
+      "archive": "Information Systems and Electronic Archiving",
+      "digital-journalism": "Digital and Television Journalism",
+      "television": "Television and Film Production",
+      "law": "Legal Studies",
+      "commerce": "International Accounting and Finance"
+    }
+  },
+  "program": {
+    "TITLE": "For any inquiries or information, click here to contact BSNU",
+    "BTN1": " Student information system (SIS) ",
+    "BTN2": " E-Book platform ",
+    "Number": " +1 (415) 555‑0132"
+  },
+  "university-news": {
+    "TITLE": "Latest News",
+    "MORE": "More Campus News",
+    "CARD1": {
+      "DESC": "the First Employment Fair",
+      "TITLE": "#the First Employment Fair"
+    },
+    "CARD2": {
+      "DESC": "A Visit to the great egytian musieum..",
+      "TITLE": "#Activities"
+    },
+    "CARD3": {
+      "DESC": "Beni-Suef National University President Reviews Student Projects at the First Employment Fair",
+      "TITLE": "#the First Employment Fair"
+    },
+    "CARD4": {
+      "DESC": "Creative Day Out – Art Event..",
+      "TITLE": "#Art"
+    },
+    "CARD5": {
+      "DESC": "The El-Refai Martyr Basketball Championship..",
+      "TITLE": "#Championship"
+    }
+  },
+  "allNews": {
+    "BACK": "Back to home",
+    "KICKER": "Stories from our campus",
+    "TITLE": "University News",
+    "INTRO": "Discover the people, ideas and moments shaping life at Beni-Suef National University.",
+    "STORIES": "stories",
+    "LOADING": "Loading news...",
+    "ERROR": "News could not be loaded. Please try again later.",
+    "EMPTY": "No news is available in this category.",
+    "FILTERS": "Filter news by category",
+    "CATEGORIES": {
+      "ALL": "All stories",
+      "CAMPUS": "Campus",
+      "CULTURE": "Culture",
+      "SPORTS": "Sports"
+    },
+    "ITEM1": {
+      "TITLE": "Student projects take center stage at the first employment fair",
+      "DESCRIPTION": "The university president reviews student projects and connects campus talent with career opportunities.",
+      "DETAIL": "At the first employment fair, students presented projects developed through their studies to the university president. The meeting gave students a chance to share their ideas and connect them with potential career paths."
+    },
+    "ITEM2": {
+      "TITLE": "The first employment fair brings campus talent together",
+      "DESCRIPTION": "Students meet employers and explore new pathways from university study to the workplace.",
+      "DETAIL": "The employment fair brought students and employers together to exchange perspectives and explore professional opportunities. It highlighted how university learning can connect with practical work."
+    },
+    "ITEM3": {
+      "TITLE": "A student visit to the Grand Egyptian Museum",
+      "DESCRIPTION": "A campus visit invites students to explore Egypt's history through its landmark museum collection.",
+      "DETAIL": "Students visited the Grand Egyptian Museum to encounter Egypt's history through its collection and exhibitions. The visit offered a shared opportunity to explore the country's cultural heritage beyond the classroom."
+    },
+    "ITEM4": {
+      "TITLE": "A creative day out with art on campus",
+      "DESCRIPTION": "Students gather for a day of creative expression and shared artistic experiences.",
+      "DETAIL": "The creative day brought students together around art and self-expression. The event offered a welcoming space to share creative work and enjoy culture as part of campus life."
+    },
+    "ITEM5": {
+      "TITLE": "El-Refai Martyr basketball championship",
+      "DESCRIPTION": "The university community comes together for a spirited student basketball championship.",
+      "DETAIL": "Students took part in the El-Refai Martyr basketball championship, bringing the university community together through sport. The competition celebrated teamwork, participation and campus spirit."
+    }
+  },
+  "newsDetails": {
+    "BACK": "Back to all news",
+    "LABEL": "University news",
+    "MORE": "Browse all news",
+    "NOT_FOUND": "This news story could not be found."
+  },
+  "programs": {
+    "LOADING": "Loading program...",
+    "ERROR": "Program could not be loaded. Please try again later.",
+    "NOT_FOUND": "This program could not be found."
+  },
+  "events": {
+    "TITLE": "upcoming events",
+    "CARD1": {
+      "DESC": "Opening of the Student Union Office.."
+    },
+    "CARD2": {
+      "DESC": "Football League Qualification Rounds.."
+    },
+    "CARD3": {
+      "DESC": "The Hope Givers Initiative in the New Administrative Capital.."
+    },
+    "CARD4": {
+      "DESC": "Visit to the Cairo International Book Fair.."
+    }
+  },
+  "FAQ": {
+    "TITLE": "FAQ",
+    "DESC": "Everything we want to know about Beni Suef University",
+    "CARD1": {
+      "DESC": "Yes, students receive hands-on training in partner hospitals, research centers, and specialized labs depending on their faculty.",
+      "TITLE": "Is practical training available for students?"
+    },
+    "CARD2": {
+      "DESC": "Tuition fees vary depending on the faculty and are announced annually on the official platform.",
+      "TITLE": "What are the tuition fees?"
+    },
+    "CARD3": {
+      "DESC": "Admission is based on the guidelines of the National Universities Council and the electronic admission system, in addition to the specific criteria of each faculty.",
+      "TITLE": "What are the admission requirements?"
+    },
+    "CARD4": {
+      "DESC": "Yes, the certificates are recognized locally and internationally and are subject to global quality standards.",
+      "TITLE": "Is the certificate internationally recognized?"
+    },
+    "CARD5": {
+      "DESC": "The university provides a wide range of cultural, scientific, artistic, and sports activities, as well as academic trips and field visits.",
+      "TITLE": " What student activities are offered?"
+    },
+    "CARD6": {
+      "DESC": "Applications are submitted through the National Universities online platform, followed by completing the required documents at the university.",
+      "TITLE": " How can I apply to the university?"
+    },
+    "CARD7": {
+      "DESC": "Yes, the university offers scholarships based on academic excellence and student activities. Announcements are made throughout the year.",
+      "TITLE": "Are scholarships available?"
+    }
+  },
+  "Footer": {
+    "TITLE": "Hotline ",
+    "HOTLINE": "or use our hotline",
+    "NUMBER": "+1 (415) 555‑0132",
+    "FOOTERTITLE": "New Bani Suef City Beni Suef Governorate, Egypt",
+    "Admissions": {
+      "TITLE": "Admissions",
+      "1": "How to apply",
+      "2": "Faculties",
+      "3": "Eligibility",
+      "4": "Program Fees",
+      "5": "Scholarships"
+    },
+    "Quick_Links": {
+      "TITLE": "Quick Links",
+      "1": "Press & Media",
+      "2": "Alumni Portal",
+      "3": "Newsletters",
+      "5": "Careers"
+    },
+    "Additional_Links": {
+      "TITLE": "Additional Links",
+      "1": "competions",
+      "2": "Summer Camps",
+      "3": "Conferences",
+      "4": "Terms & Condition"
+    },
+    "Applying_Links": {
+      "TITLE": "Applying Links",
+      "1": "Applying",
+      "2": "Calendar",
+      "3": "Contact"
+    }
+  },
+  "Underconstruction": {
+    "TITLE": "Under Construction",
+    "DESCRIPTION": "This page is still being built. Please come back soon for the full content.",
+    "BUTTON": "Back to Home"
+  },
+  "Calendar": {
+    "TITLE": "Semester Calendar for Second Term 2026-2027",
+    "COLUMNS": {
+      "EVENT": "Event",
+      "DATE": "Date"
+    },
+    "ROWS": {
+      "REGISTRATION": "Course registration",
+      "REGISTRATION_DATE": "Sat 7/2 – Thu 19/2/2026",
+      "ADD_DROP": "Add/drop and late registration with acceptable excuse",
+      "ADD_DROP_DATE": "Sat 21/2 – Thu 5/3/2026",
+      "REGISTRATION_CLOSE": "Registration system closing for students",
+      "REGISTRATION_CLOSE_DATE": "Thu 5/3/2026",
+      "LECTURES": "Lectures and practical sessions",
+      "LECTURES_DATE": "Sat 7/2 – Thu 21/5/2026",
+      "MID_TERM_GUIDELINE": "First periodic exam (guideline date)",
+      "MID_TERM_GUIDELINE_DATE": "Sat 7/3 – Thu 19/3/2026",
+      "MID_TERM": "Midterm exam (if applicable)",
+      "MID_TERM_DATE": "Sat 18/4 – Thu 30/4/2026",
+      "SECOND_CYCLE_GUIDELINE": "Second periodic exam (guideline date)",
+      "SECOND_CYCLE_GUIDELINE_DATE": "Sat 2/5 – Thu 14/5/2026",
+      "LABS_END": "End of lectures and practical exams",
+      "LABS_END_DATE": "Thu 21/5/2026",
+      "WITHDRAWAL_END": "End of course withdrawal",
+      "WITHDRAWAL_END_DATE": "Thu 21/5/2026",
+      "FINAL_EXAMS": "Final theoretical exams",
+      "FINAL_EXAMS_DATE": "Sat 23/5 – Thu 20/6/2026"
+    },
+    "HEAD": {
+      "ADVISOR": "Head of Student Sector",
+      "NAME": "Prof. Dr. Basem Anwar Shehata"
+    }
+  },
+  "Program_TVFilm": {
+
+    "PROGRAMMANNAGERNAME": "Dr. Ahmed Shehata Abdel-Fadil",
+    "pmgrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Dr. Ahmed Shehata Abdel-Fadil is an Associate Professor and Director of the Digital & Television Journalism Program at Beni-Suef National University. He holds a Bachelor’s, Master’s, and PhD in Journalism from Cairo University.  He previously managed the Quality Assurance Unit and the Media Production &Training Center. His research focuses on digital journalism, media technology, and artificial  intelligence in news production. He contributed to developing updated journalism curricula aligned with digital transformation and market demands.",
+    "breadcrumb_title": "Television and Film Production",
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+    "sidebar_title": "Course Includes:",
+    "program_manager": "Program manager:",
+    "duration": "Duration:",
+    "job_titles": "Job titles:",
+    "study_system": "Study system and number of hours:",
+    "degree": "The academic degree awarded by the program:",
+    "students": "Students:",
+    "share": "Share on:",
+    "doctor": "Associate Professor",
+    "category": "Category",
+    "faculty_title": "Faculty of Television and Film Production",
+    "program_manager_title": "Program Manager",
+    "mission_title": "Mission",
+    "mission_desc": "The program aims to graduate creative media generations who believe in the values of citizenship...",
+    "vision_title": "Vision",
+    "vision_desc": "The program seeks to be the first choice for those wishing to study television and cinema...",
+    "goals_title": "Goals",
+    "beneficiary_title": "Beneficiary sectors",
+    "program_hours_title": "The program consists of 141 credit hours:",
+    "program_schedules": "Program Schedules",
+    "first_year": "First Year Schedules",
+    "second_year": "Second Year Schedules",
+    "third_year": "Third Year Schedules",
+    "forth_year": "Forth Year Schedules",
+    "events_title": "Television and Film Production events' You May Like",
+    "Goals": {
+      "GOAL1": "Graduating a media generation skilled in advanced ICT, trained to use technical tools for developing media, artistic, and cinematic capabilities.",
+      "GOAL2": " Preparing graduates committed to the ethics of the profession and media codes of honor.",
+      "GOAL3": " Spreading the culture of creativity and innovation, by providing a positive environment that stimulates creativity and develops personal abilities and skills.",
+      "GOAL4": "Preparing a generation of media researchers as a nucleus for major research on Egyptian and Arab issues in television, cinema, and development.",
+      "GOAL5": " Effectively contributing to serving the community culturally and socially."
+    },
+    "BeneficiarySectors": {
+      "BENEFICIARYSECTOR1": " Traditional and digital television media institutions.",
+      "BENEFICIARYSECTOR2": " Cinematic production companies.",
+      "BENEFICIARYSECTOR3": " Film festivals.",
+      "BENEFICIARYSECTOR4": " Journalistic institutions (Video Journalism departments).",
+      "BENEFICIARYSECTOR5": " Cultural centers of foreign embassies.",
+      "BENEFICIARYSECTOR6": " State security institutions aimed at monitoring hostile media activities."
+    },
+    "duration_value": "4 years",
+    "job_titles_list": "Scriptwriter - Television and Cinematic Editor - Television and Cinematic Cameraman/Photographer - Television and Cinematic Director - Production of Documentary, Recording/Non-Fiction, and Feature Films",
+    "study_system_value": "Credit point system – 130 credit hours",
+    "degree_value": "Bachelor of Computer Science.",
+    "students_number": "72",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "14 Hour",
+    "REQ2": "College requirements",
+    "HOURS2": "48 Hour",
+    "REQ3": "Specialization requirements",
+    "HOURS3": "63 Hour",
+    "REQ4": "Graduation project",
+    "HOURS4": "3 Hour",
+    "REQ5": "Free choice",
+    "HOURS5": "2 Hour",
+    "EVENT1": "World Heart Day Seminar – Dr. Mohamed Medhat",
+    "EVENT2": "The First Student Conference of the Medicine and Surgery Program",
+    "EVENT3": "Participation in the “Givers of Hope” Initiative"
+    },
+  "DENTAL": {
+    "TITLE": "Oral & Dental Medicine and Surgery",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Walid Samir Salemy",
+    "progrmmannagerdesc": "Professor",
+    "PROGRAMMANAGERBIO": "Dr. Walid Samir Salem Professor of Oral and Maxillofacial Radiology, MSc in Oral & Maxillofacial Surgery, Cairo University, 2004, MSc in Medical Education,               Maastricht/Suez Canal University, 2010, PhD in Oral & Maxillofacial Radiology, Cairo University, 2012",
+    "DURATION": "Duration:",
+    "DURATION2": "Five years + one internship year ",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Dentist",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "191 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor of Oral & Dental Medicine and Surgery",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "1500",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Oral & Dental Medicine and Surgery",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "The Faculty of Oral and Dental Medicine at Beni Suef National University aims to prepare qualified dental professionals who can compete, keep up with modern advances, meet market needs, and serve the community",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "The Faculty of Oral and Dental Medicine at Beni Suef National University aims to be a leading educational and research institution locally and internationally, serving its community effectively.",
+    "GOALS": "goals",
+    "GOAL1": "Preparing qualified dentists for work locally and internationally.",
+    "GOAL2": "Providing quality dental care, especially for Beni Suef and Upper Egypt.",
+    "GOAL3": "Developing dentists’ skills through  continuous training.",
+    "GOAL4": "Supporting dental research linked to community needs.",
+    "GOAL5": "Organizing conferences and medical convoys to enhance education and community service.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Ministry of Health hospitals and units",
+    "BENEFICIARYSECTOR2": "Health insurance clinics",
+    "BENEFICIARYSECTOR3": "Armed Forces and Police clinics",
+    "BENEFICIARYSECTOR4": "Private healthcare sector",
+    "TABLE": "The program consists of 191 credit hours :",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "College Requirements - Elective Courses",
+    "HOURS1": "4 Hour",
+    "REQ2": "College Requirements - Mandatory Courses",
+    "HOURS2": "179 Hour",
+    "REQ3": "University Requirements - Mandatory Courses",
+    "HOURS3": "4 Hour",
+    "REQ4": "University Requirements - Elective Courses",
+    "HOURS4": "8 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Faculty of Dentistry events' You May Like",
+    "EVENT1": "Field Visit to a School",
+    "EVENT2": "Reception Ceremony for 2025/2026 Students and Honoring Top Students.",
+    "EVENT3": "  Group Iftar during Ramadan "
+  },
+
+ "AI": {
+    "TITLE": "Artificial intelligence",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Sherif Mostafa Hashad",
+    "progrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Dr. Sherif Mostafa Hashad is a Lecturer at the Faculty of Computers and Artificial Intelligence, Beni-Suef University, Egypt, with over 20 years of technical experience in digital transformation and more than 10 years of academic experience in teaching and curriculum development. He holds a Ph.D. in Information Systems from Menoufia University, with research focused on adaptive frameworks for Arabic text classification using advanced machine learning techniques.\nDr. Hashad has a strong background in software engineering, software testing, and project management, having worked with organizations such as the Egyptian Council of State and KHABEER Software Industries. He currently serves as program coordinator, Artificial Intelligence and Data Science, Beni Suef National University. Also, he served as the Vice Manager of the University Electronic Portal, contributing to digital transformation initiatives and system development.\nHis research interests include artificial intelligence, natural language processing, and Arabic text classification. He has published multiple papers in international journals and conferences, reflecting his commitment to academic research and continuous professional development.",
+    "DURATION": "Duration:",
+    "DURATION2": "4 years",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Associate Professor",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "141 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor of Computer Science",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "72",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Artificial Intelligence",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "Providing an outstanding and specialized model aimed at being among the best technical programs that meet the needs of industry and community, particularly in medical informatics and AI applications to support and develop health systems.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "Supporting and supplying the community with distinguished, effective graduates who are capable of competing in the field of advanced artificial intelligence and able to provide specialized scientific competencies.",
+    "GOALS": "goals",
+    "GOAL1": "Preparing skilled AI professionals with advanced IT and computer science expertise to solve healthcare and industry problems.",
+    "GOAL2": "Preparing graduates to meet local, regional, and global labor needs by developing AI-based solutions for healthcare and related fields.",
+    "GOAL3": "Deepening scientific awareness and applied research in AI and medical informatics.",
+    "GOAL4": "Preparing skilled professionals to collect, analyze, and interpret data for research and comprehensive services.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Medical data analysis institutions",
+    "BENEFICIARYSECTOR2": "Medical information systems departments",
+    "BENEFICIARYSECTOR3": "Research and development institutions in healthcare technology",
+    "BENEFICIARYSECTOR4": "Medical information security and data protection departments",
+    "BENEFICIARYSECTOR5": "Software houses for development and integration of health systems",
+    "TABLE": "The program consists of 141 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "14 Hour",
+    "REQ2": "Mathematics and Basic Sciences",
+    "HOURS2": "25 Hour",
+    "REQ3": "Computer Sciences – Basic (College Requirements)",
+    "HOURS3": "40 Hour",
+    "REQ4": "Applied Sciences (Specialization Requirements)",
+    "HOURS4": "43 Hour",
+    "REQ5": "Field Training",
+    "HOURS5": "3 Hour",
+    "REQ6": "Graduation Project",
+    "HOURS6": "6 Hour",
+    "REQ7": "Institution-Determined Topics (Specialized Labs)",
+    "HOURS7": "10 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Faculty of AI events' You May Like",
+    "EVENT1": "AI in Healthcare Seminar – Dr. Mostapha Sayed",
+    "EVENT2": "The First Student Conference of the AI Program",
+    "EVENT3": "Participation in the “Givers of Hope” Initiative "
+  },
+  "PHARMACY": {
+    "TITLE": "Pharmacy – Pharm D & Clinical",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Rania Mohamed Sarhan",
+    "progrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Dr. Rania Mohamed Hussien, Associate Professor of Clinical Pharmacy, Faculty of  Pharmacy, Beni Suef University, with over 16 years of experience in academic  administration and clinical research. Holds a BPharm (2009), MSc (2015), and PhD  (2019), promoted to Assistant Professor in 2024. Currently Program Director of  the PharmD Program at Beni Suef National University, with strong contributions in academic leadership, training coordination, and clinical research, including 30 peer-reviewed publications and international collaboration with the University of Florida.",
+    "DURATION": "Duration:",
+    "DURATION2": "5 years + 1 year of training ",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Pharmacist",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "191 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor's Degree",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "2000",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Oral & Dental Medicine and Surgery",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "Prepare ethical, highly qualified pharmacists capable of advancing pharmaceutical care,  industry, research, and services across healthcare, industry, and community sectors.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "Achieve scientific excellence and continuous development to advance pharmacy, healthcare,  and industry, aiming for global prominence.",
+    "GOALS": "goals",
+    "GOAL1": "Graduate distinguished pharmacists qualified for work in pharmacies, pharmaceutical companies, laboratories, media, marketing, research, and academia",
+    "GOAL2": "Equip pharmacists to provide proper healthcare, educate and advise patients and communities, while practicing ethically and responsibly.",
+    "GOAL3": "Prepare pharmacists skilled in evidence-based practice, pharmaceutical services, communication, leadership, management, and entrepreneurship",
+    "GOAL4": "Develop lifelong learners capable of self-assessment and continuous professional growth.",
+    "GOAL5": "Enhance graduates’ regional competitiveness through study and training programs.",
+    "GOAL6": "Encourage community service, environmental development, and cost-effective medicine use.",
+    "GOAL7": "Ensure quality pharmaceutical education through interactive learning and self-directed study.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Public and private hospitals",
+    "BENEFICIARYSECTOR2": "Drug control and food analysis laboratories",
+    "BENEFICIARYSECTOR3": "Public and private pharmacies",
+    "BENEFICIARYSECTOR4": "Pharmaceutical factories and companies",
+    "BENEFICIARYSECTOR5": "Pharmaceutical research centers",
+    "BENEFICIARYSECTOR6": "Universities",
+    "TABLE": "The program consists of 177 credit hours :",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "Mandatory University Requirements – PharmD Program",
+    "HOURS1": "6 Hour",
+    "REQ2": "Mandatory Program Requirements – PharmD Students",
+    "HOURS2": "163 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Faculty of Pharmacy events' You May Like",
+    "EVENT1": "Communication Skills  module Scientific Day",
+    "EVENT2": "Student Participation in a Medical Convoy",
+    "EVENT3": "   Analytical Chemistry Department Scientific Day "
+  },
+  "Program_DigitalJournalism": {
+    "breadcrumb_title": "Digital and Television Journalism",
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+    "sidebar_title": "Course Includes:",
+    "program_manager": "Program manager:",
+    "program_manager_title": "Program Manager",
+    "program_managername": "Dr. Ahmed Shehata Abdel-Fadil",
+    "pmgrmmannagerdesc": "Associate Professor",
+    "PMBIO": "Dr. Ahmed Shehata Abdel-Fadil is an Associate Professor and Director of the Digital & Television Journalism Program at Beni-Suef National University. He holds a Bachelor’s, Master’s, and PhD in Journalism from Cairo University.  He previously managed the Quality Assurance Unit and the Media Production &Training Center. His research focuses on digital journalism, media technology, and artificial  intelligence in news production. He contributed to developing updated journalism curricula aligned with digital transformation and market demands.",
+    "duration": "Duration:",
+    "duration_value": "Four years",
+    "job_titles": "Job titles:",
+    "job_titles_list": "Media professionals: reporters, editors, photographers, video editors, web designers, and digital content creators.",
+    "study_system": "Credit hours:",
+    "study_system_value": "100",
+    "degree": "Academic degree:",
+    "degree_value": "Bachelor’s in Media, Digital & TV Journalism",
+    "students": "Students:",
+    "students_number": "100",
+    "share": "Share on :",
+    "category": "Category",
+    "mission": "The program offers a distinguished academic curriculum that aspires to lead in preparing qualified Egyptian and Arab graduates who can compete in the journalism labor market within the new digital environment at both local and regional levels, in accordance with quality education standards. Graduates will be capable of conducting scientific research and studies related to community needs, and of producing digital and televisionjournalistic content with skill and professionalism, while adhering to professionalstandards, journalistic ethics, and codes of conduct.",
+    "faculty_title": "Mass Communication",
+    "mission_title": "Mission",
+    "doctor": "Doctor",
+    "mission_desc": "The program offers a distinguished academic curriculum that aspires to lead in preparing qualified Egyptian and Arab graduates who can compete in the journalism labor market within the new digital environment at both local and regional levels, in accordance with quality education standards.",
+    "vision_title": "Vision",
+    "vision_desc": "The program seeks to achieve educational, training, and research excellence in the field of digital and television news content production, both locally and regionally.",
+    "goals_title": "Goals",
+    "Goals": {
+      "GOAL1": "Provide advanced academic services and contemporary theoretical frameworks.",
+      "GOAL2": "Offer academic services keeping pace with modern journalism and digital media.",
+      "GOAL3": "Train digital journalists with the skills, knowledge, and experience to thrive in modern tech-driven workplaces.",
+      "GOAL4": "Prepare Egyptian journalists with practical competencies and research abilities.",
+      "GOAL5": "Develop graduates’ entrepreneurial skills to launch their own media projects.",
+      "GOAL6": "Cultivate visionary journalists who create innovative content meeting market needs.",
+      "GOAL7": "Develop leadership and innovation skills among students."
+    },
+    "beneficiary_title": "Beneficiary sectors",
+    "BeneficiarySectors": {
+      "BENEFICIARYSECTOR1": "Press institutions.",
+      "BENEFICIARYSECTOR2": "Media monitoring and observatory centers.",
+      "BENEFICIARYSECTOR3": "Media offices at Egyptian embassies.",
+      "BENEFICIARYSECTOR4": "Institutions specializing in AI-driven journalism.",
+      "BENEFICIARYSECTOR5": "Colleges and departments of media and communication.",
+      "BENEFICIARYSECTOR6": "Press and media offices within official government institutions.",
+      "BENEFICIARYSECTOR7": "Multimedia production for media institutions and organizations.",
+      "BENEFICIARYSECTOR8": "Local and international institutions in photography, video editing, and publishing."
+    },
+    "program_hours_title": "The program consists of 141 credit hours :",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "14 Hour",
+    "REQ2": "College Requirements",
+    "HOURS2": "48 Hour",
+    "REQ3": "Specialization Requirements",
+    "HOURS3": "63 Hour",
+    "REQ4": "Graduation Project",
+    "HOURS4": "3 Hour",
+    "REQ5": "Free Electives",
+    "HOURS5": "2 Hour",
+    "program_schedules": "Program Schedules",
+    "first_year": "First year Schedules",
+    "second_year": "Second year Schedules",
+    "third_year": "Third year Schedules",
+    "EVENTS_title": "Program of digital journalism events' You May Like",
+    "EVENT1": "Welcome Ceremony of the Faculty of Mass Comm at BSNU for New and Returning Students.",
+    "EVENT2": "The Digital and Television Journalism Program participates in the 2025 Media Management and Economics Conference at AUC.",
+    "EVENT3": "Intro video for the Digital & TV Journalism Program – Field visit to the Livestock and Dairy Production Complex in Fayoum"
+  },
+  "Program_Commerce": {
+    "breadcrumb_title": "Faculty of Commerce",
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+    "sidebar_title": "Course Includes:",
+    "program_manager": "Program manager:",
+    "program_managername": " Enas Fakhry",
+    "program_managertitle": " Assistant Professor",
+    "program_managerBio": " Dr. Enas Fakhry, holds a Ph.D. in accounting from the Faculty of Commerce (English Section) at Beni Suef University. With a strong academic foundation and commitment to excellence, Dr. Enas has developed expertise not only in Accounting and Finance but also in soft skills and quality assurance, having completed specialized courses in these areas. As a Certified Trainer of Trainers (ToT), Dr. Enas is dedicated to advancing education and professional development, empowering students and colleagues alike through innovative teaching and training methods. Currently, Dr. Enas serves as the Program Manager of the International Accounting and Finance Program at Beni Suef National University, where they oversee curriculum design, program quality, and student success.  Dr. Enas combines academic rigor with practical leadership, striving to prepare graduates for the challenges of global finance and accounting while fostering a culture of continuous improvement and professional growth.",
+    "program_manager_title": "Program Manager",
+    "duration": "Duration:",
+    "duration_value": "4 years",
+    "job_titles": "Job titles:",
+    "job_titles_list": "Accountant - Investment Officer - Economic Expert - HR Officer - Operations Manager - Administrative Manager",
+    "study_system": "Study system and number of hours:",
+    "study_system_value": "135 credit hours",
+    "degree": "The academic degree awarded by the program:",
+    "degree_value": "Bachelor's Degree of Commerce",
+    "students": "Students:",
+    "students_number": "452",
+    "share": "Share on :",
+    "category": "Category",
+    "faculty_title": "Faculty of Commerce",
+    "mission_title": "Mission",
+    "mission_desc": "The International Accounting and Finance Program offers bilingual education and practical training preparing graduates for local, regional, and international markets.",
+    "vision_title": "Vision",
+    "vision_desc": "The program aligns with Egypt’s Vision 2030 to meet labor market needs by preparing highly qualified graduates.",
+    "goals_title": "Goals",
+    "Goals": {
+      "GOAL1": "Develop scientific thinking and problem-solving skills.",
+      "GOAL2": "Enable entrepreneurship and new business management.",
+      "GOAL3": "Prepare students for the modern business environment.",
+      "GOAL4": "Integrate technology into administrative and accounting tasks.",
+      "GOAL5": "Apply modern teaching methods and the Credit point system.",
+      "GOAL6": "Enhance practical skills through technology and training.",
+      "GOAL7": "Ensure continuous improvement through quality assurance and evaluation."
+    },
+    "beneficiary_title": "Beneficiary sectors",
+    "BeneficiarySectors": {
+      "BENEFICIARYSECTOR1": "Capital markets, financial regulatory bodies, banks, insurance companies, accounting and auditing firms, and state accountability authorities."
+    },
+    "program_hours_title": "The program consists of 198 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "14 Hour",
+    "REQ2": "College Requirements",
+    "HOURS2": "34 Hour",
+    "REQ3": "Specialization Requirements",
+    "HOURS3": "84 Hour",
+    "REQ4": "Elective College Requirements",
+    "HOURS4": "24 Hour",
+    "REQ5": "Other Requirements",
+    "HOURS5": "32 Hour",
+    "REQ6": "Graduation project",
+    "HOURS6": "6 Hour",
+    "program_schedules": "Program Schedules",
+    "EVENTS_title": "Commerce events' You May Like",
+    "EVENT1": "Commerce Faculty Symposium",
+    "EVENT2": "Student Business Startup Fair",
+    "EVENT3": "Accounting Research Day"
+  },
+"Program_ClinicalPsychology": {
+
+    "PROGRAMMANNAGERNAME": "Sherif Mamdouh Mostafa Sayed",
+
+    "PROGRAMMANAGERBIO": "Dr. Sherif Mamdouh Mostafa Sayed, PhD in Physical Geography, Faculty of Arts, Beni Suef University, awarded in 2015 with First-Class Honors and a recommendation for publication and exchange with Arab universities. He also holds a Master's degree in Geography from Beni Suef University, awarded in 2008 with an Excellent grade.",
+
+    "PROGRAMMANNAGERDESIG": "Lecturer (Associate Professor)",
+
+    "breadcrumb_title": "Clinical Psychology",
+
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+
+    "sidebar_title": "Course Includes:",
+
+    "program_manager": "Program manager:",
+
+    "program_manager_title": "Program Manager",
+
+    "duration": "Duration:",
+
+    "duration_value": "Four academic years divided into eight semesters.",
+
+    "job_titles": "Job titles:",
+
+    "job_titles_list": "Clinical Psychologist - Psychotherapist - Psychological Expert in Family Courts",
+
+    "study_system": "Study system and number of hours:",
+
+    "study_system_value": "151 credit hours",
+
+    "degree": "The academic degree awarded by the program:",
+
+    "degree_value": "Bachelor of Arts in Clinical Psychology",
+
+    "students": "Students:",
+
+    "students_number": "140",
+
+    "share": "Share on :",
+
+    "category": "Category",
+
+    "faculty_title": "Clinical Psychology Program",
+
+    "mission_title": "Mission",
+
+    "mission_desc": "To prepare qualified clinical psychology professionals by delivering psychological services and consultations in line with international standards.",
+
+    "vision_title": "Vision",
+
+    "vision_desc": "To be a leading program locally and internationally in preparing qualified practitioners and researchers in applied psychology.",
+
+    "goals_title": "Goals",
+
+    "Goals": {
+
+      "GOAL1": "Conduct research and develop psychological assessment tools to interpret behavioral phenomena.",
+
+      "GOAL2": "Apply psychological theories and principles to solve behavioral and counseling issues across applied fields.",
+
+      "GOAL3": "Interpret assessment results and provide evidence-based psychological consultations.",
+
+      "GOAL4": "Train students to analyze and solve everyday behavioral problems in diverse settings.",
+
+      "GOAL5": "Use scientific methods to understand, predict, and prevent psychological phenomena within the community."
+
+    },
+
+    "beneficiary_title": "Beneficiary sectors",
+
+    "BeneficiarySectors": {
+
+      "BENEFICIARYSECTOR1": "Educational institutions and schools",
+
+      "BENEFICIARYSECTOR2": "Hospitals and therapeutic centers",
+
+      "BENEFICIARYSECTOR3": "Special needs care centers",
+
+      "BENEFICIARYSECTOR4": "Armed Forces psychological services",
+
+      "BENEFICIARYSECTOR5": "Psychological and educational assessment centers",
+
+      "BENEFICIARYSECTOR6": "Public and private sector organizations",
+
+      "BENEFICIARYSECTOR7": "Media institutions",
+
+      "BENEFICIARYSECTOR8": "Sports clubs and youth centers",
+
+      "BENEFICIARYSECTOR9": "Elderly care homes",
+
+      "BENEFICIARYSECTOR10": "Orphan care institutions",
+
+      "BENEFICIARYSECTOR11": "Family courts"
+
+    },
+
+    "program_hours_title": "The program consists of 136 credit hours :",
+
+    "NUMBER": "No.",
+
+    "REQ": "Requirement",
+
+    "TOTALHOURS": "Total Hours in the Program",
+
+    "REQ1": "first year- first semester",
+
+    "HOURS1": "18 Hour",
+
+    "REQ2": "first year- second semester",
+
+    "HOURS2": "18 Hour",
+
+    "REQ3": "second year- first semester",
+
+    "HOURS3": "22 Hour",
+
+    "REQ4": "second year- second semester",
+
+    "HOURS4": "19 Hour",
+
+    "REQ5": "third year- first semester",
+
+    "HOURS5": "19 Hour",
+
+    "REQ6": "third year- second semester",
+
+    "HOURS6": "19 Hour",
+
+    "REQ7": "fourth year- first semester",
+
+    "HOURS7": "18 Hour",
+
+    "REQ8": "fourth year- second semester",
+
+    "HOURS8": "18 Hour",
+
+    "program_schedules": "Program Schedules",
+
+    "first_year": "First year Schedules",
+
+    "second_year": "Second year Schedules",
+
+    "third_year": "Third year Schedules",
+
+    "forth_year": "Forth year Schedules",
+
+    "events_title": "Clinical Psychology events' You May Like",
+
+    "EVENT1": "Visit to 'Our Children' Association for Individuals with Special Needs in Beni Suef Governorate",
+
+    "EVENT2": "First day of training at Abu El-Azaim Hospital for Mental Health and Addiction",
+
+    "EVENT3": "Training of Clinical Psychology Program students at Beni Suef Mental Health Hospital"
+
+  },
+
+  "Program_Law": {
+    "breadcrumb_title": "Law",
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+    "sidebar_title": "Course Includes:",
+    "program_manager": "Program manager:",
+    "program_manager_title": "Program Manager",
+    "duration": "Duration:",
+    "duration_value": "4 years",
+    "job_titles": "Job titles:",
+    "job_titles_list": "Professor - Consultant - Judge - Deputy Public Prosecutor - Police Officer",
+    "study_system": "Study system and number of hours:",
+    "study_system_value": "140 credit hours",
+    "degree": "The academic degree awarded by the program:",
+    "degree_value": "Licentiate",
+    "students": "Students:",
+    "students_number": "452",
+    "share": "Share on :",
+    "category": "Category",
+    "faculty_title": "Faculty of Law",
+    "mission_title": "Mission",
+    "mission_desc": "Providing the legal and academic labor market with qualified competencies to solve legal problems and offer consultancy to individuals and institutions.",
+    "vision_title": "Vision",
+    "vision_desc": "To become a leading institution in the Arab and international region in legal studies and applied professional qualification.",
+    "goals_title": "Goals",
+    "Goals": {
+      "GOAL1": "Provide students with basic knowledge and theories in various branches of law.",
+      "GOAL2": "Develop skills in legal writing, research, and oral advocacy.",
+      "GOAL3": "Enhance critical thinking, analysis, and problem solving in legal contexts.",
+      "GOAL4": "Support applied and professional legal studies.",
+      "GOAL5": "Enable students to conduct legal research using scientific methodology."
+    },
+    "beneficiary_title": "Beneficiary sectors",
+    "BeneficiarySectors": {
+      "BENEFICIARYSECTOR1": "State administrative bodies, ministries, public institutions",
+      "BENEFICIARYSECTOR2": "Judicial bodies",
+      "BENEFICIARYSECTOR3": "Police",
+      "BENEFICIARYSECTOR4": "Private sector",
+      "BENEFICIARYSECTOR5": "Legal profession"
+    },
+    "program_hours_title": "The program consists of 198 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "Level 1 - First semester",
+    "HOURS1": "16 Hour",
+    "REQ2": "Level 1 - Second semester",
+    "HOURS2": "14 Hour",
+    "REQ3": "Level 2 - First semester",
+    "HOURS3": "16 Hour",
+    "REQ4": "Level 2 - Second semester",
+    "HOURS4": "18 Hour",
+    "REQ5": "Level 3 - First semester",
+    "HOURS5": "16 Hour",
+    "REQ6": "Level 3 - Second semester",
+    "HOURS6": "20 Hour",
+    "REQ7": "Level 4",
+    "HOURS7": "40 Hour",
+    "program_schedules": "Program Schedules",
+    "first_year":"First Year Schedules",
+    "second_year":"Second Year Schedules",
+    "EVENTS_title": "Law events' You May Like",
+    "EVENT1": "Opening of the Legal Clinic",
+    "EVENT2": "Reception Ceremony for Students 2024–2025",
+    "EVENT3": "Scientific Day on Legal Research"
+  },
+  "Program_Law1": {
+    "PROGRAMMANNAGERNAME": "Hesham Shaban",
+    "PROGRAMMANAGERBIO": "Bachelor of law (LLB) (2013)-Beni seuf University-Faculty of law. Master's degree in private law (2015)-Beni seuf University-Faculty of law. Diploma in Social law (2017) Cairo University-Faculty of law. PhD in Social Law (2023)-Beni seuf University-faculty of law.",
+    "PROGRAMMANNAGERDESIG": "Assistant Professor"
+  },
+  "CYBERSECURITY": {
+    "TITLE": "Cyber Security",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Mohamed Arafa Ali",
+    "progrmmannagerdesc": "PH D, Associate Professor of Computers & AI",
+    "PROGRAMMANAGERBIO": "Academic and Professional Background\n\nHe currently works as a Lecturer at the Faculty of Computers and Artificial Intelligence at Beni-Suef University.\n\nHe holds a Ph.D. and a Master's degree in Computer Science from Minia University, as well as a Bachelor's degree in Computers and Artificial Intelligence from Beni-Suef University.\n\nHis scientific research primarily focuses on nature-inspired algorithms, complex multi-objective optimization problems, and machine learning applications.\n\nAdministrative Roles\n\nHe was the Director of the Alumni Unit at the Faculty of Computers and Artificial Intelligence, Beni-Suef University.\n\nHe served as a member of the International Ranking Office at the University Performance Development Center.\n\nHe is a certified digital transformation trainer accredited by the Supreme Council of Egyptian Universities.\n\nTeaching and Technical Expertise\n\nHis teaching portfolio includes core computer science courses such as Artificial Intelligence, Computer Vision, Machine Learning, Object-Oriented Programming, and Compiler Construction.\n\nHe has authored and co-authored numerous peer-reviewed research papers published in international scientific journals.",
+    "DURATION": "Duration:",
+    "DURATION2": "4 years ",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Security Engineer - CISO - Security Manager",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "141 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor of Computer Science",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "2000",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Oral & Dental Medicine and Surgery",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "The Cyber Security  Engineering Information Security program aims to prepare outstanding graduates equipped with the necessary practical, scientific, and knowledge-based skills. They will be highly qualified and competent to compete in the local, regional, and international job markets.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "The cybersecurity Engineering information Security program to be distinguished and responsive to the needs of the regional and international labor market.",
+    "GOALS": "goals",
+    "GOAL1": "Delivering world-class educational experiences in Cybersecurity engineering to strengthen students’ professional skills and practices.",
+    "GOAL2": "Developing students’ ability to identify cyber risks, understand cybercrime, and apply prevention strategies.",
+    "GOAL3": "Equipping students with practical skills to secure data, software, hardware, and networks, and to restore system security after breaches.",
+    "GOAL4": "Enhancing students’ critical thinking to understand hacking, phishing, and social engineering, ensuring full awareness in confronting each type of attack.",
+    "GOAL5": "Familiarizing students with the impact of breaches, data leaks, cybercrimes, and extortion, and how to respond effectively after incidents.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Include all technological, educational, healthcare, community, and governmental institutions. Every institution that relies on technology needs a robust security system to prevent breaches and ensure data protection.",
+    "TABLE": "The program consists of 141 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "14 Hour",
+    "REQ2": "Mathematics and Basic Sciences",
+    "HOURS2": "25 Hour",
+    "REQ3": "Computer Sciences – Basic (College Requirements)",
+    "HOURS3": "40 Hour",
+    "REQ4": "Applied Sciences (Specialization Requirements",
+    "HOURS4": "43 Hour",
+    "REQ5": "Field Training",
+    "HOURS5": "3 Hour",
+    "REQ6": "Graduation Project",
+    "HOURS6": "6 Hour",
+    "REQ7": "Institution-Determined Topics (Specialized Labs)",
+    "HOURS7": "10 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Cybersecurity  events' You May Like",
+    "EVENT1": "Vising to EDUX ",
+    "EVENT2": "Elzerio lecture to students event",
+    "EVENT3": "Hwawei Event at BSNU "
+  },
+  "ENGINEERING": {
+
+    "TITLE": "Engineering",
+
+    "DESC": "Explore Our Comprehensive Programs",
+
+    "COURSEINCLUDE": "Course Includes:",
+
+    "PROGRAMMANNAGE": "Program manager:",
+
+    "PROGRAMMANNAGERNAME": "Naguib Gerges Naguib Yacoub",
+
+    "progrmmannagerdesc": "Assistant Professor of Mechanics and Design and Production Engineering",
+
+    "PROGRAMMANAGERBIO": "Assistant Professor at the Faculty of Engineering, Beni Suef National University. Research interests: composite and nanomaterials, hydraulic and mechanical systems, renewable energy, and digital manufacturing and mechatronics.",
+
+    "DURATION": "Duration:",
+
+    "DURATION2": "5 years",
+
+    "JOBTITLE": "job titles:",
+
+    "DOCTOR": "Electrical Engineer",
+
+    "STUDYSYSTEM": "Study system and number of hours:",
+
+    "CREDITHOURS": "164 credit hours",
+
+    "ACADEMICDEGREE": "The academic degree awarded by the program:",
+
+    "BECLOR": "Bachelor's Degree of Electrical Engineering",
+
+    "STUDENTS": "Students:",
+
+    "STUDENTSNUMBER": "452",
+
+    "SHAREON": "Share on :",
+
+    "CATEGORY": "Category",
+
+    "FACULTYNAME": "Faculty of Engineering",
+
+    "MISSION": "mission",
+
+    "PROGRAMMISSION": "Preparing a distinguished graduate who will acquire the principles and skills of renewable and sustainable energy engineering with the aim of serving the community and developing the environment.",
+
+    "VISSION": "Vission",
+
+    "PROGRAMVISSION": "Achieving leadership among renewable energy and sustainable energy engineering programs at the local and regional levels by providing a scientific environment that supports and enhances academic excellence.",
+
+    "GOALS": "goals",
+
+    "GOAL1": "Prepare engineers skilled in renewable and sustainable energy systems.",
+
+    "GOAL2": "Keep pace with technological advances in energy.",
+
+    "GOAL3": "Develop self-learning and communication skills.",
+
+    "GOAL4": "Qualify graduates for postgraduate studies and research",
+
+    "GOAL5": "Promote professional and ethical values.",
+
+    "GOAL6": "Enable work in local, regional, and international markets.",
+
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+
+    "BENEFICIARYSECTOR1": "Graduates can work locally and internationally in power generation and distribution, solar and wind plants, green hydrogen projects, energy consulting and marketing, research institutes, control systems, factories, contracting, and private companies.",
+
+    "TABLE": "The program consists of 198 credit hours:",
+
+    "NUMBER": "No.",
+
+    "REQ": "Requirement",
+
+    "TOTALHOURS": "Total Hours in the Program",
+
+    "REQ1": "University Requirements",
+
+    "HOURS1": "14 Hour",
+
+    "REQ2": "Faculty requirements",
+
+    "HOURS2": "34 Hour",
+
+    "REQ3": "Compulsory specialization requirements",
+
+    "HOURS3": "84 Hour",
+
+    "REQ4": "Elective specialization requirements",
+
+    "HOURS4": "24 Hour",
+
+    "REQ5": "Field training",
+
+    "HOURS5": "2 Hour",
+
+    "REQ6": "Graduation project",
+
+    "HOURS6": "6 Hour",
+
+    "PROGRAMSCEDULE": "Program Schedules",
+
+    "FSCEDULE": "First Year Schedule",
+
+    "SSCEDULE": "Second Year Schedule",
+
+    "TSCEDULE": "Third Year Schedule",
+
+    "FOSCEDULE": "Forth Year Schedule",
+
+    "EVENTSTITLE": "Engineering events' You May Like",
+
+    "EVENT1": "Celebration of World Physiotherapy Day 2025",
+
+    "EVENT2": "Reception Ceremony for Students 2024–2025",
+
+    "EVENT3": "Scientific Day for Exercise Physiology Course and Honoring the Course Instructor"
+
+},
+
+  "BIOCHEMISTRY": {
+    "TITLE": "Biochemistry and Microbiology",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": " Nabil Hasona",
+    "progrmmannagerdesc": " Professor",
+    "PROGRAMMANAGERBIO": "Prof. Dr. Nabil A. Hasona is working as a coordinator of Biochemistry- Microbiology program at BSNU and Professor of Biochemistry at Faculty of Science, Beni-Suef University , Egypt. He is involved in multidisciplinary research to decipher real life problems from the environment to human diseases. Prof. Nabil’s main research area includes biochemistry, enzymology, biomolecules, molecular biology, human diseases as well as microbiological and biotechnological approaches in these areas. He has published more than 50 research articles in reputed international journals. Used to teach basic and clinical science hybrid curriculum that include systems-based active learning strategies such a PBL and TBL. Excellent outcome based teaching and research skills to higher education sector that includes administrative ability as well as training skill. Eager to join any prestigious institution for challenging education.",
+    "DURATION": "Duration:",
+    "DURATION2": "Four years",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Biochemist and Microbiologist (Laboratory Health)",
+    "STUDYSYSTEM": "Study system and number of hours:",
+    "CREDITHOURS": "198 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "BSc in Science – Biochemistry-Microbiology Program",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "1072",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Biochemistry and Microbiology",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "Preparing qualified personnel in the field of biochemistry and microbiology with practical skills aligned with international standards, capable of providing high-quality services that meet community needs.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "Leadership and innovation in the field of biochemistry and microbiology.",
+    "GOALS": "goals",
+    "GOAL1": "Demonstrate fundamental knowledge of biochemical and microbiological principles.",
+    "GOAL2": "Apply practical training methodologies to achieve professional competence.",
+    "GOAL3": "Understand metabolic interactions of living organisms with their environment.",
+    "GOAL4": "Use biochemical foundations in toxin control and food quality.",
+    "GOAL5": "Apply techniques and methods used in biochemistry and microbiology.",
+    "GOAL6": "Develop laboratory skills using modern technologies.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Egyptian public, private, and non-governmental universities.",
+    "BENEFICIARYSECTOR2": "Relevant research centers and ministries.",
+    "BENEFICIARYSECTOR3": "Serum and Vaccine Authority.",
+    "BENEFICIARYSECTOR4": "Food and Drug Authority.",
+    "BENEFICIARYSECTOR5": "Ministry of Health laboratories.",
+    "BENEFICIARYSECTOR6": "Food factories and biotechnology companies.",
+    "BENEFICIARYSECTOR7": "Cosmetics manufacturing companies.",
+    "BENEFICIARYSECTOR8": "Marketing and public relations in pharmaceutical and nutraceutical companies.",
+    "TABLE": "The program consists of 198 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "8 Hour",
+    "REQ2": "Computer Requirements",
+    "HOURS2": "6 Hour",
+    "REQ3": "Faculty Requirements",
+    "HOURS3": "36 Hour",
+    "REQ4": "Program Requirements",
+    "HOURS4": "82 Hour",
+    "REQ5": "Field Training",
+    "HOURS5": "2 Hour",
+    "REQ6": "Graduation Projects",
+    "HOURS6": "2 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Biochemistry and Microbiology events' You May Like",
+    "EVENT1": "Celebration of World Physiotherapy Day 2025",
+    "EVENT2": "Reception Ceremony for Students 2024–2025",
+    "EVENT3": "Scientific Day for Exercise Physiology Course and Honoring the Course Instructor"
+  },
+ "MEDICAL_INFORMATICS": {
+    "TITLE": "Medical Informatics",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+     "PROGRAMMANNAGERNAME": "Sherif Mostafa Hashad",
+    "progrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Dr. Sherif Mostafa Hashad is a Lecturer at the Faculty of Computers and Artificial Intelligence, Beni-Suef University, Egypt, with over 20 years of technical experience in digital transformation and more than 10 years of academic experience in teaching and curriculum development. He holds a Ph.D. in Information Systems from Menoufia University, with research focused on adaptive frameworks for Arabic text classification using advanced machine learning techniques.\nDr. Hashad has a strong background in software engineering, software testing, and project management, having worked with organizations such as the Egyptian Council of State and KHABEER Software Industries. He currently serves as program coordinator, Artificial Intelligence and Data Science, Beni Suef National University. Also, he served as the Vice Manager of the University Electronic Portal, contributing to digital transformation initiatives and system development.\nHis research interests include artificial intelligence, natural language processing, and Arabic text classification. He has published multiple papers in international journals and conferences, reflecting his commitment to academic research and continuous professional development.",
+    "DURATION": "Duration:",
+    "DURATION2": "4 years ",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Assistant Professor",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "Credit point system – 141 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor of Computer Science.",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "72",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Medical Informatics",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "Providing an outstanding and specialized model aimed at being among the best technical programs that meet the needs of the business sector in the medical field to support and develop health systems",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "Supporting and supplying the community with distinguished, effective graduates who are capable of competing in the field of advanced medical informatics, and able to provide the community with specialized scientific competencies",
+    "GOALS": "goals",
+    "GOAL1": "Preparing skilled medical informatics professionals with advanced IT and computer science expertise to solve healthcare problems.",
+    "GOAL2": "Preparing graduates to meet local, regional, and global labor needs by developing software for medical and related fields.",
+    "GOAL3": "Deepening scientific awareness and applied research in the field of medical informatics.",
+    "GOAL4": "Preparing skilled professionals to collect, analyze, and interpret medical record data for research and comprehensive healthcare.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Medical data analysis institutions",
+    "BENEFICIARYSECTOR2": "Medical information systems departments",
+    "BENEFICIARYSECTOR3": "Research and development institutions in healthcare technology",
+    "BENEFICIARYSECTOR4": "Medical information security and data protection departments",
+    "BENEFICIARYSECTOR5": "Software houses for development and integration of health systems",
+    "TABLE": "The program consists of 141 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "14 Hour",
+    "REQ2": "Mathematics and Basic Sciences",
+    "HOURS2": "25 Hour",
+    "REQ3": "Computer Sciences – Basic (College Requirements)",
+    "HOURS3": "40 Hour",
+    "REQ4": "Applied Sciences (Specialization Requirements)",
+    "HOURS4": "43 Hour",
+    "REQ5": "Field Training",
+    "HOURS5": "3 Hour",
+    "REQ6": "Graduation Project",
+    "HOURS6": "6 Hour",
+    "REQ7": "Institution-Determined Topics (Specialized Labs)",
+    "HOURS7": "10 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Medical Informatics events' You May Like",
+    "EVENT1": "World Heart Day Seminar – Dr. Mohamed Medhat",
+    "EVENT2": "The First Student Conference of the Medicine and Surgery",
+    "EVENT3": "Participation in the “Givers of Hope” Initiative "
+  },
+  "NAVIGATION_SCIENCES": {
+    "TITLE": "Navigation Sciences and Space Technology",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Mohamed Murad",
+    "progrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Dr. Mohamed Murad, PhD in Environmental Technology (LUT, Finland, 2015), is an expert in hydrology, water quality, and environmental geochemistry. He teaches and supervises graduate students at Beni-Suef University and has collaborated with multiple international institutions. He has contributed to research on Lake Qarun, wastewater treatment, and global river systems, published in high-impact journals, and consulted on the EU-funded Fayoum Wastewater Expansion Programme. He is also active in science communication and sustainable water management initiatives.",
+    "DURATION": "Duration:",
+    "DURATION2": "5 years",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Applied Space and Navigation Sciences Specialist - Space Navigation Specialist",
+    "STUDYSYSTEM": "Study system and number of hours:",
+    "CREDITHOURS": "164 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor’s in Navigation Sciences & Space Technology",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "80",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Navigation Sciences and Space Technology",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "Build a strong scientific foundation in navigation sciences and space technology through advanced academic programs that meet standards, qualify graduates for the job market, support research, and achieve academic excellence and accreditation.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "The program prepares graduates to analyze, design, and implement satellite systems, space navigation satellites, and their applications.",
+    "GOALS": "goals",
+    "GOAL1": "Provide core foundations in navigation and space sciences and their applications.",
+    "GOAL2": "Equip students with modern scientific and technological knowledge.",
+    "GOAL3": "Teach satellite assembly, design, and development methods.",
+    "GOAL4": "Keep students updated with recent advances in navigation and space sciences.",
+    "GOAL5": "Prepare skilled professionals to apply navigation and space technologies to societal needs.",
+    "GOAL6": "Integrate navigation and space sciences with fields such as communications, meteorology, aviation, maritime navigation, and space media.",
+    "GOAL7": "Develop innovation and problem-solving skills through research and applied graduation projects.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "National Authority for Remote Sensing and Space Sciences",
+    "BENEFICIARYSECTOR2": "Egyptian, African, and International Space Agencies",
+    "BENEFICIARYSECTOR3": "Satellite ground stations (control, reception, tracking)",
+    "BENEFICIARYSECTOR4": "Telecommunications and networking companies",
+    "BENEFICIARYSECTOR5": "Civil Aviation Authority",
+    "BENEFICIARYSECTOR6": "Satellite companies and applications",
+    "BENEFICIARYSECTOR7": "Airports, seaports, and maritime ports",
+    "BENEFICIARYSECTOR8": "Universities and scientific research centers",
+    "TABLE": "The program consists of 136 credit hours :",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "8 Hour",
+    "REQ2": "Computer Requirements",
+    "HOURS2": "6 Hour",
+    "REQ3": "College Requirements",
+    "HOURS3": "32 Hour",
+    "REQ4": "Major Requirements",
+    "HOURS4": "116 Hour",
+    "REQ5": "Field Training",
+    "HOURS5": "3 Hour",
+    "REQ6": "Graduation Project",
+    "HOURS6": "5 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "EVENTSTITLE": "Program of Navigation Sciences events' You May Like",
+    "EVENT1": "Honoring Outstanding Students (Top of the Program, Academic Year 2024/2025).",
+    "EVENT2": "Participation of Beni Suef National University Navigation and Space Program students in summer training at Damietta Port",
+    "EVENT3": "The second group of Applied Space and Navigation Sciences students at Beni Suef National University in a training program at the Egyptian Space Agency"
+  },
+"PHYSICAL_THERAPY": {
+
+    "TITLE": "Physical Therapy",
+
+    "DESC": "Explore Our Comprehensive Programs",
+
+    "COURSEINCLUDE": "Course Includes:",
+
+    "PROGRAMMANNAGE": "Program manager:",
+
+    "PROGRAMMANNAGERNAME": "Dr. Dina Al-Amir",
+
+    "progrmmannagerdesc": "Lecturer",
+
+    "PROGRAMMANAGERBIO": "Dr. Dina Al-Amir is a Lecturer in the Department of Basic Sciences and Biomechanics at the Faculty of Physical Therapy, Beni-Suef University, and the Director of the Physical Therapy Program at Beni-Suef National University. She obtained her Bachelor's Degree in Physical Therapy from Cairo University in 2009, followed by a Master's Degree in Basic Sciences from Cairo University in 2015 and a Ph.D. in Basic Sciences from Cairo University in 2021. She has served in several academic and administrative roles, including membership and leadership of the Examination Control Committees at the Faculty of Physical Therapy, Beni-Suef University, and the Physical Therapy Program at Beni-Suef National University. She has taught undergraduate courses including Biomechanics, Manual Therapy, Hydrotherapy, Therapeutic Exercises, and Measurements and Evaluation. She also teaches Master's degree students and participates in the academic supervision of postgraduate theses. Her research interests focus primarily on Evidence-Based Practice in Physical Therapy, with an active research profile and scientific publications in the field. Her professional experience includes academic teaching, scientific research, postgraduate supervision, academic program administration, and educational organizational activities.",
+
+    "DURATION": "Duration:",
+
+    "DURATION2": "6 years (Five years + internship year)",
+
+    "JOBTITLE": "job titles:",
+
+    "DOCTOR": "Physiotherapist",
+
+    "STUDYSYSTEM": "Study system:",
+
+    "CREDITHOURS": "198 credit hours and 36 credit hour for internship year",
+
+    "ACADEMICDEGREE": "academic degree",
+
+    "BECLOR": "Bachelor of Physical Therapy",
+
+    "STUDENTS": "Students:",
+
+    "STUDENTSNUMBER": "72",
+
+    "SHAREON": "Share on :",
+
+    "CATEGORY": "Category",
+
+    "FACULTYNAME": "Faculty of Physical Therapy",
+
+    "MISSION": "mission",
+
+    "PROGRAMMISSION": "Preparing competent graduates to meet local labor market needs and researchers who advance the profession, all within a framework of community values and lifelong learning.",
+
+    "VISSION": "Vission",
+
+    "PROGRAMVISSION": "Striving for leadership and excellence in the field of physiotherapy locally and regionally.",
+
+    "GOALS": "goals",
+
+    "GOAL1": "The program aims to prepare well-rounded graduates who excel in various work environments.",
+
+    "GOAL2": "Advance physiotherapy education and research.",
+
+    "GOAL3": "Improve health services, and contribute to Egypt’s Vision 2030 and societal development.",
+
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+
+    "BENEFICIARYSECTOR1": "Hospitals, rehabilitation centers, nursing homes, research institutions, schools and universities, factories, and sports clubs.",
+
+    "TABLE": "The program consists of 198 credit hours:",
+
+    "NUMBER": "No.",
+
+    "REQ": "Requirement",
+
+    "TOTALHOURS": "Total Hours in the Program",
+
+    "REQ1": "University Requirements",
+
+    "HOURS1": "14 Hour",
+
+    "REQ2": "College and General Major Requirements",
+
+    "HOURS2": "184 Hour",
+
+    "REQ3": "Internship Year Requirements",
+
+    "HOURS3": "36 Hour",
+
+    "PROGRAMSCEDULE": "Program Schedules",
+
+    "FSCEDULE": "First Year Schedule",
+
+    "SSCEDULE": "Second Year Schedule",
+
+    "TSCEDULE": "Third Year Schedule",
+
+    "FOSCEDULE": "Forth Year Schedule",
+
+    "EVENTSTITLE": "Physical Therapy events' You May Like",
+
+    "EVENT1": "Celebration of World Physiotherapy Day 2025",
+
+    "EVENT2": "Reception Ceremony for Students 2024–2025",
+
+    "EVENT3": "Scientific Day for Exercise Physiology Course and Honoring the Course Instructor"
+
+  },
+  "NURSING": {
+    "TITLE": "Nursing",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Dr. Seham Mohammed Elmwafie",
+    "progrmmannagerdesc": "Professor",
+    "PROGRAMMANAGERBIO": "Professor of Pediatric Nursing and Dean of the Faculty of Nursing (Program Director) at Beni-Suef National University, and Vice Dean for Education and Students' Affairs at the Faculty of Nursing, Beni-Suef University, Egypt.\n\nShe holds a PhD in Nursing Sciences (Pediatric and Neonatal Nursing) from Ain Shams University. Prof. Elmwafie has extensive academic and administrative experience in pediatric nursing, quality assurance, accreditation, and curriculum development. She has held several leadership positions in Egyptian universities and served as an Assistant Professor at Al Jouf University, Saudi Arabia.\n\nHer scholarly work includes numerous publications in nationally and internationally indexed journals (Q1–Q3), active participation and leadership in scientific conferences, and supervision of Master's and PhD theses. Her research interests focus on child health, pediatric nursing care, healthcare quality, patient safety, and evidence-based nursing interventions.",
+    "DURATION": "Duration:",
+    "DURATION2": "4 years + 1 internship year",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Nursing Specialist",
+    "STUDYSYSTEM": "Study system:",
+    "CREDITHOURS": "The degree is awarded upon fulfillment of the program requirements.",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "Bachelor of Nursing",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "7000",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Nursing",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "The program aims to graduate a nursing specialist qualified with nursing competencies that enable them to provide comprehensive nursing care meeting community needs through scientific research and evidence-based practice.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "Achieving excellence in nursing education to keep pace with advances in modern sciences and meet community needs and the requirements of the local, regional, and international labor market.",
+    "GOALS": "goals",
+    "GOAL1": "Preparing qualified and competent nursing professionals.",
+    "GOAL2": "Developing effective professional communication skills.",
+    "GOAL3": "Promoting health awareness and leadership in the community.",
+    "GOAL4": "Equipping students with essential knowledge, skills, and problem-solving abilities",
+    "GOAL5": "Emphasizing professional ethics, integrity, and teamwork.",
+    "GOAL6": "Building competence in information technology and modern techniques.",
+    "GOAL7": "Developing advanced curricula aligned with international standards.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Healthcare institutions locally and internationally.",
+    "TABLE": "The program consists of 141 credit hours distributed as follows::",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "Level 1 – First Semester",
+    "HOURS1": "43",
+    "REQ2": "Level 1 – Second Semester",
+    "HOURS2": "41",
+    "REQ3": "Level 2 – First Semester",
+    "HOURS3": "43",
+    "REQ4": "Level 2 – Second Semester",
+    "HOURS4": "48",
+    "REQ5": "Level 3 – First Semester",
+    "HOURS5": "43",
+    "REQ6": "Level 3 – Second Semester",
+    "HOURS6": "42",
+    "REQ7": "Level 4 – First Semester",
+    "HOURS7": "47",
+    "REQ8": "Level 4 – Second Semester",
+    "HOURS8": "47",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Fourth Year Schedule",
+    "EVENTSTITLE": "Nursing events' You May Like",
+    "EVENT1": "World Heart Day Seminar – Dr. Mohamed Medhat",
+    "EVENT2": "The First Student Conference of the Medicine and Surgery Program",
+    "EVENT3": "Participation in the “Givers of Hope” Initiative "
+  },
+  "GIS": {
+    "breadcrumb_title": "Surveying, Mapping and Geographic Information Systems Program",
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+    "alt_title": "Information Systems and Electronic Archiving",
+    "course_includes": "Course Includes:",
+    "program_manager_label": "Program manager:",
+    "program_manager_name": "Anwar Sayed Kamel",
+    "duration_label": "Duration:",
+    "duration_value": "Four academic levels (eight semesters)",
+    "job_titles_label": "job titles:",
+    "job_titles_value": "Surveyor and Geographic Information Systems Specialist",
+    "study_system_label": "Study system and number of hours:",
+    "study_system_value": "136 credit hours",
+    "academic_degree_label": "academic degree :",
+    "degree_value": "Bachelor of Arts in Surveying, Mapping, and Geographic Information Systems",
+    "students_label": "Students:",
+    "students_number": "140",
+    "share_on": "Share on :",
+    "doctor": "Doctor",
+    "category": "Category",
+    "category_value": "Surveying, Mapping and Geographic Information Systems Program",
+    "program_title": "Surveying, Mapping and Geographic Information Systems Program",
+    "program_manager_title": "Program Manager",
+    "manager_name": "Anwar Sayed Kamel",
+    "manager_designation": "Associate Professor",
+    "manager_bio": "Dr. Anwar Sayed Kamel, Associate Professor of Geopolitics and Geographic Information Systems (GIS) Faculty of Arts, Beni-Suef University An Associate Professor of Geopolitics and Geographic Information Systems (GIS) at the Faculty of Arts, Beni-Suef University, with over 20 years of academic experience in teaching and scientific research.",
+    "mission_title": "mission",
+    "mission_desc": "Developing professional cadres in electronic archiving equipped with research skills and self-learning abilities to meet market needs in line with Egypt’s Vision 2030.",
+    "vision_title": "vision",
+    "vision_desc": "To provide a distinguished academic program in electronic archiving that prepares graduates to assume professional responsibility in a rapidly evolving knowledge environment.",
+    "goals_title": "goals",
+    "goals": [
+      "Provide students with scientific knowledge and professional qualifications in electronic archiving.",
+      "Equip students with research and self-learning skills to keep pace with knowledge development.",
+      "Instill professional archival ethics, balancing access to information and privacy.",
+      "Develop students’ skills to serve the community in line with the country’s Sustainable Development Vision 2030."
+    ],
+    "beneficiary_title": "beneficiary sectors",
+    "beneficiary_sectors": [
+      "Petroleum, mining, and natural gas companies",
+      "Crisis management, support, and decision-making bodies",
+      "Bodies concerned with managing transportation and communications services",
+      "Bodies concerned with managing planning and construction departments",
+      "The Air Survey Authority, the Geological Survey Authority, and the Military Survey Authority.",
+      "Electronic archiving in courts, banks, private companies, and other institutions."
+    ],
+    "program_hours_title": "The program consists of 136 credit hours :",
+    "table_no": "No.",
+    "table_requirement": "Requirement",
+    "table_total_hours": "Total Hours in the Program",
+    "req1": "University Requirements",
+    "hours1": "16 Hour",
+    "req2": "College Requirements",
+    "hours2": "16 Hour",
+    "req3": "Specialization Requirements",
+    "hours3": "98 Hour",
+    "req4": "Field Training",
+    "hours4": "3 Hour",
+    "req5": "Graduation Project",
+    "hours5": "3 Hour",
+    "program_schedules": "Program Schedules",
+    "first_year": "First year Schedules",
+    "second_year": "Second year Schedules",
+    "third_year": "Third year Schedules",
+    "forth_year": "Forth year Schedules",
+    "events_title": "Program of Petroleum Geology and Mining events' You May Like",
+    "event1": "An orientation seminar on the job market in Surveying and Geographic Information Systems",
+    "event2": "Practical training sessions conducted within the Private University"
+  },
+  "ARCHIVE": {
+    "breadcrumb_title": "Information Systems and Electronic Archiving",
+    "breadcrumb_desc": "Explore Our Comprehensive Programs",
+    "course_includes": "Course Includes:",
+    "program_manager_label": "Program manager:",
+    "program_manager_name": "Anwar Sayed Kamel",
+    "duration_label": "Duration:",
+    "duration_value": "Four academic levels (eight semesters)",
+    "job_titles_label": "job titles:",
+    "job_titles_value": "Archives and Information Systems Specialist - Electronic Archives Specialist",
+    "study_system_label": "Study system and number of hours:",
+    "study_system_value": "136 credit hours",
+    "academic_degree_label": "academic degree :",
+    "degree_value": "Bachelor's Degree in Information Systems and Electronic Archiving",
+    "students_label": "Students:",
+    "students_number": "140",
+    "share_on": "Share on :",
+    "doctor": "Doctor",
+    "category": "Category",
+    "category_value": "Information Systems and Electronic Archiving",
+    "program_title": "Information Systems and Electronic Archiving",
+    "program_manager_title": "Program Manager",
+    "manager_name": "Anwar Sayed Kamel",
+    "manager_designation": "Associate Professor",
+    "manager_bio": "Dr. Anwar Sayed Kamel, Associate Professor of Geopolitics and Geographic Information Systems (GIS) Faculty of Arts, Beni-Suef University An Associate Professor of Geopolitics and Geographic Information Systems (GIS) at the Faculty of Arts, Beni-Suef University, with over 20 years of academic experience in teaching and scientific research.",
+    "mission_title": "mission",
+    "mission_desc": "Developing professional cadres in electronic archiving equipped with research skills and self-learning abilities to meet market needs in line with Egypt’s Vision 2030.",
+    "vision_title": "vision",
+    "vision_desc": "To provide a distinguished academic program in electronic archiving that prepares graduates to assume professional responsibility in a rapidly evolving knowledge environment.",
+    "goals_title": "goals",
+    "goals": [
+      "Provide students with scientific knowledge and professional qualifications in electronic archiving.",
+      "Equip students with research and self-learning skills to keep pace with knowledge development.",
+      "Instill professional archival ethics, balancing access to information and privacy.",
+      "Develop students’ skills to serve the community in line with the country’s Sustainable Development Vision 2030."
+    ],
+    "beneficiary_title": "beneficiary sectors",
+    "beneficiary_sectors": [
+      "Companies specialized in designing automated electronic archiving software.",
+      "Information systems units in both the public and private sectors.",
+      "The Ministry of Communications, in cooperation with Cisco Information Technology.",
+      "The Administrative Development Organization of the League of Arab States.",
+      "The Arab Federation for Libraries and Information.",
+      "Electronic archiving in courts, banks, private companies, and other institutions."
+    ],
+    "program_hours_title": "The program consists of 136 credit hours :",
+    "table_no": "No.",
+    "table_requirement": "Requirement",
+    "table_total_hours": "Total Hours in the Program",
+    "req1": "University Requirements",
+    "hours1": "16 Hour",
+    "req2": "College Requirements",
+    "hours2": "16 Hour",
+    "req3": "Specialization Requirements",
+    "hours3": "98 Hour",
+    "req4": "Field Training",
+    "hours4": "3 Hour",
+    "req5": "Graduation Project",
+    "hours5": "3 Hour",
+    "table_row1_no": "1",
+    "table_row1_requirement": "Level 1 (First Semester)",
+    "table_row1_hours": "33 Hour",
+    "table_row2_no": "2",
+    "table_row2_requirement": "Level 1 (Second Semester)",
+    "table_row2_hours": "35 Hour",
+    "table_row3_no": "2",
+    "table_row3_requirement": "Level 2 (First Semester)",
+    "table_row3_hours": "16 Hour",
+    "table_row4_no": "3",
+    "table_row4_requirement": "Level 2 (Second Semester)",
+    "table_row4_hours": "37 Hour",
+    "table_row5_no": "4",
+    "table_row5_requirement": "Level 3 (First Semester)",
+    "table_row5_hours": "33 Hour",
+    "table_row6_no": "5",
+    "table_row6_requirement": "Level 3 (Second Semester)",
+    "table_row6_hours": "4 Hour",
+    "table_row7_no": "6",
+    "table_row7_requirement": "Level 4 (First Semester)",
+    "table_row7_hours": "16 Hour",
+    "table_row8_no": "7",
+    "table_row8_requirement": "Level 4 (Second Semester)",
+    "table_row8_hours": "18 Hour",
+    "program_schedules": "Program Schedules",
+    "first_year": "First year Schedules",
+    "second_year": "Second year Schedules",
+    "third_year": "Third year Schedules",
+    "forth_year": "Forth year Schedules",
+    "events_title": "Information Systems and Electronic Archiving events' You May Like",
+    "event1": "An orientation seminar on the job market in Electronic Archiving",
+    "event2": "Practical training sessions in electronic archiving"
+  },
+  "PETROLEUM_MINING": {
+    "TITLE": "Petroleum Geology and Mining",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Mahmoud Abdel Wahed",
+    "progrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Dr. Mahmoud S. M. Abdel Wahed, PhD in Environmental Technology (LUT, Finland, 2015), is an expert in hydrology, water quality, and environmental geochemistry. He teaches and supervises graduate students at Beni-Suef University and has collaborated with multiple international institutions. He has contributed to research on Lake Qarun, wastewater treatment, and global river systems, published in high-impact journals, and consulted on the EU-funded Fayoum Wastewater Expansion Programme. He is also active in science communication and sustainable water management initiatives.",
+    "DURATION": "Duration:",
+    "DURATION2": "4 years",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Petroleum & Mining Geologist - Exploration Geologist - Drilling Geologist",
+    "STUDYSYSTEM": "Study system and number of hours:",
+    "CREDITHOURS": "136 credit hours",
+    "ACADEMICDEGREE": "academic degree",
+    "BECLOR": "BSc in Petroleum Geology and Mining",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "100",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Petroleum Geology and Mining",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "The Petroleum Geology and Mining at the Faculty of Science aims to train skilled professionals in petroleum geology and mining, providing practical, internationally aligned expertise. Graduates will compete nationally and globally in exploration and resource prospecting, excel in applied geology, research, and contribute to community service.",
+    "VISSION": "vision",
+    "PROGRAMVISSION": "Foster leadership and innovation in petroleum geology and mining, aiming to graduate highly skilled professionals ready for global competition.",
+    "GOALS": "goals",
+    "GOAL1": "Provide graduates with unique knowledge and skills in Petroleum Geology and Mining not offered in other Upper Egypt universities.",
+    "GOAL2": "Introduce a specialized bachelor's program at Beni-Suef National University to meet local and regional labor market needs.",
+    "GOAL3": "Establish collaboration with Egyptian ministries and authorities in Petroleum Geology and Mining.",
+    "GOAL4": "Develop partnerships with national petroleum and mining companies and international universities.",
+    "GOAL5": "Enhance graduates' and researchers' capabilities through participation in advanced research projects in the petroleum and mining fields.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Ministry of Petroleum and Mineral Resources",
+    "BENEFICIARYSECTOR2": "National and international petroleum companies",
+    "BENEFICIARYSECTOR3": "Mining and mineral companies",
+    "BENEFICIARYSECTOR4": "Quarries sector",
+    "BENEFICIARYSECTOR5": "Industrial wastewater treatment companies in petroleum and mining",
+    "BENEFICIARYSECTOR6": "Cement and gypsum factories",
+    "BENEFICIARYSECTOR7": "Ceramics factories",
+    "BENEFICIARYSECTOR8": "Paint manufacturing factories",
+    "BENEFICIARYSECTOR9": "Ministry of Environment",
+    "TABLE": "The program consists of 136 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements",
+    "HOURS1": "8 Hour",
+    "REQ2": "Computer Requirements",
+    "HOURS2": "6 Hour",
+    "REQ3": "College Requirements",
+    "HOURS3": "36 Hour",
+    "REQ4": "Major Requirements",
+    "HOURS4": "84 Hour",
+    "REQ5": "Graduation Project",
+    "HOURS5": "2 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First year Schedules",
+    "SSCEDULE": "Second year Schedules",
+    "TSCEDULE": "Third year Schedules",
+    "EVENTSTITLE": "Program of Petroleum Geology and Mining events' You May Like",
+    "EVENT1": "Students' participation in the 2024/2025 Nuclear Materials Authority summer training",
+    "EVENT2": "Student visit to Kenoz Egypt Marble & Granite Complex, 2024/2025",
+    "EVENT3": "Photos from the 2024/2025 field trip to Abu Rawash and Qubbat Al-Hasana Reserve"
+  },
+  "INDUSTRIAL_CHEMISTRY": {
+    "TITLE": "Applied Industrial Chemistry",
+    "DESC": "Explore Our Comprehensive Programs",
+    "COURSEINCLUDE": "Course Includes:",
+    "PROGRAMMANNAGE": "Program manager:",
+    "PROGRAMMANNAGERNAME": "Dr. Abeer Enayatallah Abdel Fattah",
+    "progrmmannagerdesc": "Associate Professor",
+    "PROGRAMMANAGERBIO": "Prof. Dr. Abeer Enayatallah Abdel Fattah is an Assistant Professor of Physical Chemistry at the Faculty of Science, Beni Suef University. She earned her Ph.D. through a joint supervision scholarship between Beni Suef University and the National Institute for Materials Science (NIMS) in Tsukuba, Japan. She currently serves as the Director of the Applied Industrial Chemistry Program. She has distinguished academic and research expertise in industrial chemistry and its practical applications across various production sectors. She has contributed to the development and modernization of the program’s curricula in line with accredited academic standards and labor market needs, with a strong focus on applied aspects and integrating theoretical knowledge with practical training. She is committed to promoting applied scientific research principles among students from early stages, enhancing their practical skills, and encouraging innovation and teamwork. She aims to prepare graduates who are academically and professionally qualified, capable of competing effectively, and contributing to the development of chemical industries and community service.",
+    "DURATION": "Duration:",
+    "DURATION2": "Four years",
+    "JOBTITLE": "job titles:",
+    "DOCTOR": "Graduates can work in industrial processes, quality control, labs, R&D, environmental management, safety, technical sales, or forensic analysis.",
+    "STUDYSYSTEM": "Study system and number of hours:",
+    "CREDITHOURS": "136 credit hours",
+    "ACADEMICDEGREE": "The academic degree awarded by the program:",
+    "BECLOR": "Bachelor of Science degree in Applied Industrial Chemistry",
+    "STUDENTS": "Students:",
+    "STUDENTSNUMBER": "772",
+    "SHAREON": "Share on :",
+    "CATEGORY": "Category",
+    "FACULTYNAME": "Faculty of Applied Industrial Chemistry",
+    "MISSION": "mission",
+    "PROGRAMMISSION": "The Applied Industrial Chemistry program prepares skilled graduates with practical and international-standard training, enabling them to excel in industrial sectors, research, community service, and environmental problem-solving.",
+    "VISSION": "Vission",
+    "PROGRAMVISSION": "Leadership and innovation in the field of applied industrial chemistry at the national and regional levels, and providing a promising graduate capable of competing in international forums.",
+    "GOALS": "goals",
+    "GOAL1": "Equip graduates with unique knowledge and skills in applied industrial chemistry.",
+    "GOAL2": "Align undergraduate studies with local and regional labor market needs.",
+    "GOAL3": "Establish collaboration with Egyptian ministries and relevant organizations.",
+    "GOAL4": "Develop partnerships with national companies and international universities",
+    "GOAL5": "Enhance graduates’ research skills through participation in advanced projects.",
+    "GOAL6": "The program uses continuous evaluation to ensure these objectives are met.",
+    "BENEFICIARYSECTOR": "beneficiary sectors",
+    "BENEFICIARYSECTOR1": "Ministry of Industry",
+    "BENEFICIARYSECTOR2": "Governorate factories (heavy, medium, and light industries)",
+    "BENEFICIARYSECTOR3": "Research institutes",
+    "BENEFICIARYSECTOR4": "Industrial wastewater treatment companies",
+    "BENEFICIARYSECTOR5": "Ministry of Environment",
+    "BENEFICIARYSECTOR6": "Chemistry departments",
+    "BENEFICIARYSECTOR7": "Pharmaceutical companies",
+    "BENEFICIARYSECTOR8": "Polymer, plastic, and paint factories",
+    "BENEFICIARYSECTOR9": "Cement factories - Ceramic factories",
+    "BENEFICIARYSECTOR10": "Ministry of Petroleum and Mineral Resources",
+    "BENEFICIARYSECTOR11": "Drinking Water and Wastewater Company",
+    "TABLE": "The program consists of 198 credit hours:",
+    "NUMBER": "No.",
+    "REQ": "Requirement",
+    "TOTALHOURS": "Total Hours in the Program",
+    "REQ1": "University Requirements for Humanities",
+    "HOURS1": "8 Hour",
+    "REQ2": "University Requirements",
+    "HOURS2": "6 Hour",
+    "REQ3": "Faculty Requirements",
+    "HOURS3": "28 Hour",
+    "REQ4": "Standalone Major",
+    "HOURS4": "88 Hour",
+    "REQ5": "Elective",
+    "HOURS5": "3 Hour",
+    "REQ6": "Graduation Projects",
+    "HOURS6": "3 Hour",
+    "PROGRAMSCEDULE": "Program Schedules",
+    "FSCEDULE": "First Year Schedule",
+    "SSCEDULE": "Second Year Schedule",
+    "TSCEDULE": "Third Year Schedule",
+    "FOSCEDULE": "Forth Year Schedule",
+    "EVENTSTITLE": "Applied Industrial Chemistry events' You May Like",
+    "EVENT1": "Celebration of World Physiotherapy Day 2025",
+    "EVENT2": "Reception Ceremony for Students 2024–2025",
+    "EVENT3": "Scientific Day for Exercise Physiology Course and Honoring the Course Instructor"
+  },
+  "STAFF": {
+    "PROGRAM_MANAGER": "Program Manager",
+    "DEAN": "Sector Dean",
+    "MEMBER": {
+      "11": {
+        "NAME": "Dr. Ahmed ElGendy",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "Professor and Dean of the Health Sciences Sector at Beni Suef National University",
+        "BIO": "It is my pleasure to welcome all our students and faculty members to the university’s official platform. The Health Sciences Sector is committed to serving as a cornerstone in fulfilling the university’s mission of providing advanced health education that serves the community and strengthens the healthcare system in Egypt. With the full support of the university, we continuously strive to build a comprehensive academic environment for the programs of Medicine, Dentistry, Pharmacy, Nursing, and Physical Therapy. This includes multiple cooperation protocols and the ongoing establishment of laboratories equipped with cutting-edge technologies, advanced educational simulation systems, and all necessary resources to ensure that students acquire the clinical and professional skills required by the labor market. We also work consistently to enhance local and international partnerships and to promote innovation and entrepreneurship within the health fields, in alignment with the university’s vision to become a leading model for health sciences programs at both the national and regional levels. I encourage all our students to make the most of their educational journey at the university and to actively contribute to achieving academic and professional excellence, thereby preparing themselves to become competitive graduates capable of serving the community with competence and dedication. With my sincere wishes for success and excellence."
+      },
+      "12": {
+        "NAME": "Dr. Doaa Ahmed Hamdy",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "Professor of Medicine and Surgery",
+        "BIO": "Dr. Doaa Ahmed Hamdy M.B.B.Ch., M.Sc., M.D, Professor of Medical Parasitology Faculty of Medicine Beni-Suef University, Egypt.<br><br>Previous Head of Education and Students affairs in Beni Suef National University. Previous Managing Director of Integrated Medical Program in Faculty of Medicine, Beni-Suef University. Worked in parallel as a university staff member of medical parasitology for 20 years in 3 different universities. Research interests are clinical & diagnostic human parasitology, particularly, parasitic diseases, especially those with a One Health interface. Primarily focused on genotypic variance analysis & bioinformatics of human parasites. Ongoing interest in microbiomes, novel therapeutics for parasitic diseases, and vector & vector-borne diseases. Has 24 scientific papers and research projects (funded) and internationally published; 33 scientific papers as a peer reviewer. Over 20 years, Has been teaching Medical Parasitology for undergraduate & postgraduate students. Supervised over 10 postgraduate theses."
+      },
+      "13": {
+        "NAME": "Dr. Dina Al-Amir",
+        "JOBTITLE": "Lecturer",
+        "DESCRIPTION": "Associate Professor ofPhysical Therapy",
+        "BIO": "Dr. Dina Al-Amir is a Lecturer in the Department of Basic Sciences and Biomechanics at the Faculty of Physical Therapy, Beni-Suef University, and the Director of the Physical Therapy Program at Beni-Suef National University. She obtained her Bachelor's Degree in Physical Therapy from Cairo University in 2009, followed by a Master's Degree in Basic Sciences from Cairo University in 2015 and a Ph.D. in Basic Sciences from Cairo University in 2021. She has served in several academic and administrative roles, including membership and leadership of the Examination Control Committees at the Faculty of Physical Therapy, Beni-Suef University, and the Physical Therapy Program at Beni-Suef National University. She has taught undergraduate courses including Biomechanics, Manual Therapy, Hydrotherapy, Therapeutic Exercises, and Measurements and Evaluation. She also teaches Master's degree students and participates in the academic supervision of postgraduate theses. Her research interests focus primarily on Evidence-Based Practice in Physical Therapy, with an active research profile and scientific publications in the field. Her professional experience includes academic teaching, scientific research, postgraduate supervision, academic program administration, and educational organizational activities."
+      },
+      "14": {
+        "NAME": "Dr. Walid Samir",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "Professor of Oral & Dental Medicine and Surgery",
+        "BIO": "Professor, Department of Oral and Maxillofacial Radiology. Academic Qualifications: Master's Degree in Oral and Maxillofacial Surgery, Cairo University, 2004. Master's Degree in Medical Education, Maastricht University / Suez Canal University, 2010. PhD in Oral and Maxillofacial Radiology, Cairo University, 2012."
+      },
+      "15": {
+        "NAME": "Dr. Rania Sarhan",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor of Pharm D & Clinical Pharmacy Program",
+        "BIO": "Assistant Professor, Clinical Pharmacy Department, Faculty of Pharmacy, Beni Suef University, with over 16 years of experience in administrative work and clinical research. She earned a Bachelor of Pharmacy (Excellent) in 2009, was appointed Teaching Assistant at the Faculty of Pharmacy, obtained her Master’s degree in 2015 and was promoted to Assistant Lecturer, then earned her PhD in 2019 and was appointed Lecturer in the Clinical Pharmacy Department. She was promoted to Assistant Professor in 2024."
+      },
+      "16": {
+        "NAME": "Dr. Seham Mohammed Elmwafie",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "Professor of Pediatric Nursing and Dean of the Faculty of Nursing (Program Director) at Beni-Suef National University",
+        "BIO": "Professor of Pediatric Nursing and Dean of the Faculty of Nursing (Program Director) at Beni-Suef National University, and Vice Dean for Education and Students' Affairs at the Faculty of Nursing, Beni-Suef University, Egypt.\n\nShe holds a PhD in Nursing Sciences (Pediatric and Neonatal Nursing) from Ain Shams University. Prof. Elmwafie has extensive academic and administrative experience in pediatric nursing, quality assurance, accreditation, and curriculum development. She has held several leadership positions in Egyptian universities and served as an Assistant Professor at Al Jouf University, Saudi Arabia.\n\nHer scholarly work includes numerous publications in nationally and internationally indexed journals (Q1–Q3), active participation and leadership in scientific conferences, and supervision of Master's and PhD theses. Her research interests focus on child health, pediatric nursing care, healthcare quality, patient safety, and evidence-based nursing interventions."
+      },
+      "21": {
+        "NAME": "Dr. Mohamed Mahmoud Samy",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "",
+        "BIO": " "
+      },
+      "22": {
+        "NAME": "Dr. Naguib Gerges Naguib Yacoub",
+        "JOBTITLE": "Assistant Professor",
+        "DESCRIPTION": "Assistant Professor of Mechanics and Design and Production Engineering",
+        "BIO": "Assistant Professor at the Faculty of Engineering, Beni Suef National University. Research interests: composite and nanomaterials, hydraulic and mechanical systems, renewable energy, and digital manufacturing and mechatronics."
+      },
+       "23": {
+        "NAME": "Dr. Sherif Mostafa Hashad",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor of Computer Science at Beni-Suef University's Faculty of Computers & Artificial Intelligence,",
+        "BIO": "Associate Professor of Computer Science at Beni-Suef University's Faculty of Computers & Artificial Intelligence, specializing in Artificial Intelligence, Machine Learning, and Bioinformatics. He holds a Ph.D. in Computer Science focusing on AI and wavelet methods for medical image compression, alongside an M.Sc. in Wireless Networks Security. Throughout his academic career, he has served in various leadership roles, including Director of Quality Assurance and Director of Training for Digital Transformation. His prolific research portfolio features extensive publications in high-impact journals, addressing bio-image processing, Arabic natural language processing, and medical diagnostics. Beyond his research, he brings rich teaching experience across core computer science disciplines like deep learning, algorithms, and software engineering. Also contributed to public sector digital transformation initiatives as a Software Engineer at the Central Agency for Organization and Administration. An active peer reviewer for prestigious international journals like IEEE Access, he is dedicated to advancing smart healthcare technologies. Overall, his career reflects a strong commitment to academic excellence, innovative research, and institutional development."
+      },
+      "24": {
+        "NAME": "Dr. Mohamed Arafa Ali",
+        "JOBTITLE": "Doctor",
+        "DESCRIPTION": "Program Manager at the Faculty of Computers and Artificial Intelligence (FCAI) at Beni-Suef National University.       ",
+        "BIO": "Academic and Professional Background\n\nHe currently works as a Lecturer at the Faculty of Computers and Artificial Intelligence at Beni-Suef University.\n\nHe holds a Ph.D. and a Master's degree in Computer Science from Minia University, as well as a Bachelor's degree in Computers and Artificial Intelligence from Beni-Suef University.\n\nHis scientific research primarily focuses on nature-inspired algorithms, complex multi-objective optimization problems, and machine learning applications.\n\nAdministrative Roles\n\nHe was the Director of the Alumni Unit at the Faculty of Computers and Artificial Intelligence, Beni-Suef University.\n\nHe served as a member of the International Ranking Office at the University Performance Development Center.\n\nHe is a certified digital transformation trainer accredited by the Supreme Council of Egyptian Universities.\n\nTeaching and Technical Expertise\n\nHis teaching portfolio includes core computer science courses such as Artificial Intelligence, Computer Vision, Machine Learning, Object-Oriented Programming, and Compiler Construction.\n\nHe has authored and co-authored numerous peer-reviewed research papers published in international scientific journals."
+      },  
+      "25": {
+        "NAME": "Dr. Sherif Mostafa Hashad",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor of Computer Science at Beni-Suef University's Faculty of Computers & Artificial Intelligence,",
+        "BIO": "Associate Professor of Computer Science at Beni-Suef University's Faculty of Computers & Artificial Intelligence, specializing in Artificial Intelligence, Machine Learning, and Bioinformatics. He holds a Ph.D. in Computer Science focusing on AI and wavelet methods for medical image compression, alongside an M.Sc. in Wireless Networks Security. Throughout his academic career, he has served in various leadership roles, including Director of Quality Assurance and Director of Training for Digital Transformation. His prolific research portfolio features extensive publications in high-impact journals, addressing bio-image processing, Arabic natural language processing, and medical diagnostics. Beyond his research, he brings rich teaching experience across core computer science disciplines like deep learning, algorithms, and software engineering. Also contributed to public sector digital transformation initiatives as a Software Engineer at the Central Agency for Organization and Administration. An active peer reviewer for prestigious international journals like IEEE Access, he is dedicated to advancing smart healthcare technologies. Overall, his career reflects a strong commitment to academic excellence, innovative research, and institutional development."
+      },
+      "26": {
+        "NAME": "Dr. Mahmoud Abdel-Wahed",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": " Associate Professor of Petroleum and Mining Program Director at Faculty of Science, Beni Suef National University",
+        "BIO": "Dr. Mahmoud S. M. Abdel Wahed earned his PhD in Environmental Technology from the LUT School of Engineering Science, Lappeenranta University of Technology (LUT), Finland in 2015. His doctoral research focused on the geochemistry and water quality of Lake Qarun, Egypt. With extensive teaching experience, he has instructed undergraduate and post-graduate courses in geology, hydrology, and environmental geochemistry.\n\nDr. Abdel Wahed has held visiting researcher and collaborative roles at numerous international institutions including Centre National de Recherche en Sciences des Matériaux (Tunis), Aarhus University (Denmark), University of Eastern Finland, United Arab Emirates University, Masdar Institute, and King Fahd University for Petroleum and Minerals (Saudi Arabia).\n\nHe has published numerous articles in peer-reviewed, high-impact international journals and supervises Master's and PhD students at Beni-Suef University. After returning to Egypt, he served as a consultant for the Fayoum Wastewater Expansion Programme, funded by the European Union and international banks, contributing his expertise to address Lake Qarun pollution.\n\nAs an active science communicator, Dr. Abdel Wahed has published public articles on unconventional water resources in Egypt's water scarcity context and plans to deliver public lectures on sustainable water management, funded by Beni-Suef University.\n\nHis research interests encompass hydrology, water quality, environmental impacts of human activities, and aquatic ecosystem protection. He has conducted field studies on major rivers worldwide, including the Nile (Egypt), Yangtze (China), and Teesta and Brahmaputra Rivers in the Indian Himalayas, and contributed to wastewater treatment and purification technology research.\n\nThis professional profile illustrates Dr. Abdel Wahed's multifaceted experience as an educator, researcher, consultant, and science advocate with strong international ties and impactful contributions to water resource management and environmental hydrogeochemistry."
+      },
+      "27": {
+        "NAME": "Dr. Nabil Hasona",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "Professor of Biochemistry- Microbiology program at BSNU ",
+        "BIO": "Prof. Dr. Nabil A. Hasona is working as a coordinator of Biochemistry- Microbiology program at BSNU and Professor of Biochemistry at Faculty of Science, Beni-Suef University , Egypt. He is involved in multidisciplinary research to decipher real life problems from the environment to human diseases. Prof. Nabil’s main research area includes biochemistry, enzymology, biomolecules, molecular biology, human diseases as well as microbiological and biotechnological approaches in these areas. He has published more than 50 research articles in reputed international journals. Used to teach basic and clinical science hybrid curriculum that include systems-based active learning strategies such a PBL and TBL. Excellent outcome based teaching and research skills to higher education sector that includes administrative ability as well as training skill. Eager to join any prestigious institution for challenging education."
+      },
+      "28": {
+        "NAME": "Dr. Abeer Abdelaal",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "of Biochemistry- Microbiology program at BSNU  Professor of Physical Chemistry at the Faculty of Science, Beni-Suef University.",
+        "BIO": "She earned her Ph.D. through a joint supervision scholarship between Beni-Suef University and the National Institute for Materials Science in Tsukuba, Japan. She currently serves as Director of the Applied Industrial Chemistry Program.\n\nShe applies her academic and research expertise in the fields of industrial chemistry and its practical applications across various production sectors. She has contributed to the development and modernization of the program's curriculum in accordance with accredited academic standards and labor market needs, with a strong emphasis on practical aspects and the integration of theoretical knowledge with hands-on training.\n\nShe is committed to promoting the principles of applied scientific research among students from their first year in the program, enhancing their practical skills, and encouraging innovation and teamwork. Through her leadership of the program, she strives to prepare scientifically and professionally qualified graduates who are capable of competing effectively and contributing to the development of chemical industries and community service."
+      },
+      "29": {
+        "NAME": "Dr. Mohamed Morad",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor at Space communication Engineering Dept. in faculty of Navigation Science & Space Technology (NSST), Beni-Suef university, Beni-Suef, Egypt",
+        "BIO": "M. Mourad Mabrook, received his B.Sc. and M.Sc. degrees in Electrical and Communication Engineering from Assiut University, Egypt, in 2008 and 2013, respectively. He received Ph.D. degree in communication Dept., Menia University, Egypt in 2017.\nHe is Assistant Professor at Space communication Engineering Dept. in faculty of Navigation Science & Space Technology (NSST), Beni-Suef university, Beni-Suef, Egypt. Director of Space & Navigation Applied science Program, Beni-Suef National Iniversity science 2023.\nMember of the specialized scientific committees at the Academy of Scientific Research (Space Sciences and Remote Sensing Committee)\nPublished more than 40 papers in international highly impacted journals and conferences His research interest includes, wireless communications, Space and satellite communication, 5G networks, cognitive radio, Artificial intelligence and sensors. He is a reviewer in many Elsevier and Springer Publishers' Journals."
+      },
+      "31": {
+        "NAME": "Dr. Rasha Adel Lotfy",
+        "JOBTITLE": "Professor",
+        "DESCRIPTION": "Professor of Radio and Television and Political Communication at Beni Suef University, and the Dean of the Arts, Humanities, and Social Sciences Sector at Beni Suef National University.",
+        "BIO": " She is recognized as the first woman to serve as Director of Media Programs at the Faculty of Media, Beni Suef National University.\n\nShe earned her PhD from Minya University in 2013 and has since built a distinguished academic and administrative career in media education and university leadership. Throughout her career, she has held several key positions, including Head of the Electronic Media Syndicate in Minya, Director of the Women’s Studies and Media Research Center, Coordinator of the Open Education Media Program, Head of the Radio and Television Department, Vice Dean for Community Service and Environmental Development, and Vice Dean for Education and Student Affairs.\n\nIn September 2023, Dr. Rasha was seconded as Director of Media Programs at the Faculty of Media, Beni Suef National University, and appointed Acting Dean of the Arts, Humanities, and Social Sciences Sector, which encompasses the Faculties of Media, Arts, Law, and Commerce.\n\nDr. Rasha is a graduate of the \"Women Lead\" Program (First Cohort) at the National Training Academy, a Certified International Trainer (ToT), and a member of the Arab Union for the Protection of Intellectual Property Rights. She is also an accredited trainer with the Ministries of Youth and Sports and Social Solidarity through the \"Mawadda\" Project, and serves as a member of the Media Sector Committee at the Supreme Council of Universities and the Political Participation Committee at the National Council for Women."
+      },
+      "32": {
+        "NAME": "Dr. Hesham Shaban",
+        "JOBTITLE": "Assistant Professor",
+        "DESCRIPTION": "Assistant Professor of law program at Beni Suef National University.",
+        "BIO": "Bachelor of Law (LLB) (2013) – Beni Suef University – Faculty of Law, Master’s Degree in Private Law (2015) – Beni Suef University – Faculty of Law, Diploma in Social Law (2017) – Cairo University – Faculty of Law, PhD in Social Law (2023) – Beni Suef University – Faculty of Law"
+      },
+      "33": {
+        "NAME": "Dr. Enas Fakry",
+        "JOBTITLE": "Assistant Professor",
+        "DESCRIPTION": "Assistant Professor of Commerce program at Beni Suef National University.",
+        "BIO": " Dr. Enas Fakhry, holds a Ph.D. in accounting from the Faculty of Commerce (English Section) at Beni Suef University. With a strong academic foundation and commitment to excellence, Dr. Enas has developed expertise not only in Accounting and Finance but also in soft skills and quality assurance, having completed specialized courses in these areas. As a Certified Trainer of Trainers (ToT), Dr. Enas is dedicated to advancing education and professional development, empowering students and colleagues alike through innovative teaching and training methods. Currently, Dr. Enas serves as the Program Manager of the International Accounting and Finance Program at Beni Suef National University, where they oversee curriculum design, program quality, and student success.  Dr. Enas combines academic rigor with practical leadership, striving to prepare graduates for the challenges of global finance and accounting while fostering a culture of continuous improvement and professional growth."
+      },
+      "34": {
+        "NAME": "Dr. Anwar Sayed Kamel",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor of Archives and Information Systems Program at the Faculty of Arts, Beni-Suef University",
+        "BIO": "Dr. Anwar Sayed Kamel, Associate Professor of Geopolitics and Geographic Information Systems (GIS) at the Faculty of Arts, Beni-Suef University, with over 20 years of academic experience in teaching and scientific research."
+      },
+      "35": {
+
+        "NAME": "Dr. Sherif Mamdouh Mostafa Sayed",
+        "JOBTITLE": "Lecturer (Associate Professor)",
+        "DESCRIPTION": "Associate Professor of Philosophy at the Faculty of Arts, Beni-Suef University",
+        "BIO": "Dr. Sherif Mamdouh Mostafa Sayed, PhD in Physical Geography, Faculty of Arts, Beni Suef University, awarded in 2015 with First-Class Honors and a recommendation for publication and exchange with Arab universities. He also holds a Master's degree in Geography from Beni Suef University, awarded in 2008 with an Excellent grade."
+      },
+      "36": {
+        "NAME": "Dr. Anwar Sayed Kamel",
+        "JOBTITLE": "Associate   Professor",
+        "DESCRIPTION": "Associate Professor of Political Geography and Geographic Information Systems (GIS) at the Faculty of Arts, Beni-Suef University",
+        "BIO": "Associate Professor of Political Geography and Geographic Information Systems (GIS) at the Faculty of Arts, Beni-Suef University, with over 20 years of academic experience in teaching and scientific research.\n\nAcademic Qualifications:\nHe obtained a Ph.D. in Arts (Geography) with Excellent grade and First Class Honors from Beni-Suef University in 2010. His dissertation was titled \"The Geopolitical Dimensions of Oil in the Gulf Region\" and received the Beni-Suef University Award for Best Doctoral Dissertation in 2012. He also holds a two-year Diploma in Geographic Information Systems (GIS) with Excellent grade and first rank from Ain Shams University. In addition, he has completed numerous specialized GIS training courses from Esri, along with Training of Trainers (TOT) programs in programming and internet specialization with Excellent grade from the ITC Computer Science and Information Technology Training Center, as well as TOT & SME courses.\n\nAcademic and Professional Experience:\nHe progressed through academic ranks from Teaching Assistant (2002) to Assistant Professor (2021). He has held several administrative and academic positions, including Head of the Geographic and Environmental Studies Division at the Community Service Center and Editorial Secretary of the Faculty of Arts Journal. He has extensive teaching experience in Political Geography, Geographic Information Systems (GIS), Statistical Analysis, and the Geography of the Arab World. He has taught at the Faculties of Arts, Education, Special Needs Sciences, and Commerce at Beni-Suef University, as well as at the Faculties of Arts and Education at Fayoum University.\n\nScientific Research and Publications:\nHe has produced more than 30 published research papers in local, regional, and international journals, in addition to authoring 8 books. His research focuses on Political Geography (including geopolitical analysis of regional conflicts and borders) and GIS applications in spatial analysis and services. He possesses advanced and ongoing expertise in GIS and remote sensing software, as well as field surveying using Total Station and GPS devices. He has supervised and examined numerous theses at Beni-Suef University, Cairo University, Benha University, and Mansoura University."
+      },
+     "37": {
+       "NAME": "Dr. Ahmed Shehata Abdel-Fadil",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor and Director of the Digital and Television Journalism Program at Beni Suef National University.",
+        "BIO": "Dr. Ahmed Shehata Abdel-Fadil is an Associate Professor and Director of the Digital & Television Journalism Program at Beni-Suef National University. He holds a Bachelor’s, Master’s, and PhD in Journalism from Cairo University."
+     },
+      "38": {
+        "NAME": "Dr. Ahmed Shehata Abdel-Fadil",
+        "JOBTITLE": "Associate Professor",
+        "DESCRIPTION": "Associate Professor and Director of the Digital and Television Journalism Program at Beni Suef National University.",
+        "BIO": "Dr. Ahmed Shehata Abdel-Fadil is an Associate Professor and Director of the Digital & Television Journalism Program at Beni-Suef National University. He holds a Bachelor’s, Master’s, and PhD in Journalism from Cairo University."
+      }
+    }
+  },
+  "VicePresident": {
+    "VicePresidenttitle": "Vice President",
+    "MEMBER": {
+      
+      "2": {
+        "title":"Vice President",
+        "NAME": "Dr. Rasha Mohamed",
+        "JOBTITLE": "Vice President of the University for Academic Affairs",
+        "BIO": "Prof. Rasha Mohamed Tawfiq serves as Vice President for Academic Affairs at Beni Suef National University, with extensive experience in higher education, quality assurance, and academic program development. Former Vice Dean of the Faculty of Sport Sciences for Education and Student Affairs (2019–2026), contributing to the advancement of academic and student services. Member of the Scientific Production Review Committee for faculty promotions (Cycle 14, 2022–2025) in the field of School Sports. Director of the Quality Assurance Unit, Faculty of Sport Sciences – Beni Suef University (2016–2021), leading accreditation and institutional performance improvement. Executive Director of the Support and Development of Educational Effectiveness Project (SDEE – Cycle 3), funded by the Ministry of Higher Education. Broad expertise in academic supervision, program development, quality systems, and digital transformation in higher education. Holder of professional diplomas and advanced training in strategic leadership, crisis management, quality assurance, e-learning, international publishing, human resources, NLP, and statistical analysis. Message from the Vice President for Academic Affairs Welcome to Beni Suef National University, where students are at the heart of our educational mission. We are committed to developing modern academic programs that align with scientific progress and labor market needs. Our academic affairs strive to build a flexible, quality-driven learning system that integrates theory with practice, ensuring an outstanding educational experience and clear academic pathways for students. We continuously update curricula, support faculty members, and apply fair and transparent evaluation systems to prepare graduates with knowledge, skills, and lifelong learning abilities, ready to compete locally and internationally. We look forward to making your academic journey with us a path of success and distinction. Prof. Rasha Mohamed Tawfiq Vice President for Academic Affairs.",
+        "IMAGE": "assets/vice_president/rasha.jpg"
+      },
+
+      "4": {
+        "title":"Department head",
+        "NAME": "Dr. Bassem Anwar",
+        "JOBTITLE": "Head of the Education and Student Affairs Sector",
+        "BIO": "Dear students and applicants,\nBeni Suef National University thanks you for your trust and offers high-quality education through three main sectors: Health Sciences, Engineering and Applied Sciences, and Humanities, all based on a credit-hour system.\n\nThe university continuously develops its programs to meet labor market needs, with teaching delivered by experienced professors.\n\nThree key messages:\n\nChoose your field of study carefully based on proper research, not pressure.\nUnderstand your rights and responsibilities to benefit fully and avoid issues.\nUse your time wisely to achieve your goals.\n\nWishing you all success.",
+        "IMAGE": "assets/vice_president/drbasem.jpeg"
+      }
+      ,
+      "5": {
+        "title":" President",
+        "NAME": "Tarek Ali ",
+        "JOBTITLE": "President of Benisuef National University",
+        "BIO": " - ",
+        "IMAGE": "assets/vice_president/drtarek.jpeg"
+      }
+    }
+  },
+  "CONFERENCES": {
+    "HERO": {
+      "GALLERY_LABEL": "Conference Gallery",
+      "TITLE": "Explore the most inspiring academic events.",
+      "DESCRIPTION": "Hover over each image to reveal the conference theme, a short highlight, and a bold visual feel. Click any card to see the full story and rich event details."
+    },
+    "DETAIL": {
+      "BACK_BUTTON": "Back to gallery",
+      "DATE_LABEL": "Date",
+      "LOCATION_LABEL": "Location",
+      "NOT_FOUND_TITLE": "Conference not found",
+      "NOT_FOUND_MESSAGE": "The conference information could not be loaded. Please return to the gallery and choose another item.",
+      "RETURN_BUTTON": "Return to gallery"
+    },
+    "CARDS": {
+      "GLOBAL_EDUCATION_FORUM": {
+        "TITLE": "Beni-Suef National University President Opens the Second International Conference of the Egyptian Climate Group",
+        "SUBTITLE": "Climate Change and Sustainable Development",
+        "SNIPPET": "Media Center: Dr. Tariq Ali, President of Beni-Suef Ahlia University, opened the Second International Conference of the Egyptian Climate Group.",
+        "DETAIL": "Media Center: Dr. Tariq Ali, President of Beni-Suef Ahlia University, opened the Second International Conference of the Egyptian Climate Group titled “Climate Change and Sustainable Development” at Beni-Suef Ahlia University today. The conference, held April 4-5, is a partnership between Beni-Suef Ahlia and public universities under the supervision of Dr. Abu Al-Hassan Abdel-Mawgoud, Vice President for Community Service and conference rapporteur; Dr. Enas Yahya, Vice President for International Relations; Dr. Mohamed Zaki Al-Sudeimi, President of the Egyptian Geographical Society; Dr. Mohamed Ibrahim Sharaf, Conference President; and Dr. Mohamed Fawzi Ahmed Atta, Professor of Physical Geography at the Faculty of Arts, Beni-Suef University. The opening session was attended by Dr. Abdel Aziz Abdel Latif, Professor of Climatological Geography; Dr. Masad Salama Mandour, Conference Secretary; Dr. Rasha Mohamed Tawfiq, Vice President for Academic Affairs; Dr. Hanan Suleiman, Vice President for Employment and Innovation; Dr. Shehata Sayed Ahmed, Conference Group Secretary; Dr. Ahmed El-Gendy, Dean of Health Sciences; Dr. Rasha Adel, Dean of Arts, Humanities and Social Sciences; Dr. Ahmed El-Tahami, Dean of the Engineering Sector; and Mr. Mohamed Selim, University Secretary-General. Dr. Mohamed Zaki Al-Sudeimi said the Egyptian Geographical Society is one of the oldest scientific institutions in the Middle East, founded in 1875 by Khedive Ismail to promote geographic knowledge, map study, and environmental research. The society has supported geographic research, documented natural and human change, and preserved the history of Egypt and Africa with tens of thousands of books, journals, and rare maps. It publishes a peer-reviewed scientific journal in both Arabic and foreign languages, hosts international conferences and seminars, and serves as a cultural and academic beacon. Dr. Abdel Aziz Abdel Latif of Ain Shams University said the conference aims to formulate an integrated scientific vision through essential themes covering climate change and its relationship to food and water security, the use of spatial technologies to monitor changes, the impact of climate on the environment and natural systems, the economic and social dimensions, heritage and antiquities, sustainable development under a changing climate, climate action policies, response efforts, and the religious and legislative frameworks that support resilience and sustainable development goals. Dr. Abu Al-Hassan Abdel-Mawgoud underlined the need to use this scientific event to strengthen partnerships between the university and research entities. He stressed the importance of producing actionable recommendations that help decision-makers address environmental crises and praised the university’s role as a scientific beacon aligned with Egypt Vision 2030. Dr. Enas Yahya said the conference vision centers on enhancing the role of geography and atmospheric sciences in understanding development challenges and delivering innovative, practical solutions. She added that the conference aims to deepen scientific communication and build a strong network of specialists locally and internationally. Dr. Shehata Sayed affirmed that climate studies have documented evidence of change since the late nineteenth century, resulting in alterations to the Earth’s solar energy budget and serious environmental impacts on human activity and development. The conference will issue recommendations to guide sustainable development and improve quality of life. The opening session concluded with a shield exchange between the President of Beni-Suef Ahlia University, the President of the Egyptian Geographical Society, and the President of the Egyptian-Chinese University. Honorees included Dr. Abu Al-Hassan Abdel-Mawgoud; Dr. Rasha Tawfiq, Academic Deputy; Dr. Enas Yahya; Dr. Hanan Suleiman; Dr. Abdel Aziz Abdel Latif, Professor of Climatological Geography at Ain Shams University; Dr. Youssef Abdel-Meguid, Professor of Climatological Geography at Cairo University; the late Dr. Abdelaziz Sharaf, Professor of Climatological Geography at Alexandria University; Dr. Mayada Abed Al-Qader, Vice President of the Egyptian Chinese University; Dr. Ahmed El-Gendy, Dean of Health Sciences; Dr. Rasha Adel, Dean of Humanities and Social Sciences; and Dr. Ahmed El-Tahami, Dean of Engineering.",
+
+        "TYPE": "Academic Summit",
+        "LOCATION": "Amman Conference Center"
+      },
+      "INNOVATION_IN_STEM_EXPO": {
+        "TITLE": "Beni-Suef National University President Reviews Student Projects at the First Employment Fair",
+        "SUBTITLE": "Media Center",
+        "SNIPPET": "Dr. Tariq Ali inspected student projects at the first employment fair, held under the supervision of Dr. Hanan Suleiman, with broad participation from major companies.",
+        "DETAIL": "Media Center: Dr. Tariq Ali, President of Beni-Suef Ahlia University, toured student projects displayed at the first employment fair under the supervision of Dr. Hanan Suleiman, Vice President for Employment, Innovation and Entrepreneurship. The event brought together leading companies, banks, and industrial institutions. It coincided with the graduation of the first student project cohort, and Dr. Ali praised the students’ innovative ideas for reflecting their understanding of entrepreneurship as a key tool to empower youth in the job market. He stressed that the university has always supported a national model of modern programs and applied learning closely linked to market needs, backed by an ambitious national vision and political leadership guidance.",
+
+        "TYPE": "Employment Fair",
+        "LOCATION": "Beni-Suef Ahlia University"
+      },
+      "CULTURAL_EXCHANGE_SYMPOSIUM": {
+        "TITLE": "Beni-Suef Ahlia University President Receives Fayoum Cancer Institute",
+        "SUBTITLE": "Media Center",
+        "SNIPPET": "Dr. Tariq Ali welcomed the delegation from Fayoum Cancer Institute to discuss academic, research, and alal training cooperation.",
+        "DETAIL": "Media Center: Dr. Tariq Ali, President of Beni-Suef Ahlia University, received a delegation from Fayoum Cancer Institute including Dr. Salah Abu Taleb, Chairman of the Board; Dr. Dina El-Hadqa, Executive Director; and Dr. Emad Hamdy, Director of the Training Unit. The meeting took place in the presence of Dr. Rasha Mohamed Tawfiq, Vice President for Academic Affairs; Dr. Ahmed El-Gendy, Dean of Health Sciences; Dr. Doaa Ahmed Hamdy, Director of the Human Medicine Program; Dr. Rania Sarhan, Director of the Pharmacy Program; Dr. Walid Samir, Director of the Dentistry Program; and Dr. Bassem Anwar, Head of Education and Student Affairs. Discussions focused on exchanging expertise in oncology treatment, organizing training programs for medical students, supporting scientific research, and developing human resources to elevate healthcare services for the community.",
+
+        "TYPE": "Medical Cooperation",
+        "LOCATION": "Beni-Suef Ahlia University"
+      },
+      "HEALTH_WELLNESS_CONFERENCE": {
+        "TITLE": "Signing a Contract to Supply 36 Dental Units for Training and Community Service",
+        "SUBTITLE": "Advancing Health Through Education",
+        "SNIPPET": "Acting President of Beni Suef Ahlia University Announces Signing of Contract to Supply 36 Dental Units for Training and Community Service",
+        "DETAIL": "Dr. Tariq Ali, Acting President of Beni Suef Ahlia University, announced the signing of a contract to supply 36 dental units along with an air compressor unit to operate laboratories and clinics for training purposes and to provide advanced medical services to the local community, in the presence of Dr. Shaaban Mobarez, Financial Advisor, Dr. Rasha Tawfiq, Academic Vice President, Dr. Ahmed Osama Al-Gundi, Dean of the Health Sciences Sector, Dr. Walid Samir, Director of the Dental Program, Dr. Doaa Hamdi, Director of the Human Medicine Program, and Prof. Mohamed Selim, Secretary General of the University, emphasizing that equipping the dental clinics reflects the university's commitment to developing the educational process and strengthening its community service role within the framework of its strategy to provide an integrated educational environment based on the latest medical devices and technologies, ensuring the preparation of qualified professionals capable of competing in both local and international job markets, while Dr. Rasha Tawfiq noted that the university seeks to build bridges of cooperation with the community through the imminent opening of several university clinics, Dr. Ahmed Al-Gundi confirmed that this initiative is part of the university's plan to support the health sector and ease the burden on public hospitals by providing specialized dental services, and Dr. Walid Samir stated that the supply of these units will enable the college to implement advanced training programs including simulation of various practical cases, thereby raising students' practical competency levels.",
+        "TYPE": "Health Conference",
+        "LOCATION": "Beni Suef Ahlia University"
+      }
+    }
+  },
+  "ALL_EVENTS": {
+    "TITLE": "Explore university events",
+    "INTRO": "Discover public university events and activities from our academic programs.",
+    "SEE_ALL": "See all events",
+    "PUBLIC": "University-wide",
+    "PROGRAM_EVENTS": "Program events",
+    "PROGRAM": "Program",
+    "FILTER_BY_PROGRAM": "Filter events by program",
+    "ALL_PROGRAMS": "All categories",
+    "SEARCH_LABEL": "Search events",
+    "SEARCH_PLACEHOLDER": "Search by event or program",
+    "DATE": "Date",
+    "DATE_UNANNOUNCED": "Date not provided",
+    "LOCATION": "Location",
+    "DETAILS_UNAVAILABLE": "Additional event details have not been provided.",
+    "VIEW_DETAILS": "View details",
+    "BACK": "Back to all events",
+    "BACK_HOME": "Back to home",
+    "PREVIOUS_IMAGE": "Previous image",
+    "NEXT_IMAGE": "Next image",
+    "SHOW_IMAGE": "Show image",
+    "EVENT_GALLERY": "Event photos",
+    "LOADING_EVENT": "Loading event details...",
+    "EVENT_NOT_FOUND": "Event not found",
+    "EVENT_NOT_FOUND_COPY": "The event could not be found. It may have been moved or removed.",
+    "EVENT_LOAD_FAILED": "Unable to load event",
+    "EVENT_LOAD_FAILED_COPY": "There was a problem loading this event. Please try again later.",
+    "LOADING_EVENTS": "Loading latest events...",
+    "EVENTS_LOAD_FAILED": "Events could not be loaded. Please try again later.",
+    "NO_RESULTS": "No events match your search."
+  }
+}

@@ -1,0 +1,91 @@
+<section class="department" [attr.dir]="currentLanguage === 'ar' ? 'rtl' : 'ltr'">
+  <div class="container">
+    <header class="section-title">
+      <span class="section-kicker" aria-hidden="true"></span>
+      <h1 class="title">{{ langService.translate('DEPARTMENTS.TITLE') }}</h1>
+      <p class="section-subtitle">{{ langService.translate('DEPARTMENTS.SUBTITLE') }}</p>
+    </header>
+
+    @if (loading) {
+      <p class="status-message" role="status">{{ langService.translate('DEPARTMENTS.LOADING') }}</p>
+    } @else if (loadError) {
+      <p class="status-message status-error" role="alert">{{ langService.translate('DEPARTMENTS.LOAD_ERROR') }}</p>
+    } @else if (facultySlides.length > 0) {
+      <div
+        class="carousel slide faculty-carousel"
+        id="facultyCarousel"
+        data-bs-ride="carousel"
+        data-bs-interval="5000"
+        data-bs-pause="false"
+        data-bs-wrap="true"
+        [attr.aria-label]="langService.translate('DEPARTMENTS.TITLE')">
+        @if (facultySlides.length > 1) {
+          <div class="carousel-indicators">
+            @for (slide of facultySlides; track $index; let slideIndex = $index) {
+              <button
+                type="button"
+                data-bs-target="#facultyCarousel"
+                [attr.data-bs-slide-to]="slideIndex"
+                [class.active]="slideIndex === 0"
+                [attr.aria-current]="slideIndex === 0 ? 'true' : null"
+                [attr.aria-label]="langService.translate('DEPARTMENTS.SLIDE') + ' ' + (slideIndex + 1)">
+              </button>
+            }
+          </div>
+        }
+
+        <div class="carousel-inner">
+          @for (slide of facultySlides; track $index; let slideIndex = $index) {
+            <div class="carousel-item" [class.active]="slideIndex === 0">
+              <div class="row g-4">
+                @for (faculty of slide; track $index; let facultyIndex = $index) {
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="faculty-card">
+                      <div
+                        class="faculty-image"
+                        [class.image-fallback]="faculty.imageUrl && failedImageUrls.has(faculty.imageUrl)">
+                        @if (faculty.imageUrl && !failedImageUrls.has(faculty.imageUrl)) {
+                          <img
+                            [src]="faculty.imageUrl"
+                            [alt]="facultyName(faculty)"
+                            loading="lazy"
+                            decoding="async"
+                            (error)="markImageUnavailable(faculty.imageUrl)">
+                        } @else {
+                          <span class="image-placeholder" aria-hidden="true">BSNU</span>
+                        }
+                        <span class="faculty-number" aria-hidden="true">
+                          {{ (slideIndex * 4 + facultyIndex + 1).toString().padStart(2, '0') }}
+                        </span>
+                      </div>
+                      <h2 class="faculty-name">{{ facultyName(faculty) }}</h2>
+                    </article>
+                  </div>
+                }
+              </div>
+            </div>
+          }
+        </div>
+
+        @if (facultySlides.length > 1) {
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#facultyCarousel"
+            data-bs-slide="prev"
+            [attr.aria-label]="langService.translate('DEPARTMENTS.PREVIOUS')">
+            <span class="carousel-arrow" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#facultyCarousel"
+            data-bs-slide="next"
+            [attr.aria-label]="langService.translate('DEPARTMENTS.NEXT')">
+            <span class="carousel-arrow" aria-hidden="true"></span>
+          </button>
+        }
+      </div>
+    }
+  </div>
+</section>
