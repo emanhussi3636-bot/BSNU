@@ -1,4 +1,4 @@
-<main class="course-details">
+<main class="course-details" [attr.dir]="(langService.currentLang$ | async) === 'ar' ? 'rtl' : 'ltr'">
   <p *ngIf="isLoading" class="course-details__state" role="status">
     {{ langService.translate('programs.LOADING') }}
   </p>
@@ -29,52 +29,8 @@
     </header>
 
     <div class="container course-details__layout">
-      <aside class="course-details__sidebar">
-         <section *ngIf="item.videoPath && assetUrl(item.videoPath) as videoUrl" class="course-details__panel">
-          <video controls preload="metadata" [src]="videoUrl"></video>
-        </section>
-        <section class="course-details__panel">
-          <h2>{{ langService.translate('MEDICAL.COURSEINCLUDE') }}</h2>
-          <dl>
-            <ng-container *ngIf="item.duration">
-              <dt>{{ langService.translate('MEDICAL.DURATION') }}</dt>
-              <dd>{{ item.duration }}</dd>
-            </ng-container>
-            <ng-container *ngIf="item.studySystem">
-              <dt>{{ langService.translate('MEDICAL.STUDYSYSTEM') }}</dt>
-              <dd>{{ item.studySystem }}</dd>
-            </ng-container>
-            <ng-container *ngIf="item.creditHours">
-              <dt>{{ langService.translate('MEDICAL.TOTALHOURS') }}</dt>
-              <dd>{{ item.creditHours }}</dd>
-            </ng-container>
-            <ng-container *ngIf="item.academicDegree">
-              <dt>{{ langService.translate('MEDICAL.ACADEMICDEGREE') }}</dt>
-              <dd>{{ item.academicDegree }}</dd>
-            </ng-container>
-            <ng-container *ngIf="item.jobTitles">
-              <dt>{{ langService.translate('MEDICAL.JOBTITLE') }}</dt>
-              <dd>{{ item.jobTitles }}</dd>
-            </ng-container>
-            <ng-container *ngIf="item.studentsCount !== null && item.studentsCount !== undefined">
-              <dt>{{ langService.translate('MEDICAL.STUDENTS') }}</dt>
-              <dd>{{ item.studentsCount }}</dd>
-            </ng-container>
-          </dl>
-        </section>
 
-        <section *ngIf="programImages.length" class="course-details__panel course-details__program-images">
-          <img
-            *ngFor="let image of programImages; let index = index"
-            [src]="image"
-            [alt]="item.name + ' image ' + (index + 1)"
-            loading="lazy">
-        </section>
-
-       
-      </aside>
-
-      <div class="course-details__content">
+     <div class="course-details__content">
         <section *ngIf="item.programManager as manager" class="course-details__panel course-details__panel--manager">
           <h2>{{ langService.translate('MEDICAL.PROGRAMMANNAGE') }}</h2>
           <div class="course-details__manager">
@@ -163,6 +119,63 @@
           </div>
         </section>
       </div>
+      <aside class="course-details__sidebar">
+        <section *ngIf="youtubeEmbedUrl as embedUrl" class="course-details__panel">
+          <div class="course-details__video-embed">
+            <iframe
+              [src]="embedUrl"
+              [title]="item.name + ' video'"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+        <section *ngIf="directVideoUrl as videoUrl" class="course-details__panel">
+          <video controls preload="metadata" [src]="videoUrl"></video>
+        </section>
+        <section class="course-details__panel">
+          <h2>{{ langService.translate('MEDICAL.COURSEINCLUDE') }}</h2>
+          <dl>
+            <ng-container *ngIf="item.duration">
+              <dt>{{ langService.translate('MEDICAL.DURATION') }}</dt>
+              <dd>{{ item.duration }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.studySystem">
+              <dt>{{ langService.translate('MEDICAL.STUDYSYSTEM') }}</dt>
+              <dd>{{ item.studySystem }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.creditHours">
+              <dt>{{ langService.translate('MEDICAL.TOTALHOURS') }}</dt>
+              <dd>{{ item.creditHours }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.academicDegree">
+              <dt>{{ langService.translate('MEDICAL.ACADEMICDEGREE') }}</dt>
+              <dd>{{ item.academicDegree }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.jobTitles">
+              <dt>{{ langService.translate('MEDICAL.JOBTITLE') }}</dt>
+              <dd>{{ item.jobTitles }}</dd>
+            </ng-container>
+            <ng-container *ngIf="item.studentsCount !== null && item.studentsCount !== undefined">
+              <dt>{{ langService.translate('MEDICAL.STUDENTS') }}</dt>
+              <dd>{{ item.studentsCount }}</dd>
+            </ng-container>
+          </dl>
+        </section>
+
+        <section *ngIf="programImages.length" class="course-details__panel course-details__program-images">
+          <img
+            *ngFor="let image of programImages; let index = index"
+            [src]="image"
+            [alt]="item.name + ' image ' + (index + 1)"
+            loading="lazy">
+        </section>
+
+
+      </aside>
+
+
     </div>
   </ng-container>
 </main>

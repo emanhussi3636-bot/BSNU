@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Subscription, catchError, of, switchMap } from 'rxjs';
+import { Subscription, catchError, combineLatest, of, switchMap } from 'rxjs';
 import { LanguageService } from '../services/language.service';
 import {
   UniversityRoleName,
@@ -43,6 +43,7 @@ loadError = false;
 notFound = false;
 
 private roleUser: UniversityRoleUser | null = null;
+private currentRoleName: UniversityRoleName | null = null;
 private currentLanguage: 'en' | 'ar' = 'en';
 private readonly subscriptions = new Subscription();
 
@@ -54,17 +55,12 @@ private readonly subscriptions = new Subscription();
 
   ngOnInit(): void {
     this.subscriptions.add(
-      this.langService.currentLang$.subscribe((language) => {
-        this.currentLanguage = language;
-        this.mapRoleUser();
-      })
-    );
-
-    this.subscriptions.add(
-      this.route.paramMap.pipe(
-        switchMap((params) => {
+      combineLatest([this.route.paramMap, this.langService.currentLang$]).pipe(
+        switchMap(([params, language]) => {
+          this.currentLanguage = language;
           const routeRoleName = params.get('id');
           const roleName = routeRoleName ? UNIVERSITY_ROLE_ALIASES[routeRoleName] : undefined;
+          this.currentRoleName = roleName ?? null;
           this.roleUser = null;
           this.selectedVicePresident = null;
           this.loadError = false;
@@ -77,7 +73,7 @@ private readonly subscriptions = new Subscription();
             return of(null);
           }
 
-          return this.vicePresidentService.getUserByRole(roleName).pipe(
+          return this.vicePresidentService.getUserByRole(roleName, language).pipe(
             catchError((error: unknown) => {
               console.error(`Failed to load university user for role ${routeRoleName}.`, error);
               this.loadError = true;
@@ -132,6 +128,6 @@ private readonly subscriptions = new Subscription();
       image: imageUrl,
       VIDEO: localMember?.VIDEO || ''
     };
-    this.showPresidentVideo = String(this.roleUser.id) === '5';
+    this.showPresidentVideo = this.currentRoleName === 'President';
   }
 }

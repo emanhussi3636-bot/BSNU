@@ -27,8 +27,10 @@ export interface UniversityRoleUser {
 export class VicePresidentService {
   private readonly httpClient = inject(HttpClient);
 
-  getUserByRole(roleName: UniversityRoleName): Observable<UniversityRoleUser> {
-    const params = new HttpParams().set('roleName', roleName);
+  getUserByRole(roleName: UniversityRoleName, language: 'en' | 'ar'): Observable<UniversityRoleUser> {
+    const params = new HttpParams()
+      .set('roleName', roleName)
+      .set('lang', language);
     return this.httpClient.get<UniversityRoleUser>('/api/Users/byrole', { params });
   }
 }

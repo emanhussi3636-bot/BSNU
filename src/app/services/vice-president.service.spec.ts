@@ -20,13 +20,14 @@ describe('VicePresidentService', () => {
   });
 
   it('requests a user by role name', () => {
-    service.getUserByRole('VicePresidentAcademic').subscribe((user) => {
+    service.getUserByRole('VicePresidentAcademic', 'ar').subscribe((user) => {
       expect(user.fullName).toBe('Rasha Mohamed Tawfiq');
     });
 
     const request = httpTestingController.expectOne(
       (candidate) => candidate.url === '/api/Users/byrole'
         && candidate.params.get('roleName') === 'VicePresidentAcademic'
+        && candidate.params.get('lang') === 'ar'
     );
     request.flush({
       id: '2',
