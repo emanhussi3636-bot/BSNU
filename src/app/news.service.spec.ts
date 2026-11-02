@@ -30,7 +30,7 @@ describe('NewsService', () => {
     });
 
     httpTestingController
-      .expectOne('/api/News/GetAllGroupedByCategory')
+      .expectOne('/api/News/GetAllGroupedByCategory?lang=en')
       .flush([
         {
           categoryId: 2,
@@ -55,6 +55,16 @@ describe('NewsService', () => {
           ]
         }
       ]);
+  });
+
+  it('requests grouped news in the selected language', () => {
+    service.getAllGroupedByCategory('ar').subscribe((groups) => {
+      expect(groups).toEqual([]);
+    });
+
+    httpTestingController
+      .expectOne('/api/News/GetAllGroupedByCategory?lang=ar')
+      .flush([]);
   });
 
   it('loads news details by ID', () => {

@@ -158,8 +158,51 @@ app.get('/api/Users/byrole', (req, res) => {
   void sendProxyResponse(upstreamUrl, res);
 });
 
-app.get('/api/News/GetAllGroupedByCategory', (_req, res) => {
-  void sendProxyResponse(new URL('/api/News/GetAllGroupedByCategory', apiOrigin), res);
+app.get('/api/Events', (req, res) => {
+  const lang = req.query['lang'];
+  if (lang !== undefined && lang !== 'en' && lang !== 'ar') {
+    res.status(400).json({ error: 'Unsupported events language.' });
+    return;
+  }
+
+  const upstreamUrl = new URL('/api/Events', apiOrigin);
+  if (typeof lang === 'string') {
+    upstreamUrl.searchParams.set('lang', lang);
+  }
+  void sendProxyResponse(upstreamUrl, res);
+});
+
+app.get('/api/Events/:id', (req, res) => {
+  const { id } = req.params;
+  const lang = req.query['lang'];
+  if (!/^\d+$/.test(id)) {
+    res.status(400).json({ error: 'Invalid event ID.' });
+    return;
+  }
+  if (lang !== undefined && lang !== 'en' && lang !== 'ar') {
+    res.status(400).json({ error: 'Unsupported events language.' });
+    return;
+  }
+
+  const upstreamUrl = new URL(`/api/Events/${id}`, apiOrigin);
+  if (typeof lang === 'string') {
+    upstreamUrl.searchParams.set('lang', lang);
+  }
+  void sendProxyResponse(upstreamUrl, res);
+});
+
+app.get('/api/News/GetAllGroupedByCategory', (req, res) => {
+  const lang = req.query['lang'];
+  if (lang !== undefined && lang !== 'en' && lang !== 'ar') {
+    res.status(400).json({ error: 'Unsupported news language.' });
+    return;
+  }
+
+  const upstreamUrl = new URL('/api/News/GetAllGroupedByCategory', apiOrigin);
+  if (typeof lang === 'string') {
+    upstreamUrl.searchParams.set('lang', lang);
+  }
+  void sendProxyResponse(upstreamUrl, res);
 });
 
 app.get('/api/News/GetById/:id', (req, res) => {

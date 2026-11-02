@@ -2,7 +2,6 @@ import { TestBed } from '@angular/core/testing';
 import { provideHttpClient } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { EventsService } from './events.service';
-import { environment } from './environment/environment';
 
 describe('EventsService', () => {
   let service: EventsService;
@@ -31,7 +30,7 @@ describe('EventsService', () => {
     });
 
     httpTestingController
-      .expectOne(`${environment.baseUrl}/api/Events/24?lang=ar`)
+      .expectOne('/api/Events/24?lang=ar')
       .flush({
         id: 24,
         title: 'University event',
@@ -52,7 +51,7 @@ describe('EventsService', () => {
       expect(events[0].title).toBe('University event');
     });
 
-    httpTestingController.expectOne(`${environment.baseUrl}/api/Events?lang=ar`).flush([
+    httpTestingController.expectOne('/api/Events?lang=ar').flush([
       {
         id: 24,
         title: 'University event',
@@ -75,7 +74,7 @@ describe('EventsService', () => {
       expect(events[0].title).toBe('Basketball Championship');
     });
 
-    httpTestingController.expectOne(`${environment.baseUrl}/api/Events?lang=en`).flush({
+    httpTestingController.expectOne('/api/Events?lang=en').flush({
       value: [
         {
           programId: 4,
@@ -98,5 +97,35 @@ describe('EventsService', () => {
       ],
       Count: 1
     });
+  });
+
+  it('flattens the localized program-group response', () => {
+    service.getEvents('ar').subscribe((events) => {
+      expect(events.length).toBe(1);
+      expect(events[0].programsId).toBe(4);
+      expect(events[0].title).toBe('عنوان الفعالية');
+      expect(events[0].description).toBe('وصف الفعالية');
+    });
+
+    httpTestingController.expectOne('/api/Events?lang=ar').flush([
+      {
+        programId: 4,
+        programName: 'العلاج الطبيعي',
+        events: [
+          {
+            id: 17,
+            title: 'عنوان الفعالية',
+            description: 'وصف الفعالية',
+            detail: 'تفاصيل الفعالية',
+            startDate: '2026-10-27T00:00:00',
+            endDate: '2026-10-28T00:00:00',
+            programsId: 4,
+            location: 'طب بشري',
+            isPublished: true,
+            images: []
+          }
+        ]
+      }
+    ]);
   });
 });

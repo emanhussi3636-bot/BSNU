@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { catchError, of, Subscription, switchMap } from 'rxjs';
 import { environment } from '../environment/environment';
 import { LanguageService } from '../services/language.service';
 import { NewsCategoryGroup, NewsRecord, NewsService } from '../news.service';
@@ -30,14 +30,23 @@ export class AllNewsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subscriptions.add(
-      this.langService.currentLang$.subscribe((language) => {
-        this.currentLanguage = language;
-      })
-    );
+      this.langService.currentLang$
+        .pipe(
+          switchMap((language) => {
+            this.currentLanguage = language;
+            this.isLoading = true;
+            this.loadError = false;
 
-    this.subscriptions.add(
-      this.newsService.getAllGroupedByCategory().subscribe({
-        next: (groups) => {
+            return this.newsService.getAllGroupedByCategory(language).pipe(
+              catchError((error: unknown) => {
+                console.error('Failed to load news from the API.', error);
+                this.loadError = true;
+                return of([]);
+              })
+            );
+          })
+        )
+        .subscribe((groups) => {
           this.categories = groups;
           this.newsItems = groups.flatMap((group) =>
             group.news.map((item) => ({
@@ -48,13 +57,7 @@ export class AllNewsComponent implements OnInit, OnDestroy {
             }))
           );
           this.isLoading = false;
-        },
-        error: (error: unknown) => {
-          console.error('Failed to load news from the API.', error);
-          this.loadError = true;
-          this.isLoading = false;
-        }
-      })
+        })
     );
   }
 
@@ -70,21 +73,21 @@ export class AllNewsComponent implements OnInit, OnDestroy {
 
   title(item: NewsRecord): string {
     return this.currentLanguage === 'ar'
-      ? item.titleAr || item.titleEn
-      : item.titleEn || item.titleAr;
+      ? item.titleAr || item.title || item.titleEn || ''
+      : item.titleEn || item.title || item.titleAr || '';
   }
 
   description(item: NewsRecord): string {
     const description = this.currentLanguage === 'ar'
-      ? item.descriptionAr || item.descriptionEn
-      : item.descriptionEn || item.descriptionAr;
+      ? item.descriptionAr || item.description || item.descriptionEn
+      : item.descriptionEn || item.description || item.descriptionAr;
     return description || '';
   }
 
   categoryName(item: NewsRecord): string {
     return this.currentLanguage === 'ar'
-      ? item.categoryNameAr || item.categoryNameEn
-      : item.categoryNameEn || item.categoryNameAr;
+      ? item.categoryNameAr || item.categoryName || item.categoryNameEn || ''
+      : item.categoryNameEn || item.categoryName || item.categoryNameAr || '';
   }
 
   imageUrl(item: NewsRecord): string | null {

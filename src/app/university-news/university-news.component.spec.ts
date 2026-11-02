@@ -8,37 +8,37 @@ import { UniversityNewsComponent } from './university-news.component';
 describe('UniversityNewsComponent', () => {
   let fixture: ComponentFixture<UniversityNewsComponent>;
   let language$: BehaviorSubject<'en' | 'ar'>;
+  let newsService: jasmine.SpyObj<NewsService>;
 
   beforeEach(async () => {
     language$ = new BehaviorSubject<'en' | 'ar'>('en');
-    const newsService = {
-      getAllGroupedByCategory: jasmine.createSpy().and.returnValue(of([
-        {
+    newsService = jasmine.createSpyObj<NewsService>('NewsService', ['getAllGroupedByCategory']);
+    newsService.getAllGroupedByCategory.and.callFake((language = 'en') => of([
+      {
+        categoryId: 4,
+        categoryNameEn: 'Sports',
+        categoryNameAr: 'رياضة',
+        news: [{
+          id: 5,
+          title: language === 'ar' ? 'عنوان الخبر' : 'API headline',
+          titleEn: 'API headline',
+          titleAr: 'عنوان الخبر',
+          description: language === 'ar' ? 'وصف الخبر' : 'API description',
+          descriptionEn: 'API description',
+          descriptionAr: 'وصف الخبر',
+          subTitle: null,
+          subTitleEn: null,
+          subTitleAr: null,
+          publishedAt: '2026-10-26T00:00:00',
           categoryId: 4,
+          categoryName: language === 'ar' ? 'الرياضة' : 'Sports',
           categoryNameEn: 'Sports',
           categoryNameAr: 'رياضة',
-          news: [{
-            id: 5,
-            title: 'API headline',
-            titleEn: '',
-            titleAr: '',
-            description: 'API description',
-            descriptionEn: null,
-            descriptionAr: null,
-            subTitle: null,
-            subTitleEn: null,
-            subTitleAr: null,
-            publishedAt: '2026-10-26T00:00:00',
-            categoryId: 4,
-            categoryName: 'Sports',
-            categoryNameEn: '',
-            categoryNameAr: '',
-            programsId: 4,
-            images: ['http://bsnudash.runasp.net/images/news/image.jpeg']
-          }]
-        }
-      ]))
-    };
+          programsId: 4,
+          images: ['http://bsnudash.runasp.net/images/news/image.jpeg']
+        }]
+      }
+    ]));
     const languageService = {
       currentLang$: language$.asObservable(),
       translate: (key: string) => key
@@ -64,7 +64,16 @@ describe('UniversityNewsComponent', () => {
     expect(component.newsItems.length).toBe(1);
     expect(cards.length).toBe(1);
     expect(fixture.nativeElement.textContent).toContain('API headline');
-    expect(fixture.nativeElement.textContent).toContain('API description');
+    expect(component.newsItems[0].description).toBe('API description');
     expect(fixture.nativeElement.textContent).not.toContain('First Employment Fair');
+  });
+
+  it('requests and renders the localized API news when Arabic is selected', () => {
+    language$.next('ar');
+    fixture.detectChanges();
+
+    expect(newsService.getAllGroupedByCategory).toHaveBeenCalledWith('ar');
+    expect(fixture.nativeElement.textContent).toContain('عنوان الخبر');
+    expect(fixture.nativeElement.textContent).not.toContain('API headline');
   });
 });

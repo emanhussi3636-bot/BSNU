@@ -1,16 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
-import { of } from 'rxjs';
+import { BehaviorSubject, of } from 'rxjs';
 import { FacultyserviceService } from '../services/facultyservice.service';
 import { LanguageService } from '../services/language.service';
 import { CoursesDetailsComponent } from './courses-details.component';
 
 describe('CoursesDetailsComponent', () => {
   let fixture: ComponentFixture<CoursesDetailsComponent>;
+  let language: BehaviorSubject<'en' | 'ar'>;
+  let getProgram: jasmine.Spy;
 
   beforeEach(async () => {
-    const facultyService = {
-      getProgram: jasmine.createSpy().and.returnValue(of({
+    language = new BehaviorSubject<'en' | 'ar'>('en');
+    const programResponse = {
         id: 2,
         name: 'API program name',
         description: 'API program summary',
@@ -42,17 +44,23 @@ describe('CoursesDetailsComponent', () => {
           description: 'Event details',
           images: [{ id: 1, imagePath: 'http://bsnudash.runasp.net/images/events/event.jpg' }]
         }]
-      }))
-    };
+      };
+    getProgram = jasmine.createSpy().and.callFake((_id: number | string, lang: 'en' | 'ar') =>
+      of({
+        ...programResponse,
+        name: lang === 'ar' ? 'اسم البرنامج' : programResponse.name
+      })
+    );
+    const facultyService = { getProgram };
     const languageService = {
-      currentLang$: of('en'),
+      currentLang$: language.asObservable(),
       translate: (key: string) => key
     };
 
     await TestBed.configureTestingModule({
       imports: [CoursesDetailsComponent],
       providers: [
-        { provide: ActivatedRoute, useValue: { paramMap: of(convertToParamMap({ id: '2' })) } },
+        { provide: ActivatedRoute, useValue: { paramMap: new BehaviorSubject(convertToParamMap({ id: '2' })) } },
         { provide: FacultyserviceService, useValue: facultyService },
         { provide: LanguageService, useValue: languageService }
       ]
@@ -60,6 +68,16 @@ describe('CoursesDetailsComponent', () => {
 
     fixture = TestBed.createComponent(CoursesDetailsComponent);
     fixture.detectChanges();
+  });
+
+  it('reloads program details in Arabic when the website language changes', () => {
+    expect(getProgram).toHaveBeenCalledWith('2', 'en');
+
+    language.next('ar');
+    fixture.detectChanges();
+
+    expect(getProgram).toHaveBeenCalledWith('2', 'ar');
+    expect(fixture.nativeElement.textContent).toContain('اسم البرنامج');
   });
 
   it('renders program details and images from the API response', () => {
@@ -102,6 +120,43 @@ describe('CoursesDetailsComponent', () => {
       .toBe('http://bsnudash.runasp.net/images/programs/one.jpg');
     expect((images[1] as HTMLImageElement).src)
       .toBe('http://bsnudash.runasp.net/images/programs/two.jpg');
+  });
+
+  it('embeds a YouTube video URL in the sidebar', () => {
+    fixture.componentInstance.program = {
+      ...fixture.componentInstance.program!,
+      videoPath: 'https://www.youtube.com/watch?v=oqK_RoAYBXQ'
+    };
+    fixture.detectChanges();
+
+    const iframe = fixture.nativeElement.querySelector('.course-details__video-embed iframe') as HTMLIFrameElement;
+    expect(iframe).not.toBeNull();
+    expect(iframe.src).toBe('https://www.youtube-nocookie.com/embed/oqK_RoAYBXQ');
+    expect(fixture.nativeElement.querySelector('.course-details__sidebar video')).toBeNull();
+  });
+
+  it('embeds a YouTube URL returned without a protocol by the API', () => {
+    fixture.componentInstance.program = {
+      ...fixture.componentInstance.program!,
+      videoPath: 'www.youtube.com/watch?v=oqK_RoAYBXQ&amp;feature=share'
+    };
+    fixture.detectChanges();
+
+    const iframe = fixture.nativeElement.querySelector('.course-details__video-embed iframe') as HTMLIFrameElement;
+    expect(iframe.src).toBe('https://www.youtube-nocookie.com/embed/oqK_RoAYBXQ');
+    expect(fixture.nativeElement.querySelector('.course-details__sidebar video')).toBeNull();
+  });
+
+  it('keeps direct video files in the native video player', () => {
+    fixture.componentInstance.program = {
+      ...fixture.componentInstance.program!,
+      videoPath: 'https://bsnudash.runasp.net/videos/program.mp4'
+    };
+    fixture.detectChanges();
+
+    expect(fixture.nativeElement.querySelector('.course-details__video-embed iframe')).toBeNull();
+    expect((fixture.nativeElement.querySelector('.course-details__sidebar video') as HTMLVideoElement).src)
+      .toBe('https://bsnudash.runasp.net/videos/program.mp4');
   });
 
   it('changes the displayed program image with carousel controls', () => {

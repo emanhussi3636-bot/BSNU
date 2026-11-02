@@ -55,13 +55,13 @@ describe('FacultyserviceService', () => {
     ]);
   });
 
-  it('loads a program by ID', () => {
-    service.getProgram(2).subscribe((program) => {
+  it('loads a program by ID and language', () => {
+    service.getProgram(2, 'ar').subscribe((program) => {
       expect(program.name).toBe('Pharmacy – Pharm D & Clinical');
       expect(program.programManager?.name).toBe('Rania Sarhan');
     });
 
-    httpTestingController.expectOne('/api/Program/2').flush({
+    httpTestingController.expectOne('/api/Program/2?lang=ar').flush({
       id: 2,
       name: 'Pharmacy – Pharm D & Clinical',
       programManager: { id: '15', name: 'Rania Sarhan' },

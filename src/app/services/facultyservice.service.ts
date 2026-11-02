@@ -115,8 +115,12 @@ export class FacultyserviceService {
     );
   }
 
-  getProgram(programId: number | string): Observable<ProgramDetails> {
-    return this.httpClient.get<ProgramDetails>(`${this.programApiUrl}/${programId}`).pipe(
+  getProgram(
+    programId: number | string,
+    language: SupportedLanguage = 'en'
+  ): Observable<ProgramDetails> {
+    const params = new HttpParams().set('lang', language);
+    return this.httpClient.get<ProgramDetails>(`${this.programApiUrl}/${programId}`, { params }).pipe(
       retry({ count: 2, delay: this.retryDelay })
     );
   }

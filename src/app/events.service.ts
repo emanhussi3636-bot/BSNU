@@ -1,5 +1,6 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { Injectable, inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Injectable, PLATFORM_ID, inject } from '@angular/core';
 import { Observable, map, retry, throwError, timer } from 'rxjs';
 import { environment } from './environment/environment';
 
@@ -40,7 +41,9 @@ export type EventApiResponse = EventRecord[] | EventApiCollection;
   providedIn: 'root'
 })
 export class EventsService {
-  private readonly apiUrl = `${environment.baseUrl}/api/Events`;
+  private readonly apiUrl = isPlatformBrowser(inject(PLATFORM_ID))
+    ? '/api/Events'
+    : `${environment.baseUrl}/api/Events`;
   private readonly httpClient = inject(HttpClient);
 
   getEvents(language: 'en' | 'ar' = 'en'): Observable<EventRecord[]> {

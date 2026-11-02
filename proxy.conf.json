@@ -41,6 +41,12 @@
     "changeOrigin": true,
     "logLevel": "warn"
   },
+  "/api/Events": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
   "/api/Faculty": {
     "target": "http://bsnu.runasp.net",
     "secure": false,

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { catchError, map, of, Subscription, switchMap } from 'rxjs';
 import { environment } from '../environment/environment';
 import { NewsRecord, NewsService } from '../news.service';
 import { LanguageService } from '../services/language.service';
@@ -22,7 +22,6 @@ interface UniversityNewsItem {
 })
 export class UniversityNewsComponent implements OnInit, OnDestroy {
   newsItems: UniversityNewsItem[] = [];
-  currentLanguage: 'en' | 'ar' = 'en';
   isLoading = true;
   loadError = false;
 
@@ -35,40 +34,41 @@ export class UniversityNewsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.subscriptions.add(
-      this.langService.currentLang$.subscribe((language) => {
-        this.currentLanguage = language;
-        this.updateNewsTitles();
-      })
-    );
-
-    this.subscriptions.add(
-      this.newsService.getAllGroupedByCategory().subscribe({
-        next: (groups) => {
-          const apiNews = groups.flatMap((group) =>
-            group.news.map((news) => ({
-              ...news,
-              categoryId: group.categoryId,
-              categoryNameEn: group.categoryNameEn,
-              categoryNameAr: group.categoryNameAr
-            }))
-          );
-
-          const latestNews = apiNews
-            .sort((left, right) => this.newsTime(right) - this.newsTime(left))
-            .slice(0, 5);
-
-          this.apiNews = latestNews;
-          this.updateNewsTitles();
-          this.isLoading = false;
+      this.langService.currentLang$.pipe(
+        switchMap((language) => {
+          this.isLoading = true;
           this.loadError = false;
-        },
-        error: (error: unknown) => {
-          console.error('Failed to load university news.', error);
-          this.apiNews = [];
-          this.newsItems = [];
-          this.loadError = true;
-          this.isLoading = false;
-        }
+
+          return this.newsService.getAllGroupedByCategory(language).pipe(
+            map((groups) =>
+              groups.flatMap((group) =>
+                group.news.map((news) => ({
+                  news,
+                  categoryName: news.categoryName
+                    || (language === 'ar' ? group.categoryNameAr : group.categoryNameEn)
+                    || ''
+                }))
+              )
+                .sort((left, right) => this.newsTime(right.news) - this.newsTime(left.news))
+                .slice(0, 5)
+                .map(({ news, categoryName }) => ({
+                  id: news.id,
+                  image: this.imageUrl(news) ?? '',
+                  title: news.title || '',
+                  description: news.description || '',
+                  category: categoryName
+                }))
+            ),
+            catchError((error: unknown) => {
+              console.error('Failed to load university news.', error);
+              this.loadError = true;
+              return of([]);
+            })
+          );
+        })
+      ).subscribe((newsItems) => {
+        this.newsItems = newsItems;
+        this.isLoading = false;
       })
     );
   }
@@ -77,27 +77,9 @@ export class UniversityNewsComponent implements OnInit, OnDestroy {
     this.subscriptions.unsubscribe();
   }
 
-  private apiNews: NewsRecord[] = [];
-
   private newsTime(news: NewsRecord): number {
     const time = news.publishedAt ? new Date(news.publishedAt).getTime() : 0;
     return Number.isNaN(time) ? news.id : time;
-  }
-
-  private updateNewsTitles(): void {
-    this.newsItems = this.apiNews.map((news) => ({
-      id: news.id,
-      image: this.imageUrl(news) ?? '',
-      title: this.currentLanguage === 'ar'
-        ? news.titleAr || news.titleEn || news.title || ''
-        : news.titleEn || news.titleAr || news.title || '',
-      description: this.currentLanguage === 'ar'
-        ? news.descriptionAr || news.descriptionEn || news.description || ''
-        : news.descriptionEn || news.descriptionAr || news.description || '',
-      category: this.currentLanguage === 'ar'
-        ? news.categoryNameAr || news.categoryNameEn || news.categoryName || ''
-        : news.categoryNameEn || news.categoryNameAr || news.categoryName || ''
-    }));
   }
 
   private imageUrl(news: NewsRecord): string | null {
