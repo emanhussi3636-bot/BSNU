@@ -1,32 +1,34 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
-import { of } from 'rxjs';
+import { BehaviorSubject, of } from 'rxjs';
 import { NewsService } from '../news.service';
 import { LanguageService } from '../services/language.service';
 import { NewsDetailsComponent } from './newsdetails.component';
 
 describe('NewsDetailsComponent', () => {
   let fixture: ComponentFixture<NewsDetailsComponent>;
+  let language: BehaviorSubject<'en' | 'ar'>;
+  let newsService: jasmine.SpyObj<NewsService>;
 
   beforeEach(async () => {
-    const newsService = {
-      getById: jasmine.createSpy().and.returnValue(of({
+    language = new BehaviorSubject<'en' | 'ar'>('en');
+    newsService = jasmine.createSpyObj<NewsService>('NewsService', ['getById']);
+    newsService.getById.and.callFake((_id, selectedLanguage) => of({
         id: 6,
-        title: 'API headline',
-        description: 'API description',
-        subTitle: 'API article text',
+        title: selectedLanguage === 'ar' ? 'عنوان API' : 'API headline',
+        description: selectedLanguage === 'ar' ? 'وصف API' : 'API description',
+        subTitle: selectedLanguage === 'ar' ? 'نص المقال' : 'API article text',
         publishedAt: '2026-10-25T00:00:00',
         categoryId: 3,
-        categoryName: 'Culture',
+        categoryName: selectedLanguage === 'ar' ? 'الثقافة' : 'Culture',
         programsId: 4,
         images: [
           'http://bsnudash.runasp.net/images/news/image.jpg',
           'http://bsnudash.runasp.net/images/news/image-2.jpg'
         ]
-      }))
-    };
+      }));
     const languageService = {
-      currentLang$: of('en'),
+      currentLang$: language.asObservable(),
       translate: (key: string) => key
     };
 
@@ -57,6 +59,17 @@ describe('NewsDetailsComponent', () => {
     expect(fixture.nativeElement.querySelectorAll('.detail-carousel__indicators button').length).toBe(2);
     expect(fixture.nativeElement.querySelector('img').src)
       .toBe('http://bsnudash.runasp.net/images/news/image.jpg');
+  });
+
+  it('requests and renders the selected language when the language changes', () => {
+    language.next('ar');
+    fixture.detectChanges();
+
+    const content = fixture.nativeElement.textContent as string;
+    expect(newsService.getById).toHaveBeenCalledWith('6', 'ar');
+    expect(content).toContain('عنوان API');
+    expect(content).toContain('وصف API');
+    expect(content).not.toContain('API headline');
   });
 
   it('navigates through the API image carousel', () => {

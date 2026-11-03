@@ -48,9 +48,11 @@ export class NewsService {
       .pipe(retry({ count: 2, delay: this.retryDelay }));
   }
 
-  getById(id: number | string): Observable<NewsRecord> {
+  getById(id: number | string, language: 'en' | 'ar' = 'en'): Observable<NewsRecord> {
     return this.httpClient
-      .get<NewsRecord>(`${this.apiUrl}/GetById/${id}`)
+      .get<NewsRecord>(`${this.apiUrl}/GetById/${id}`, {
+        params: { lang: language }
+      })
       .pipe(retry({ count: 2, delay: this.retryDelay }));
   }
 

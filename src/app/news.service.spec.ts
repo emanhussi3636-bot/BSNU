@@ -74,7 +74,7 @@ describe('NewsService', () => {
     });
 
     httpTestingController
-      .expectOne('/api/News/GetById/1004')
+      .expectOne('/api/News/GetById/1004?lang=en')
       .flush({
         id: 1004,
         titleEn: 'University news',
@@ -87,6 +87,26 @@ describe('NewsService', () => {
         categoryId: 2,
         categoryNameEn: 'Campus',
         categoryNameAr: 'الحرم الجامعي',
+        programsId: 4,
+        images: ['/images/news/image.jpeg']
+      });
+  });
+
+  it('requests news details in the selected language', () => {
+    service.getById(1004, 'ar').subscribe((news) => {
+      expect(news.title).toBe('أخبار الجامعة');
+    });
+
+    httpTestingController
+      .expectOne('/api/News/GetById/1004?lang=ar')
+      .flush({
+        id: 1004,
+        title: 'أخبار الجامعة',
+        description: 'الوصف',
+        subTitle: 'عنوان فرعي',
+        publishedAt: null,
+        categoryId: 2,
+        categoryName: 'الحرم الجامعي',
         programsId: 4,
         images: ['/images/news/image.jpeg']
       });

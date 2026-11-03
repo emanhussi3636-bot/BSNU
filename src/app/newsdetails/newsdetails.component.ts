@@ -1,7 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { Subscription, catchError, of, switchMap } from 'rxjs';
+import { Subscription, catchError, combineLatest, of, switchMap } from 'rxjs';
 import { environment } from '../environment/environment';
 import { NewsRecord, NewsService } from '../news.service';
 import { LanguageService } from '../services/language.service';
@@ -28,15 +28,10 @@ export class NewsDetailsComponent implements OnDestroy {
     public langService: LanguageService
   ) {
     this.subscriptions.add(
-      this.langService.currentLang$.subscribe((language) => {
-        this.currentLanguage = language;
-      })
-    );
-
-    this.subscriptions.add(
-      this.route.paramMap
+      combineLatest([this.route.paramMap, this.langService.currentLang$])
         .pipe(
-          switchMap((params) => {
+          switchMap(([params, language]) => {
+            this.currentLanguage = language;
             const id = params.get('id') ?? '';
             this.isLoading = true;
             this.loadError = false;
@@ -49,7 +44,7 @@ export class NewsDetailsComponent implements OnDestroy {
               return of(null);
             }
 
-            return this.newsService.getById(id).pipe(
+            return this.newsService.getById(id, language).pipe(
               catchError((error: unknown) => {
                 console.error('Failed to load news details from the API.', error);
                 this.loadError = true;
@@ -69,28 +64,28 @@ export class NewsDetailsComponent implements OnDestroy {
 
   title(news: NewsRecord): string {
     return this.currentLanguage === 'ar'
-      ? news.titleAr || news.titleEn || news.title || ''
-      : news.titleEn || news.titleAr || news.title || '';
+      ? news.titleAr || news.title || news.titleEn || ''
+      : news.titleEn || news.title || news.titleAr || '';
   }
 
   description(news: NewsRecord): string {
     const description = this.currentLanguage === 'ar'
-      ? news.descriptionAr || news.descriptionEn || news.description
-      : news.descriptionEn || news.descriptionAr || news.description;
+      ? news.descriptionAr || news.description || news.descriptionEn
+      : news.descriptionEn || news.description || news.descriptionAr;
     return description || '';
   }
 
   subtitle(news: NewsRecord): string {
     const subtitle = this.currentLanguage === 'ar'
-      ? news.subTitleAr || news.subTitleEn || news.subTitle
-      : news.subTitleEn || news.subTitleAr || news.subTitle;
+      ? news.subTitleAr || news.subTitle || news.subTitleEn
+      : news.subTitleEn || news.subTitle || news.subTitleAr;
     return subtitle || this.description(news);
   }
 
   categoryName(news: NewsRecord): string {
     return this.currentLanguage === 'ar'
-      ? news.categoryNameAr || news.categoryNameEn || news.categoryName || ''
-      : news.categoryNameEn || news.categoryNameAr || news.categoryName || '';
+      ? news.categoryNameAr || news.categoryName || news.categoryNameEn || ''
+      : news.categoryNameEn || news.categoryName || news.categoryNameAr || '';
   }
 
   showImage(index: number): void {

@@ -15,7 +15,6 @@
         <p class="detail-kicker">{{ langService.translate('newsDetails.LABEL') }}</p>
         <p class="detail-category">{{ categoryName(item) }}</p>
         <h1>{{ title(item) }}</h1>
-        <p class="detail-deck">{{ description(item) }}</p>
       </div>
       <div class="detail-header__mark" aria-hidden="true">BSNU</div>
     </header>
@@ -54,6 +53,7 @@
       </section>
       <div class="detail-copy">
         <p>{{ subtitle(item) }}</p>
+        <p class="detail-deck">{{ description(item) }}</p>
         <a class="detail-more" routerLink="/all-news">
           {{ langService.translate('newsDetails.MORE') }}
           <span aria-hidden="true">&#8594;</span>
