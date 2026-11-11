@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
 import { isPlatformBrowser } from '@angular/common';
 import { Injectable, PLATFORM_ID, inject } from '@angular/core';
-import { Observable, retry, throwError, timer } from 'rxjs';
+import { Observable, map, retry, throwError, timer } from 'rxjs';
 import { environment } from '../environment/environment';
 
 export interface FacultyRecord {
@@ -43,6 +43,32 @@ export interface FacultyWithProgramsApiCollection {
 export type FacultyWithProgramsApiResponse =
   | FacultyWithProgramsRecord[]
   | FacultyWithProgramsApiCollection;
+
+export interface SectorWithProgramsRecord {
+  id: number | string;
+  name: string;
+  programs: ProgramRecord[];
+}
+
+export interface SectorWithProgramsApiCollection {
+  value: SectorWithProgramsRecord[];
+  Count?: number;
+}
+
+export type SectorWithProgramsApiResponse =
+  | SectorWithProgramsRecord[]
+  | SectorWithProgramsApiCollection;
+
+export interface SectorRecord {
+  name: string;
+  subTitle: string | null;
+  image: string | null;
+}
+
+export type SectorApiResponse = SectorRecord[] | {
+  value: SectorRecord[];
+  Count?: number;
+};
 
 export interface ProgramManager {
   id: number | string;
@@ -101,6 +127,12 @@ export class FacultyserviceService {
   private readonly programApiUrl = isPlatformBrowser(inject(PLATFORM_ID))
     ? '/api/Program'
     : `${environment.baseUrl}/api/Program`;
+  private readonly sectorApiUrl = isPlatformBrowser(inject(PLATFORM_ID))
+    ? '/api/Sector/with-programs'
+    : `${environment.baseUrl}/api/Sector/with-programs`;
+  private readonly sectorsApiUrl = isPlatformBrowser(inject(PLATFORM_ID))
+    ? '/api/Sector'
+    : `${environment.baseUrl}/api/Sector`;
   private readonly httpClient = inject(HttpClient);
 
   getAllFaculties(): Observable<FacultyApiResponse> {
@@ -112,6 +144,22 @@ export class FacultyserviceService {
   getFacultiesWithPrograms(): Observable<FacultyWithProgramsApiResponse> {
     return this.httpClient.get<FacultyWithProgramsApiResponse>(`${this.apiUrl}/with-programs`).pipe(
       retry({ count: 2, delay: this.retryDelay })
+    );
+  }
+
+  getSectorsWithPrograms(language: SupportedLanguage): Observable<SectorWithProgramsRecord[]> {
+    const params = new HttpParams().set('lang', language);
+    return this.httpClient.get<SectorWithProgramsApiResponse>(this.sectorApiUrl, { params }).pipe(
+      retry({ count: 2, delay: this.retryDelay }),
+      map((response) => Array.isArray(response) ? response : response.value ?? [])
+    );
+  }
+
+  getSectors(language: SupportedLanguage): Observable<SectorRecord[]> {
+    const params = new HttpParams().set('lang', language);
+    return this.httpClient.get<SectorApiResponse>(this.sectorsApiUrl, { params }).pipe(
+      retry({ count: 2, delay: this.retryDelay }),
+      map((response) => Array.isArray(response) ? response : response.value ?? [])
     );
   }
 

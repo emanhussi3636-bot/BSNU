@@ -165,11 +165,15 @@
       "NUMBER": "Number",
       "SECTOR": "Sector",
       "PROGRAM": "Program",
+      "LEVEL": "Level",
       "LEVEL_ONE": "Level 1\n2026 - 2027",
       "LEVEL_TWO": "Level 2\n2025 - 2026",
       "LEVEL_THREE": "Level 3\n2024 - 2025",
       "LEVEL_FOUR": "Level 4\n2023 - 2024"
     },
+    "LOADING": "Loading tuition fees...",
+    "LOAD_ERROR": "Tuition fees could not be loaded. Please try again later.",
+    "NO_DATA": "No tuition fees are currently available.",
     "ROWS": [
       {
         "number": 1,
@@ -480,6 +484,9 @@
       "TITLE": "University Sectors",
       "DESC": "Choose a sector to explore its programs and open the program cards below."
     },
+    "LOADING": "Loading university sectors...",
+    "LOAD_ERROR": "University sectors could not be loaded. Please try again later.",
+    "NO_DATA": "No university sectors are currently available.",
     "BUTTON": {
       "SHOW_PROGRAMS": "Show Programs",
       "HIDE_PROGRAMS": "Hide Programs"
@@ -696,6 +703,9 @@
   },
   "Calendar": {
     "TITLE": "Semester Calendar for Second Term 2026-2027",
+    "LOADING": "Loading semester calendar...",
+    "LOAD_ERROR": "The semester calendar could not be loaded. Please try again later.",
+    "NO_DATA": "No semester calendar is currently available.",
     "COLUMNS": {
       "EVENT": "Event",
       "DATE": "Date"

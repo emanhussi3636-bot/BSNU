@@ -4,9 +4,21 @@
     <p>{{ langService.translate('universitySectors.HEADER.DESC') }}</p>
   </div>
 
-  <div class="sector-grid">
+  <p *ngIf="isLoading" role="status">
+    {{ langService.translate('universitySectors.LOADING') }}
+  </p>
+
+  <p *ngIf="!isLoading && loadError" role="alert">
+    {{ langService.translate('universitySectors.LOAD_ERROR') }}
+  </p>
+
+  <p *ngIf="!isLoading && !loadError && sectors.length === 0" role="status">
+    {{ langService.translate('universitySectors.NO_DATA') }}
+  </p>
+
+  <div class="sector-grid" *ngIf="!isLoading && !loadError && sectors.length > 0">
     <article class="sector-card" *ngFor="let sector of sectors">
-      <img [src]="sector.image" [alt]="sector.title" />
+      <img *ngIf="sector.image" [src]="sector.image" [alt]="sector.title" />
       <div class="sector-content">
         <h3>{{ sector.title }}</h3>
         <p>{{ sector.subtitle }}</p>
@@ -24,7 +36,7 @@
     </div>
 
     <div class="program-grid">
-      <a class="program-card" *ngFor="let program of selectedSector.programs" [routerLink]="program.link">
+      <a class="program-card" *ngFor="let program of selectedSector.programs" [routerLink]="['/Program', program.id]">
         <div class="program-image">{{ program.name.charAt(0) }}</div>
         <h4>{{ program.name }}</h4>
       </a>

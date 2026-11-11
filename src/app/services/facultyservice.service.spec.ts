@@ -55,6 +55,37 @@ describe('FacultyserviceService', () => {
     ]);
   });
 
+  it('loads localized sectors with their programs', () => {
+    service.getSectorsWithPrograms('ar').subscribe((sectors) => {
+      expect(sectors[0].name).toBe('القطاع الطبي');
+      expect(sectors[0].programs[0].name).toBe('الطب والجراحة');
+    });
+
+    httpTestingController.expectOne('/api/Sector/with-programs?lang=ar').flush([
+      {
+        id: 1,
+        name: 'القطاع الطبي',
+        programs: [{ id: 1, name: 'الطب والجراحة' }]
+      }
+    ]);
+  });
+
+  it('loads localized sector names, subtitles, and images', () => {
+    service.getSectors('ar').subscribe((sectors) => {
+      expect(sectors[0].name).toBe('القطاع الطبي');
+      expect(sectors[0].subTitle).toBe('برامج صحية');
+      expect(sectors[0].image).toBe('https://example.com/medical.jpg');
+    });
+
+    httpTestingController.expectOne('/api/Sector?lang=ar').flush([
+      {
+        name: 'القطاع الطبي',
+        subTitle: 'برامج صحية',
+        image: 'https://example.com/medical.jpg'
+      }
+    ]);
+  });
+
   it('loads a program by ID and language', () => {
     service.getProgram(2, 'ar').subscribe((program) => {
       expect(program.name).toBe('Pharmacy – Pharm D & Clinical');

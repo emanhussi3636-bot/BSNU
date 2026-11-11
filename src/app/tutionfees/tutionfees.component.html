@@ -3,17 +3,29 @@
     <h1>{{ langService.translate('TUTIONFEES.PAGE_TITLE') }}</h1>
   </div>
 
-  <div class="table-wrapper">
+  <p *ngIf="isLoading" role="status">
+    {{ langService.translate('TUTIONFEES.LOADING') }}
+  </p>
+
+  <p *ngIf="!isLoading && loadError" role="alert">
+    {{ langService.translate('TUTIONFEES.LOAD_ERROR') }}
+  </p>
+
+  <p *ngIf="!isLoading && !loadError && tuitionFees.length === 0" role="status">
+    {{ langService.translate('TUTIONFEES.NO_DATA') }}
+  </p>
+
+  <div *ngIf="!isLoading && !loadError && tuitionFees.length > 0" class="table-wrapper">
     <table class="tuition-table">
       <thead>
         <tr>
           <th>{{ langService.translate('TUTIONFEES.HEADERS.NUMBER') }}</th>
           <th>{{ langService.translate('TUTIONFEES.HEADERS.SECTOR') }}</th>
           <th>{{ langService.translate('TUTIONFEES.HEADERS.PROGRAM') }}</th>
-          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_ONE') }}</th>
-          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_TWO') }}</th>
-          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_THREE') }}</th>
-          <th>{{ langService.translate('TUTIONFEES.HEADERS.LEVEL_FOUR') }}</th>
+          <th *ngFor="let level of levelColumns">
+            {{ langService.translate('TUTIONFEES.HEADERS.LEVEL') }} {{ level.levelNumber }}
+            <ng-container *ngIf="level.academicYear"><br>{{ level.academicYear }}</ng-container>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -21,10 +33,12 @@
           <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.NUMBER')">{{ row.number }}</td>
           <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.SECTOR')">{{ row.sector }}</td>
           <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.PROGRAM')">{{ row.program }}</td>
-          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_ONE')">{{ row.level1 }}</td>
-          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_TWO')">{{ row.level2 }}</td>
-          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_THREE')">{{ row.level3 }}</td>
-          <td [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL_FOUR')">{{ row.level4 }}</td>
+          <td
+            *ngFor="let level of levelColumns"
+            [attr.data-label]="langService.translate('TUTIONFEES.HEADERS.LEVEL') + ' ' + level.levelNumber"
+          >
+            {{ formatFee(row.fees[level.levelNumber]) }}
+          </td>
         </tr>
       </tbody>
     </table>

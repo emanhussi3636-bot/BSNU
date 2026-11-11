@@ -47,6 +47,18 @@
     "changeOrigin": true,
     "logLevel": "warn"
   },
+  "/api/TuitionFees": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
+  "/api/SemesterCalendar": {
+    "target": "http://bsnu.runasp.net",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "warn"
+  },
   "/api/Faculty": {
     "target": "http://bsnu.runasp.net",
     "secure": false,
